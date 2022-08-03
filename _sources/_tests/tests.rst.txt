@@ -6,10 +6,19 @@ tests package
    :undoc-members:
    :show-inheritance:
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tests.assertions
+   tests.utils
+
 Submodules
 ----------
 
 .. toctree::
    :maxdepth: 4
 
-   tests.test_dummy
+   tests.testing_utils

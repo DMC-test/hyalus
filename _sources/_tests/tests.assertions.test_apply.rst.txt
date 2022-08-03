@@ -1,0 +1,7 @@
+tests.assertions.test\_apply module
+===================================
+
+.. automodule:: tests.assertions.test_apply
+   :members:
+   :undoc-members:
+   :show-inheritance:

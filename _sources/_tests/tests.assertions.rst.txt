@@ -1,0 +1,16 @@
+tests.assertions package
+========================
+
+.. automodule:: tests.assertions
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tests.assertions.test_apply
+   tests.assertions.test_compare

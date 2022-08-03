@@ -1,0 +1,7 @@
+tests.assertions.test\_compare module
+=====================================
+
+.. automodule:: tests.assertions.test_compare
+   :members:
+   :undoc-members:
+   :show-inheritance:

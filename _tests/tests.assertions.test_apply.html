@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tests.test_dummy module &mdash; Hyalus 0.1 documentation</title>
+  <title>tests.assertions.test_apply module &mdash; Hyalus 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
@@ -21,7 +21,9 @@
         <script src="../_static/traceability.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tests.assertions.test_compare module" href="tests.assertions.test_compare.html" />
+    <link rel="prev" title="tests.assertions package" href="tests.assertions.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -32,7 +34,7 @@
             <a href="../index.html" class="icon icon-home"> Hyalus
           </a>
               <div class="version">
-                0.1.0-2
+                0.0.1
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -43,7 +45,24 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
-<li class="toctree-l1"><a class="reference internal" href="../_code/modules.html">code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">README</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tests</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tests.html">tests package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="tests.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="tests.assertions.html">tests.assertions package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests.utils.html">tests.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">Releases</a></li>
 </ul>
 
         </div>
@@ -60,9 +79,12 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>tests.test_dummy module</li>
+          <li><a href="modules.html">tests</a> &raquo;</li>
+          <li><a href="tests.html">tests package</a> &raquo;</li>
+          <li><a href="tests.assertions.html">tests.assertions package</a> &raquo;</li>
+      <li>tests.assertions.test_apply module</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/_tests/tests.test_dummy.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/_tests/tests.assertions.test_apply.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -70,39 +92,17 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-tests.test_dummy">
-<span id="tests-test-dummy-module"></span><h1>tests.test_dummy module<a class="headerlink" href="#module-tests.test_dummy" title="Permalink to this heading"></a></h1>
-<p>Tests for the action_utils.common module</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.test_dummy.TestStringComp">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.test_dummy.</span></span><span class="sig-name descname"><span class="pre">TestStringComp</span></span><a class="headerlink" href="#tests.test_dummy.TestStringComp" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<p>Dummy tests</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.test_dummy.TestStringComp.test_string_match">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_string_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">some_expected_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_dummy.TestStringComp.test_string_match" title="Permalink to this definition"></a></dt>
-<dd><p>Assert strings match</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.test_dummy.TestStringComp.test_string_mismatch">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_string_mismatch</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">some_expected_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_dummy.TestStringComp.test_string_mismatch" title="Permalink to this definition"></a></dt>
-<dd><p>Assert strings don’t match</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.test_dummy.fixture_some_expected_string">
-<span class="sig-prename descclassname"><span class="pre">tests.test_dummy.</span></span><span class="sig-name descname"><span class="pre">fixture_some_expected_string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.test_dummy.fixture_some_expected_string" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
+  <section id="module-tests.assertions.test_apply">
+<span id="tests-assertions-test-apply-module"></span><h1>tests.assertions.test_apply module<a class="headerlink" href="#module-tests.assertions.test_apply" title="Permalink to this heading"></a></h1>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tests.assertions.html" class="btn btn-neutral float-left" title="tests.assertions package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.assertions.test_compare.html" class="btn btn-neutral float-right" title="tests.assertions.test_compare module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
