@@ -1,0 +1,7 @@
+tests.parse.test\_base module
+=============================
+
+.. automodule:: tests.parse.test_base
+   :members:
+   :undoc-members:
+   :show-inheritance:

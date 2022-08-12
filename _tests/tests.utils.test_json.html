@@ -52,6 +52,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="tests.html">tests package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="tests.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="tests.assertions.html">tests.assertions package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests.parse.html">tests.parse package</a></li>
 <li class="toctree-l4 current"><a class="reference internal" href="tests.utils.html">tests.utils package</a></li>
 </ul>
 </li>
@@ -95,6 +96,43 @@
   <section id="module-tests.utils.test_json">
 <span id="tests-utils-test-json-module"></span><h1>tests.utils.test_json module<a class="headerlink" href="#module-tests.utils.test_json" title="Permalink to this heading"></a></h1>
 <p>Unit tests for the hyalus.utils.json module</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonAppend">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_json.</span></span><span class="sig-name descname"><span class="pre">TestJsonAppend</span></span><a class="headerlink" href="#tests.utils.test_json.TestJsonAppend" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the json_append utility function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonAppend.test_json_append_1">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_append_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonAppend.test_json_append_1" title="Permalink to this definition"></a></dt>
+<dd><p>Test appending to an outer array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonAppend.test_json_append_2">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_append_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonAppend.test_json_append_2" title="Permalink to this definition"></a></dt>
+<dd><p>Test appending to an inner array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonAppend.test_json_append_invalid_index">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_append_invalid_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonAppend.test_json_append_invalid_index" title="Permalink to this definition"></a></dt>
+<dd><p>Assert an IndexError is raised when path_list contains an index that doesn’t exist</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonAppend.test_json_append_invalid_key">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_append_invalid_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonAppend.test_json_append_invalid_key" title="Permalink to this definition"></a></dt>
+<dd><p>Assert a KeyError is raised when path_list contains a key that doesn’t exist</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonAppend.test_json_append_not_array">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_append_not_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonAppend.test_json_append_not_array" title="Permalink to this definition"></a></dt>
+<dd><p>Assert a ValueError is raised when trying to append a value to something that is not an array</p>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.utils.test_json.TestJsonGet">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_json.</span></span><span class="sig-name descname"><span class="pre">TestJsonGet</span></span><a class="headerlink" href="#tests.utils.test_json.TestJsonGet" title="Permalink to this definition"></a></dt>
@@ -200,13 +238,43 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.utils.test_json.TestJsonSet.test_json_set_array_empty_path_list">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_set_array_empty_path_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonSet.test_json_set_array_empty_path_list" title="Permalink to this definition"></a></dt>
-<dd><p>Test that attempting to set a value when giving an empty past list raises a ValueError</p>
+<dd><p>Test that attempting to set a value when giving an empty path list raises a ValueError</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.utils.test_json.TestJsonSet.test_json_set_array_invalid_index">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_set_array_invalid_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonSet.test_json_set_array_invalid_index" title="Permalink to this definition"></a></dt>
 <dd><p>Test that attempting to set a value when giving an index that doesn’t exist raises an IndexError</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonSet.test_json_set_object_1">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_set_object_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonSet.test_json_set_object_1" title="Permalink to this definition"></a></dt>
+<dd><p>Test setting value at outer-most level of object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonSet.test_json_set_object_2">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_set_object_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonSet.test_json_set_object_2" title="Permalink to this definition"></a></dt>
+<dd><p>Test setting value at an inner level of object</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonSet.test_json_set_object_create_key_true">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_set_object_create_key_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonSet.test_json_set_object_create_key_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test that when giving a key that does not exist and create_key is set to True, the object is updated</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonSet.test_json_set_object_empty_path_list">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_set_object_empty_path_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonSet.test_json_set_object_empty_path_list" title="Permalink to this definition"></a></dt>
+<dd><p>Test that attempting to set a value when giving an empty path list raises a ValueError</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json.TestJsonSet.test_json_set_object_invalid_key">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_json_set_object_invalid_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json.TestJsonSet.test_json_set_object_invalid_key" title="Permalink to this definition"></a></dt>
+<dd><p>Test that attempting to set a value when giving a key that does not exist raises a KeyError</p>
 </dd></dl>
 
 </dd></dl>
