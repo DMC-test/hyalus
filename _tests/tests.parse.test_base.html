@@ -22,7 +22,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="tests.utils package" href="tests.utils.html" />
+    <link rel="next" title="tests.parse.test_csv module" href="tests.parse.test_csv.html" />
     <link rel="prev" title="tests.parse package" href="tests.parse.html" /> 
 </head>
 
@@ -97,29 +97,45 @@
 <span id="tests-parse-test-base-module"></span><h1>tests.parse.test_base module<a class="headerlink" href="#module-tests.parse.test_base" title="Permalink to this heading"></a></h1>
 <p>Unit tests for the hyalus.parse.base module</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="tests.parse.test_base.TSVParser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TSVParser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_glob</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cache</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TSVParser" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ResultsParser</span></code></p>
-<p>Parser to be used for test cases as the base class is abstract</p>
-<p>Ctor.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – Path to results file to parse. Should include directory and file name/wildcard</p></li>
-<li><p><strong>use_glob</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – If True will treat the given path as a wildcard. If false will treat as a path and file name.</p></li>
-<li><p><strong>cache</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – Boolean flag defining whether parsed results should be stored in memory or not</p></li>
-</ul>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestDataFrameParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the DataFrameParser base class functionality</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_base.TSVParser._parse">
-<span class="sig-name descname"><span class="pre">_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TSVParser._parse" title="Permalink to this definition"></a></dt>
-<dd><p>Private parsing method for the given file. Should be overridden based on the type of file being parsed</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a> – The file parsed into memory. Classes defining this method should define the output data structure.</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_abc_honored">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_abc_honored" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that the DataFrameParser class cannot be instantiated</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_parse">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that an input file is properly parsed into a DataFrame</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_parse_kwargs">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse_kwargs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse_kwargs" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that kwargs are properly passed into the <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> call</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestKeyValueParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the KeyValueParser base class functionality</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_abc_honored">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_abc_honored" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that the KeyValueParser class cannot be instantiated</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_parse">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_parse" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that an input file is properly parsed into a dictionary of key-value pairs</p>
 </dd></dl>
 
 </dd></dl>
@@ -130,21 +146,9 @@
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Unit tests for the ResultsParser base class functionality</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_glob_file_multiple_found">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_glob_file_multiple_found</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_glob_file_multiple_found" title="Permalink to this definition"></a></dt>
-<dd><p>Assert InvalidWildcard is raised from giving a wildcard with multiple results</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_glob_file_not_found">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_glob_file_not_found</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_glob_file_not_found" title="Permalink to this definition"></a></dt>
-<dd><p>Assert InvalidWildcard is raised when giving a wildcard that cannot be found</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_glob_file_pass">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_glob_file_pass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_glob_file_pass" title="Permalink to this definition"></a></dt>
-<dd><p>Test globbing for wildcard file path in case where 1 result will be found</p>
+<dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_abc_honored">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_abc_honored" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that the ResultsParser class cannot be instantiated</p>
 </dd></dl>
 
 <dl class="py method">
@@ -159,6 +163,12 @@
 <dd><p>Assert that parsing functions as expected and results are cached as expected when turned on</p>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_use_glob_true">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_use_glob_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_use_glob_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test integration of globbing functionality when giving a valid wildcard</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -168,7 +178,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tests.parse.html" class="btn btn-neutral float-left" title="tests.parse package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tests.utils.html" class="btn btn-neutral float-right" title="tests.utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tests.parse.test_csv.html" class="btn btn-neutral float-right" title="tests.parse.test_csv module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

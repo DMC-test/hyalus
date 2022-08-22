@@ -1,0 +1,7 @@
+tests.parse.test\_tsv module
+============================
+
+.. automodule:: tests.parse.test_tsv
+   :members:
+   :undoc-members:
+   :show-inheritance:

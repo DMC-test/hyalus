@@ -13,3 +13,7 @@ Submodules
    :maxdepth: 4
 
    tests.parse.test_base
+   tests.parse.test_csv
+   tests.parse.test_gtf
+   tests.parse.test_tsv
+   tests.parse.test_vcf

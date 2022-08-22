@@ -1,0 +1,7 @@
+tests.utils.test\_file\_utils module
+====================================
+
+.. automodule:: tests.utils.test_file_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:

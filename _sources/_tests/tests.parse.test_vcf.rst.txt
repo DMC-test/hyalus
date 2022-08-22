@@ -1,0 +1,7 @@
+tests.parse.test\_vcf module
+============================
+
+.. automodule:: tests.parse.test_vcf
+   :members:
+   :undoc-members:
+   :show-inheritance:
