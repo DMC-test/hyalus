@@ -1,7 +1,7 @@
-code
-====
+hyalus
+======
 
 .. toctree::
    :maxdepth: 4
 
-   code
+   hyalus

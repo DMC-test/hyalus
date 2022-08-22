@@ -1,0 +1,7 @@
+hyalus.parse.tsv module
+=======================
+
+.. automodule:: hyalus.parse.tsv
+   :members:
+   :undoc-members:
+   :show-inheritance:

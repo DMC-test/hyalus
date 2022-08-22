@@ -1,7 +1,0 @@
-code package
-============
-
-.. automodule:: code
-   :members:
-   :undoc-members:
-   :show-inheritance:

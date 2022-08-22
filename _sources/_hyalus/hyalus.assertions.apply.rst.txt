@@ -1,0 +1,7 @@
+hyalus.assertions.apply module
+==============================
+
+.. automodule:: hyalus.assertions.apply
+   :members:
+   :undoc-members:
+   :show-inheritance:

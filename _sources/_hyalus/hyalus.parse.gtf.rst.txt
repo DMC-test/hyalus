@@ -1,0 +1,7 @@
+hyalus.parse.gtf module
+=======================
+
+.. automodule:: hyalus.parse.gtf
+   :members:
+   :undoc-members:
+   :show-inheritance:

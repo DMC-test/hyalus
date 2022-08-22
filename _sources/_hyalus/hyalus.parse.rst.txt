@@ -1,0 +1,19 @@
+hyalus.parse package
+====================
+
+.. automodule:: hyalus.parse
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hyalus.parse.base
+   hyalus.parse.csv
+   hyalus.parse.gtf
+   hyalus.parse.tsv
+   hyalus.parse.vcf

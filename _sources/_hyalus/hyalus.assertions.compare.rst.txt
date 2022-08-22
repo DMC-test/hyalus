@@ -1,0 +1,7 @@
+hyalus.assertions.compare module
+================================
+
+.. automodule:: hyalus.assertions.compare
+   :members:
+   :undoc-members:
+   :show-inheritance:

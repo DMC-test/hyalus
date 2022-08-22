@@ -1,0 +1,19 @@
+hyalus package
+==============
+
+.. automodule:: hyalus
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hyalus.assertions
+   hyalus.config
+   hyalus.parse
+   hyalus.run
+   hyalus.utils
