@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>tests.utils.test_logging_utils module &mdash; Hyalus 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.js"></script>
+        <script src="../_static/traceability.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="tests.testing_utils module" href="tests.testing_utils.html" />
+    <link rel="prev" title="tests.utils.test_json_utils module" href="tests.utils.test_json_utils.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Hyalus
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../readme.html">README</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../_hyalus/modules.html">hyalus</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">tests</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="tests.html">tests package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="tests.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="tests.assertions.html">tests.assertions package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests.parse.html">tests.parse package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="tests.utils.html">tests.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../releases.html">Releases</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Hyalus</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">tests</a> &raquo;</li>
+          <li><a href="tests.html">tests package</a> &raquo;</li>
+          <li><a href="tests.utils.html">tests.utils package</a> &raquo;</li>
+      <li>tests.utils.test_logging_utils module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/_tests/tests.utils.test_logging_utils.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-tests.utils.test_logging_utils">
+<span id="tests-utils-test-logging-utils-module"></span><h1>tests.utils.test_logging_utils module<a class="headerlink" href="#module-tests.utils.test_logging_utils" title="Permalink to this heading"></a></h1>
+<p>Unit tests for the hyalus.utils.logging_utils module</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestConfigureLogging</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the configure_logging function. Runs in a separate interpreter session for each test.</p>
+<dl class="py property">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.function_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">function_name</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.function_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.make_cmd">
+<span class="sig-name descname"><span class="pre">make_cmd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">log_stdout</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.make_cmd" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py property">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.module_name">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">module_name</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.module_name" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_double_call">
+<span class="sig-name descname"><span class="pre">test_double_call</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_double_call" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that if configure_logging is called more than once, additional handlers are not added</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_false">
+<span class="sig-name descname"><span class="pre">test_stdout_false_debug_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_false" title="Permalink to this definition"></a></dt>
+<dd><p>Assert when log_stdout=False and debug=False, only info messages are written to log, and nothing to stdout</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_true">
+<span class="sig-name descname"><span class="pre">test_stdout_false_debug_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_true" title="Permalink to this definition"></a></dt>
+<dd><p>Assert when log_stdout=False and debug=True, info and debug messages are written to log but not stdout</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_false">
+<span class="sig-name descname"><span class="pre">test_stdout_true_debug_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_false" title="Permalink to this definition"></a></dt>
+<dd><p>Assert when log_stdout=True and debug=False, only info messages are written to the log and stdout</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_true">
+<span class="sig-name descname"><span class="pre">test_stdout_true_debug_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_true" title="Permalink to this definition"></a></dt>
+<dd><p>Assert when log_stdout=True and debug=True, info and debug messages are written to the log and stdout</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogFormatter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestHyalusLogFormatter</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogFormatter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the HyalusLogFormatter class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hyalus_log_record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format_non_hyalus">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_format_non_hyalus</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other_log_record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format_non_hyalus" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.fixture_hyalus_log_record">
+<span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_hyalus_log_record</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.fixture_hyalus_log_record" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.fixture_other_log_record">
+<span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_other_log_record</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.fixture_other_log_record" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.fixture_tmp_log">
+<span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.fixture_tmp_log" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="tests.utils.test_json_utils.html" class="btn btn-neutral float-left" title="tests.utils.test_json_utils module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.testing_utils.html" class="btn btn-neutral float-right" title="tests.testing_utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Genapsys.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -93,6 +93,7 @@
  | <a href="#L"><strong>L</strong></a>
  | <a href="#M"><strong>M</strong></a>
  | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
@@ -139,12 +140,18 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_hyalus/hyalus.assertions.apply.html#hyalus.assertions.apply.ConstraintApplier">ConstraintApplier (class in hyalus.assertions.apply)</a>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus">ConfigStatus (class in hyalus.config.common)</a>
 </li>
-      <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.contains">contains() (in module hyalus.assertions.compare)</a>
+      <li><a href="_hyalus/hyalus.utils.logging_utils.html#hyalus.utils.logging_utils.configure_logging">configure_logging() (in module hyalus.utils.logging_utils)</a>
+</li>
+      <li><a href="_hyalus/hyalus.assertions.apply.html#hyalus.assertions.apply.ConstraintApplier">ConstraintApplier (class in hyalus.assertions.apply)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.contains">contains() (in module hyalus.assertions.compare)</a>
+</li>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus.COULD_NOT_BE_LOADED">COULD_NOT_BE_LOADED (hyalus.config.common.ConfigStatus attribute)</a>
+</li>
       <li><a href="_hyalus/hyalus.parse.csv.html#hyalus.parse.csv.CSVDataFrameParser">CSVDataFrameParser (class in hyalus.parse.csv)</a>
 </li>
       <li><a href="_hyalus/hyalus.parse.csv.html#hyalus.parse.csv.CSVKeyValueParser">CSVKeyValueParser (class in hyalus.parse.csv)</a>
@@ -189,11 +196,21 @@
 </li>
       <li><a href="_tests/tests.assertions.test_compare.html#tests.assertions.test_compare.fixture_example_list">fixture_example_list() (in module tests.assertions.test_compare)</a>
 </li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.fixture_hyalus_log_record">fixture_hyalus_log_record() (in module tests.utils.test_logging_utils)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.fixture_other_log_record">fixture_other_log_record() (in module tests.utils.test_logging_utils)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_tests/tests.utils.test_json_utils.html#tests.utils.test_json_utils.fixture_test_array">fixture_test_array() (in module tests.utils.test_json_utils)</a>
 </li>
       <li><a href="_tests/tests.utils.test_json_utils.html#tests.utils.test_json_utils.fixture_test_object">fixture_test_object() (in module tests.utils.test_json_utils)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.fixture_tmp_log">fixture_tmp_log() (in module tests.utils.test_logging_utils)</a>
+</li>
+      <li><a href="_hyalus/hyalus.utils.logging_utils.html#hyalus.utils.logging_utils.HyalusLogFormatter.format">format() (hyalus.utils.logging_utils.HyalusLogFormatter method)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.function_name">function_name (tests.utils.test_logging_utils.TestConfigureLogging property)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -257,10 +274,10 @@
 </li>
       </ul></li>
       <li>
-    hyalus.config.linter
+    hyalus.config.common
 
       <ul>
-        <li><a href="_hyalus/hyalus.config.linter.html#module-hyalus.config.linter">module</a>
+        <li><a href="_hyalus/hyalus.config.common.html#module-hyalus.config.common">module</a>
 </li>
       </ul></li>
       <li>
@@ -298,13 +315,20 @@
         <li><a href="_hyalus/hyalus.config.steps.run.html#module-hyalus.config.steps.run">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     hyalus.config.steps.verify
 
       <ul>
         <li><a href="_hyalus/hyalus.config.steps.verify.html#module-hyalus.config.steps.verify">module</a>
+</li>
+      </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li>
+    hyalus.config.tags
+
+      <ul>
+        <li><a href="_hyalus/hyalus.config.tags.html#module-hyalus.config.tags">module</a>
 </li>
       </ul></li>
       <li>
@@ -377,6 +401,15 @@
         <li><a href="_hyalus/hyalus.utils.json_utils.html#module-hyalus.utils.json_utils">module</a>
 </li>
       </ul></li>
+      <li>
+    hyalus.utils.logging_utils
+
+      <ul>
+        <li><a href="_hyalus/hyalus.utils.logging_utils.html#module-hyalus.utils.logging_utils">module</a>
+</li>
+      </ul></li>
+      <li><a href="_hyalus/hyalus.utils.logging_utils.html#hyalus.utils.logging_utils.HyalusLogFormatter">HyalusLogFormatter (class in hyalus.utils.logging_utils)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -385,10 +418,14 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.in_">in_() (in module hyalus.assertions.compare)</a>
 </li>
-      <li><a href="_hyalus/hyalus.utils.file_utils.html#hyalus.utils.file_utils.InvalidWildcard">InvalidWildcard</a>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus.INVALID_FIELDS">INVALID_FIELDS (hyalus.config.common.ConfigStatus attribute)</a>
+</li>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.InvalidHyalusConfig">InvalidHyalusConfig</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_hyalus/hyalus.utils.file_utils.html#hyalus.utils.file_utils.InvalidWildcard">InvalidWildcard</a>
+</li>
       <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.is_">is_() (in module hyalus.assertions.compare)</a>
 </li>
       <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.is_not">is_not() (in module hyalus.assertions.compare)</a>
@@ -433,8 +470,12 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.le">le() (in module hyalus.assertions.compare)</a>
 </li>
+      <li><a href="_hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase.load">load() (hyalus.config.steps.base.StepBase method)</a>
+</li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_hyalus/hyalus.config.loader.html#hyalus.config.loader.load_hyalus_config">load_hyalus_config() (in module hyalus.config.loader)</a>
+</li>
       <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.lt">lt() (in module hyalus.assertions.compare)</a>
 </li>
   </ul></td>
@@ -443,6 +484,10 @@
 <h2 id="M">M</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.make_cmd">make_cmd() (tests.utils.test_logging_utils.TestConfigureLogging method)</a>
+</li>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus.MISSING_FIELDS">MISSING_FIELDS (hyalus.config.common.ConfigStatus attribute)</a>
+</li>
       <li>
     module
 
@@ -457,7 +502,7 @@
 </li>
         <li><a href="_hyalus/hyalus.config.html#module-hyalus.config">hyalus.config</a>
 </li>
-        <li><a href="_hyalus/hyalus.config.linter.html#module-hyalus.config.linter">hyalus.config.linter</a>
+        <li><a href="_hyalus/hyalus.config.common.html#module-hyalus.config.common">hyalus.config.common</a>
 </li>
         <li><a href="_hyalus/hyalus.config.loader.html#module-hyalus.config.loader">hyalus.config.loader</a>
 </li>
@@ -470,6 +515,8 @@
         <li><a href="_hyalus/hyalus.config.steps.run.html#module-hyalus.config.steps.run">hyalus.config.steps.run</a>
 </li>
         <li><a href="_hyalus/hyalus.config.steps.verify.html#module-hyalus.config.steps.verify">hyalus.config.steps.verify</a>
+</li>
+        <li><a href="_hyalus/hyalus.config.tags.html#module-hyalus.config.tags">hyalus.config.tags</a>
 </li>
         <li><a href="_hyalus/hyalus.parse.html#module-hyalus.parse">hyalus.parse</a>
 </li>
@@ -490,6 +537,8 @@
         <li><a href="_hyalus/hyalus.utils.file_utils.html#module-hyalus.utils.file_utils">hyalus.utils.file_utils</a>
 </li>
         <li><a href="_hyalus/hyalus.utils.json_utils.html#module-hyalus.utils.json_utils">hyalus.utils.json_utils</a>
+</li>
+        <li><a href="_hyalus/hyalus.utils.logging_utils.html#module-hyalus.utils.logging_utils">hyalus.utils.logging_utils</a>
 </li>
         <li><a href="_tests/tests.html#module-tests">tests</a>
 </li>
@@ -519,7 +568,13 @@
 </li>
         <li><a href="_tests/tests.utils.test_json_utils.html#module-tests.utils.test_json_utils">tests.utils.test_json_utils</a>
 </li>
+        <li><a href="_tests/tests.utils.test_logging_utils.html#module-tests.utils.test_logging_utils">tests.utils.test_logging_utils</a>
+</li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.module_name">module_name (tests.utils.test_logging_utils.TestConfigureLogging property)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -531,6 +586,16 @@
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase.needs">needs (hyalus.config.steps.base.StepBase property)</a>
+</li>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus.NOT_FOUND">NOT_FOUND (hyalus.config.common.ConfigStatus attribute)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus.OTHER_FAILURE">OTHER_FAILURE (hyalus.config.common.ConfigStatus attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -544,15 +609,17 @@
 </li>
       <li><a href="_hyalus/hyalus.assertions.apply.html#hyalus.assertions.apply.ConstraintApplier.process_args">process_args() (hyalus.assertions.apply.ConstraintApplier method)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_hyalus/hyalus.assertions.apply.html#hyalus.assertions.apply.ConstraintApplier.process_kwarg">process_kwarg() (hyalus.assertions.apply.ConstraintApplier method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_hyalus/hyalus.assertions.apply.html#hyalus.assertions.apply.ConstraintApplier.process_kwargs">process_kwargs() (hyalus.assertions.apply.ConstraintApplier method)</a>
 </li>
       <li><a href="_hyalus/hyalus.assertions.apply.html#hyalus.assertions.apply.ConstraintApplier.processed_args">processed_args (hyalus.assertions.apply.ConstraintApplier property)</a>
 </li>
       <li><a href="_hyalus/hyalus.assertions.apply.html#hyalus.assertions.apply.ConstraintApplier.processed_kwargs">processed_kwargs (hyalus.assertions.apply.ConstraintApplier property)</a>
+</li>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus.PYLINT_FAILURE">PYLINT_FAILURE (hyalus.config.common.ConfigStatus attribute)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -570,6 +637,8 @@
 </li>
       <li><a href="_hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase.run">run() (hyalus.config.steps.base.StepBase method)</a>
 </li>
+      <li><a href="_hyalus/hyalus.config.steps.run.html#hyalus.config.steps.run.RunFunctionStep">RunFunctionStep (class in hyalus.config.steps.run)</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -577,6 +646,10 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase">StepBase (class in hyalus.config.steps.base)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_hyalus/hyalus.config.steps.run.html#hyalus.config.steps.run.SubprocessStep">SubprocessStep (class in hyalus.config.steps.run)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -622,6 +695,12 @@
         <li><a href="_tests/tests.parse.test_tsv.html#tests.parse.test_tsv.TestTSVKeyValueParser.test_delimiter">(tests.parse.test_tsv.TestTSVKeyValueParser static method)</a>
 </li>
       </ul></li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.test_double_call">test_double_call() (tests.utils.test_logging_utils.TestConfigureLogging method)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format">test_format() (tests.utils.test_logging_utils.TestHyalusLogFormatter static method)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format_non_hyalus">test_format_non_hyalus() (tests.utils.test_logging_utils.TestHyalusLogFormatter static method)</a>
+</li>
       <li><a href="_tests/tests.utils.test_file_utils.html#tests.utils.test_file_utils.TestGlobFile.test_glob_file_multiple_found">test_glob_file_multiple_found() (tests.utils.test_file_utils.TestGlobFile static method)</a>
 </li>
       <li><a href="_tests/tests.utils.test_file_utils.html#tests.utils.test_file_utils.TestGlobFile.test_glob_file_not_found">test_glob_file_not_found() (tests.utils.test_file_utils.TestGlobFile static method)</a>
@@ -700,12 +779,12 @@
         <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestKeyValueParser.test_parse">(tests.parse.test_base.TestKeyValueParser static method)</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestResultsParser.test_parse_cache_off">test_parse_cache_off() (tests.parse.test_base.TestResultsParser static method)</a>
 </li>
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestResultsParser.test_parse_cache_on">test_parse_cache_on() (tests.parse.test_base.TestResultsParser static method)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestDataFrameParser.test_parse_kwargs">test_parse_kwargs() (tests.parse.test_base.TestDataFrameParser static method)</a>
 </li>
       <li><a href="_tests/tests.assertions.test_apply.html#tests.assertions.test_apply.TestConstraintApplier.test_process_args_mixed">test_process_args_mixed() (tests.assertions.test_apply.TestConstraintApplier static method)</a>
@@ -720,11 +799,21 @@
 </li>
       <li><a href="_tests/tests.assertions.test_apply.html#tests.assertions.test_apply.TestConstraintApplier.test_process_kwargs_simple">test_process_kwargs_simple() (tests.assertions.test_apply.TestConstraintApplier static method)</a>
 </li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_false">test_stdout_false_debug_false() (tests.utils.test_logging_utils.TestConfigureLogging method)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_true">test_stdout_false_debug_true() (tests.utils.test_logging_utils.TestConfigureLogging method)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_false">test_stdout_true_debug_false() (tests.utils.test_logging_utils.TestConfigureLogging method)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_true">test_stdout_true_debug_true() (tests.utils.test_logging_utils.TestConfigureLogging method)</a>
+</li>
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestResultsParser.test_use_glob_true">test_use_glob_true() (tests.parse.test_base.TestResultsParser static method)</a>
 </li>
       <li><a href="_tests/tests.assertions.test_compare.html#tests.assertions.test_compare.test_values_contain_false">test_values_contain_false() (in module tests.assertions.test_compare)</a>
 </li>
       <li><a href="_tests/tests.assertions.test_compare.html#tests.assertions.test_compare.test_values_contain_true">test_values_contain_true() (in module tests.assertions.test_compare)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestConfigureLogging">TestConfigureLogging (class in tests.utils.test_logging_utils)</a>
 </li>
       <li><a href="_tests/tests.assertions.test_apply.html#tests.assertions.test_apply.TestConstraintApplier">TestConstraintApplier (class in tests.assertions.test_apply)</a>
 </li>
@@ -735,6 +824,8 @@
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestDataFrameParser">TestDataFrameParser (class in tests.parse.test_base)</a>
 </li>
       <li><a href="_tests/tests.utils.test_file_utils.html#tests.utils.test_file_utils.TestGlobFile">TestGlobFile (class in tests.utils.test_file_utils)</a>
+</li>
+      <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestHyalusLogFormatter">TestHyalusLogFormatter (class in tests.utils.test_logging_utils)</a>
 </li>
       <li><a href="_tests/tests.utils.test_json_utils.html#tests.utils.test_json_utils.TestJsonAppend">TestJsonAppend (class in tests.utils.test_json_utils)</a>
 </li>
@@ -844,6 +935,13 @@
         <li><a href="_tests/tests.utils.test_json_utils.html#module-tests.utils.test_json_utils">module</a>
 </li>
       </ul></li>
+      <li>
+    tests.utils.test_logging_utils
+
+      <ul>
+        <li><a href="_tests/tests.utils.test_logging_utils.html#module-tests.utils.test_logging_utils">module</a>
+</li>
+      </ul></li>
       <li><a href="_tests/tests.parse.test_tsv.html#tests.parse.test_tsv.TestTSVDataFrameParser">TestTSVDataFrameParser (class in tests.parse.test_tsv)</a>
 </li>
       <li><a href="_tests/tests.parse.test_tsv.html#tests.parse.test_tsv.TestTSVKeyValueParser">TestTSVKeyValueParser (class in tests.parse.test_tsv)</a>
@@ -858,10 +956,12 @@
 <h2 id="V">V</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_tests/tests.assertions.test_apply.html#tests.assertions.test_apply.ValueGetter">ValueGetter (class in tests.assertions.test_apply)</a>
+      <li><a href="_hyalus/hyalus.config.common.html#hyalus.config.common.ConfigStatus.VALID">VALID (hyalus.config.common.ConfigStatus attribute)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_tests/tests.assertions.test_apply.html#tests.assertions.test_apply.ValueGetter">ValueGetter (class in tests.assertions.test_apply)</a>
+</li>
       <li><a href="_hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.values_contain">values_contain() (in module hyalus.assertions.compare)</a>
 </li>
   </ul></td>

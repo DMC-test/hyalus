@@ -13,6 +13,7 @@ Subpackages
    :maxdepth: 4
 
    hyalus.config.steps
+   hyalus.config.tags
 
 Submodules
 ----------
@@ -20,5 +21,6 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
+   hyalus.config.common
    hyalus.config.linter
    hyalus.config.loader
