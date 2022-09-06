@@ -99,8 +99,21 @@
 <span id="hyalus-utils-logging-utils-module"></span><h1>hyalus.utils.logging_utils module<a class="headerlink" href="#module-hyalus.utils.logging_utils" title="Permalink to this heading"></a></h1>
 <p>Utilities related to logging</p>
 <dl class="py class">
+<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusFileHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusFileHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusFileHandler" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/logging.handlers.html#logging.FileHandler" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileHandler</span></code></a></p>
+<p>Custom FileHandler that uses the HyalusLogFormatter for formatting</p>
+<p>Ctor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>log_file</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – The path to the log file for the handler</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusLogFormatter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusLogFormatter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datefmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'%'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">validate</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defaults</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusLogFormatter" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusLogFormatter</span></span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusLogFormatter" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.Formatter" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Formatter</span></code></a></p>
 <p>Custom log formatter which will take the pathname attribute and create a module_path attribute accordingly</p>
 <p>Initialize the formatter with specified format strings.</p>
@@ -130,6 +143,19 @@ the log call is being made from outside of hyalus, only the module will be retur
 </dl>
 </dd></dl>
 
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusStreamHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusStreamHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">stream</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusStreamHandler" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/logging.handlers.html#logging.StreamHandler" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">StreamHandler</span></code></a></p>
+<p>Custom StreamHandler that uses the HyalusLogFormatter for formatting</p>
+<p>Ctor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>stream</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.TextIO" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextIO</span></code></a>) – The IO stream object to write to</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py function">
