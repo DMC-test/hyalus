@@ -95,8 +95,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="hyalus-config-linter-module">
-<h1>hyalus.config.linter module<a class="headerlink" href="#hyalus-config-linter-module" title="Permalink to this heading"></a></h1>
+  <section id="module-hyalus.config.linter">
+<span id="hyalus-config-linter-module"></span><h1>hyalus.config.linter module<a class="headerlink" href="#module-hyalus.config.linter" title="Permalink to this heading"></a></h1>
+<p>Linter for user-generated Hyalus config files</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.linter.</span></span><span class="sig-name descname"><span class="pre">ConfigLinter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_pylint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Performs relevant linting on a loaded hyalus config file</p>
+<p>Ctor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – The hyalus config file</p></li>
+<li><p><strong>module</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">module</span></code>) – The hyalus config parsed into a module object</p></li>
+<li><p><strong>run_pylint</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – Flag to run pylint with warnings as errors</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter._content_check">
+<span class="sig-name descname"><span class="pre">_content_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter._content_check" title="Permalink to this definition"></a></dt>
+<dd><p>Takes a guess as to whether the test writer did a “good” job filling out config fields</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter._field_check">
+<span class="sig-name descname"><span class="pre">_field_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter._field_check" title="Permalink to this definition"></a></dt>
+<dd><p>Asserts that all expected fields exist in the config file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter._type_check">
+<span class="sig-name descname"><span class="pre">_type_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter._type_check" title="Permalink to this definition"></a></dt>
+<dd><p>Asserts that the given fields have the correct type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter.lint">
+<span class="sig-name descname"><span class="pre">lint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter.lint" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </section>
 
 

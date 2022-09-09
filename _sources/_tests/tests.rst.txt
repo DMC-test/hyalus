@@ -13,6 +13,7 @@ Subpackages
    :maxdepth: 4
 
    tests.assertions
+   tests.config
    tests.parse
    tests.utils
 

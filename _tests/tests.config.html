@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tests.parse.test_csv module &mdash; Hyalus 1.0 documentation</title>
+  <title>tests.config package &mdash; Hyalus 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="tests.parse.test_gtf module" href="tests.parse.test_gtf.html" />
-    <link rel="prev" title="tests.parse.test_base module" href="tests.parse.test_base.html" /> 
+    <link rel="next" title="tests.config.steps package" href="tests.config.steps.html" />
+    <link rel="prev" title="tests.assertions.test_compare module" href="tests.assertions.test_compare.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -53,8 +53,8 @@
 <li class="toctree-l2 current"><a class="reference internal" href="tests.html">tests package</a><ul class="current">
 <li class="toctree-l3 current"><a class="reference internal" href="tests.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="tests.assertions.html">tests.assertions package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tests.config.html">tests.config package</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="tests.parse.html">tests.parse package</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">tests.config package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests.parse.html">tests.parse package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tests.utils.html">tests.utils package</a></li>
 </ul>
 </li>
@@ -84,10 +84,9 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="modules.html">tests</a> &raquo;</li>
           <li><a href="tests.html">tests package</a> &raquo;</li>
-          <li><a href="tests.parse.html">tests.parse package</a> &raquo;</li>
-      <li>tests.parse.test_csv module</li>
+      <li>tests.config package</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/_tests/tests.parse.test_csv.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/_tests/tests.config.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -95,43 +94,32 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-tests.parse.test_csv">
-<span id="tests-parse-test-csv-module"></span><h1>tests.parse.test_csv module<a class="headerlink" href="#module-tests.parse.test_csv" title="Permalink to this heading"></a></h1>
-<p>Unit tests for the hyalus.parse.csv module</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.parse.test_csv.TestCSVDataFrameParser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_csv.</span></span><span class="sig-name descname"><span class="pre">TestCSVDataFrameParser</span></span><a class="headerlink" href="#tests.parse.test_csv.TestCSVDataFrameParser" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Unit tests for the CSVDataFrameParser class - DataFrameParser specifics are out of scope</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_csv.TestCSVDataFrameParser.test_delimiter">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_delimiter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_csv.TestCSVDataFrameParser.test_delimiter" title="Permalink to this definition"></a></dt>
-<dd><p>Assert the delimiter is set to a tab</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.parse.test_csv.TestCSVKeyValueParser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_csv.</span></span><span class="sig-name descname"><span class="pre">TestCSVKeyValueParser</span></span><a class="headerlink" href="#tests.parse.test_csv.TestCSVKeyValueParser" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Unit tests for the CSVKeyValueParser class - KeyValueParser specifics are out of scope</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_csv.TestCSVKeyValueParser.test_delimiter">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_delimiter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_csv.TestCSVKeyValueParser.test_delimiter" title="Permalink to this definition"></a></dt>
-<dd><p>Assert the delimiter is set to a tab</p>
-</dd></dl>
-
-</dd></dl>
-
+  <section id="module-tests.config">
+<span id="tests-config-package"></span><h1>tests.config package<a class="headerlink" href="#module-tests.config" title="Permalink to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tests.config.steps.html">tests.config.steps package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tests.config.steps.html#submodules">Submodules</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tests.config.steps.test_base.html">tests.config.steps.test_base module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tests.config.steps.test_run.html">tests.config.steps.test_run module</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tests.config.tags.html">tests.config.tags package</a></li>
+</ul>
+</div>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="tests.parse.test_base.html" class="btn btn-neutral float-left" title="tests.parse.test_base module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tests.parse.test_gtf.html" class="btn btn-neutral float-right" title="tests.parse.test_gtf module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tests.assertions.test_compare.html" class="btn btn-neutral float-left" title="tests.assertions.test_compare module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.config.steps.html" class="btn btn-neutral float-right" title="tests.config.steps package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

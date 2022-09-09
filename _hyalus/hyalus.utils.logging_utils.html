@@ -127,22 +127,6 @@ use one of %-formatting, <a class="reference external" href="https://docs.python
 <div class="versionchanged">
 <p><span class="versionmodified changed">Changed in version 3.2: </span>Added the <code class="docutils literal notranslate"><span class="pre">style</span></code> parameter.</p>
 </div>
-<dl class="py method">
-<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusLogFormatter.format">
-<span class="sig-name descname"><span class="pre">format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusLogFormatter.format" title="Permalink to this definition"></a></dt>
-<dd><p>Update the given LogRecord with a module_path attribute based on where the log call is being made relative to
-the hyalus base directory, and then return the result of a super().format call with the updated LogRecord. If
-the log call is being made from outside of hyalus, only the module will be returned, not the entire path.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>record</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.LogRecord" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">LogRecord</span></code></a>) – The LogRecord to update and send into formatting</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> – The formatted log message</p>
-</dd>
-</dl>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="py class">

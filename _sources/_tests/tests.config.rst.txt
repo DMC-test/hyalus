@@ -1,0 +1,16 @@
+tests.config package
+====================
+
+.. automodule:: tests.config
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tests.config.steps
+   tests.config.tags
