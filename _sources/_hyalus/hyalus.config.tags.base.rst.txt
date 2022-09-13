@@ -1,0 +1,7 @@
+hyalus.config.tags.base module
+==============================
+
+.. automodule:: hyalus.config.tags.base
+   :members:
+   :undoc-members:
+   :show-inheritance:

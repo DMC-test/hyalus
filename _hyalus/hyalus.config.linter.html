@@ -99,6 +99,59 @@
 <span id="hyalus-config-linter-module"></span><h1>hyalus.config.linter module<a class="headerlink" href="#module-hyalus.config.linter" title="Permalink to this heading"></a></h1>
 <p>Linter for user-generated Hyalus config files</p>
 <dl class="py class">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.linter.</span></span><span class="sig-name descname"><span class="pre">ConfigAttr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigAttr" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#tuple" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">tuple</span></code></a></p>
+<p>Create new instance of ConfigAttr(name, description, type)</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr._asdict">
+<span class="sig-name descname"><span class="pre">_asdict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigAttr._asdict" title="Permalink to this definition"></a></dt>
+<dd><p>Return a new dict which maps field names to their values.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr._field_defaults">
+<span class="sig-name descname"><span class="pre">_field_defaults</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#hyalus.config.linter.ConfigAttr._field_defaults" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr._fields">
+<span class="sig-name descname"><span class="pre">_fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('name',</span> <span class="pre">'description',</span> <span class="pre">'type')</span></em><a class="headerlink" href="#hyalus.config.linter.ConfigAttr._fields" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr._make">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">_make</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">iterable</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigAttr._make" title="Permalink to this definition"></a></dt>
+<dd><p>Make a new ConfigAttr object from a sequence or iterable</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr._replace">
+<span class="sig-name descname"><span class="pre">_replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigAttr._replace" title="Permalink to this definition"></a></dt>
+<dd><p>Return a new ConfigAttr object replacing specified fields with new values</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#hyalus.config.linter.ConfigAttr.description" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#hyalus.config.linter.ConfigAttr.name" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.linter.ConfigAttr.type">
+<span class="sig-name descname"><span class="pre">type</span></span><a class="headerlink" href="#hyalus.config.linter.ConfigAttr.type" title="Permalink to this definition"></a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.linter.</span></span><span class="sig-name descname"><span class="pre">ConfigLinter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">module</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_pylint</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
@@ -114,12 +167,6 @@
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter._content_check">
-<span class="sig-name descname"><span class="pre">_content_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter._content_check" title="Permalink to this definition"></a></dt>
-<dd><p>Takes a guess as to whether the test writer did a “good” job filling out config fields</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter._field_check">
 <span class="sig-name descname"><span class="pre">_field_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter._field_check" title="Permalink to this definition"></a></dt>
 <dd><p>Asserts that all expected fields exist in the config file</p>
@@ -128,7 +175,7 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.linter.ConfigLinter._type_check">
 <span class="sig-name descname"><span class="pre">_type_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.linter.ConfigLinter._type_check" title="Permalink to this definition"></a></dt>
-<dd><p>Asserts that the given fields have the correct type</p>
+<dd><p>Asserts that the given fields have the correct type - works under the assumption that all fields exist</p>
 </dd></dl>
 
 <dl class="py method">

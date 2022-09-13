@@ -5,3 +5,11 @@ hyalus.config.tags package
    :members:
    :undoc-members:
    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   hyalus.config.tags.base
