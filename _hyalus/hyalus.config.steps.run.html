@@ -99,13 +99,6 @@
   <section id="module-hyalus.config.steps.run">
 <span id="hyalus-config-steps-run-module"></span><h1>hyalus.config.steps.run module<a class="headerlink" href="#module-hyalus.config.steps.run" title="Permalink to this heading"></a></h1>
 <p>Steps related to running arbitrary pieces of code via a CLI or method/function call</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><a class="reference external" href="https://pypi.org/project/dill/"><code class="docutils literal notranslate"><span class="pre">dill</span></code></a> is being used to save functions to disk as <a class="reference external" href="https://docs.python.org/3.10/library/pickle.html#module-pickle" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pickle</span></code></a> only pickles references to functions, not the
-functions themselves. However, <a class="reference external" href="https://docs.python.org/3.10/library/pickle.html#module-pickle" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pickle</span></code></a> is used to load functions from disk as it still meets the
-requirements, but is a builtin library, unlike <a class="reference external" href="https://pypi.org/project/dill/"><code class="docutils literal notranslate"><span class="pre">dill</span></code></a>. This allows the functionality to work in any Python
-environment.</p>
-</div>
 <dl class="py class">
 <dt class="sig sig-object py" id="hyalus.config.steps.run.RunFunctionStep">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.steps.run.</span></span><span class="sig-name descname"><span class="pre">RunFunctionStep</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.steps.run.RunFunctionStep" title="Permalink to this definition"></a></dt>
@@ -124,7 +117,7 @@ environment.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.steps.run.RunFunctionStep._load">
 <span class="sig-name descname"><span class="pre">_load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.steps.run.RunFunctionStep._load" title="Permalink to this definition"></a></dt>
-<dd><p>Load arguments for running the Step and set up pickle.bin and funcstep.py file</p>
+<dd><p>Load arguments for running the Step and set up funcstep.py file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>args</strong> – Positional arguments to pass to the parent class’ _load method</p>
@@ -138,7 +131,7 @@ environment.</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.steps.run.RunFunctionStep._pre_process">
 <span class="sig-name descname"><span class="pre">_pre_process</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.steps.run.RunFunctionStep._pre_process" title="Permalink to this definition"></a></dt>
-<dd><p>Create the pickle file and script file based on given positional and keyword arguments</p>
+<dd><p>Create the script file based on given positional and keyword arguments</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type</dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
