@@ -58,7 +58,6 @@
 <li class="toctree-l4"><a class="reference internal" href="tests.utils.html">tests.utils package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="tests.html#submodules">Submodules</a></li>
 </ul>
 </li>
 </ul>
@@ -99,6 +98,11 @@
 <span id="tests-assertions-test-compare-module"></span><h1>tests.assertions.test_compare module<a class="headerlink" href="#module-tests.assertions.test_compare" title="Permalink to this heading"></a></h1>
 <p>Unit tests for the hyalus.assert.compare module. Builtin <code class="docutils literal notranslate"><span class="pre">operator</span></code> module functions are left out of scope.</p>
 <dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.fixture_example_df">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">fixture_example_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.fixture_example_df" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="tests.assertions.test_compare.fixture_example_dict">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">fixture_example_dict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.fixture_example_dict" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
@@ -107,6 +111,90 @@
 <dt class="sig sig-object py" id="tests.assertions.test_compare.fixture_example_list">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">fixture_example_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.fixture_example_list" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_contains_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_contains_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_contains_false" title="Permalink to this definition"></a></dt>
+<dd><p>Simple test case for the contains function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_contains_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_contains_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_contains_true" title="Permalink to this definition"></a></dt>
+<dd><p>Simple test case for the contains function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for dataframe_contains where the given criteria do not match any records</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_1">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_1" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for dataframe_contains where the given criteria match one record</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_2">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_2" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for dataframe_contains where the given criteria match more than one record</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_3">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_3" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for dataframe_contains where no criteria are given</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_does_not_contain_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_does_not_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_does_not_contain_false" title="Permalink to this definition"></a></dt>
+<dd><p>Simple test case for the does_not_contain function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_does_not_contain_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_does_not_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_does_not_contain_true" title="Permalink to this definition"></a></dt>
+<dd><p>Simple test case for the does_not_contain function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the eq function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the eq function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the ge function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the ge function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the gt function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the gt function where the test result should be True</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.assertions.test_compare.test_in_false">
@@ -118,6 +206,30 @@
 <dt class="sig sig-object py" id="tests.assertions.test_compare.test_in_true">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_in_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_in_true" title="Permalink to this definition"></a></dt>
 <dd><p>Simple test case for the <a href="#id3"><span class="problematic" id="id4">in_</span></a> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the <a href="#id5"><span class="problematic" id="id6">is_</span></a> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the is_not function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the is_not function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the <a href="#id7"><span class="problematic" id="id8">is_</span></a> function where the test result should be True</p>
 </dd></dl>
 
 <dl class="py function">
@@ -142,6 +254,54 @@
 <dt class="sig sig-object py" id="tests.assertions.test_compare.test_keys_contain_true">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_keys_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_keys_contain_true" title="Permalink to this definition"></a></dt>
 <dd><p>Simple test case for the keys_contain function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the le function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the le function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the lt function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the lt function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_false" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the ne function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test case for the ne function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_not_in_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_not_in_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_not_in_false" title="Permalink to this definition"></a></dt>
+<dd><p>Simple test case for the not_in function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_not_in_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_not_in_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_not_in_true" title="Permalink to this definition"></a></dt>
+<dd><p>Simple test case for the not_in function where the test result should be True</p>
 </dd></dl>
 
 <dl class="py function">

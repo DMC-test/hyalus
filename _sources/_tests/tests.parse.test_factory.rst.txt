@@ -1,0 +1,7 @@
+tests.parse.test\_factory module
+================================
+
+.. automodule:: tests.parse.test_factory
+   :members:
+   :undoc-members:
+   :show-inheritance:

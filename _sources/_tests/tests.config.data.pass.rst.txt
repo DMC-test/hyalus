@@ -1,0 +1,7 @@
+tests.config.data.pass module
+=============================
+
+.. automodule:: tests.config.data.pass
+   :members:
+   :undoc-members:
+   :show-inheritance:

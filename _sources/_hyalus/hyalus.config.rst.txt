@@ -22,5 +22,4 @@ Submodules
    :maxdepth: 4
 
    hyalus.config.common
-   hyalus.config.linter
    hyalus.config.loader

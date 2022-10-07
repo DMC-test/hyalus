@@ -1,0 +1,7 @@
+tests.config.data.missing\_tags module
+======================================
+
+.. automodule:: tests.config.data.missing_tags
+   :members:
+   :undoc-members:
+   :show-inheritance:

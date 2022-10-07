@@ -1,7 +1,0 @@
-hyalus.config.linter module
-===========================
-
-.. automodule:: hyalus.config.linter
-   :members:
-   :undoc-members:
-   :show-inheritance:

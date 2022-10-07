@@ -16,11 +16,3 @@ Subpackages
    tests.config
    tests.parse
    tests.utils
-
-Submodules
-----------
-
-.. toctree::
-   :maxdepth: 4
-
-   tests.testing_utils

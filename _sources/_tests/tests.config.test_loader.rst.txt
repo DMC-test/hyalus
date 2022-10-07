@@ -1,0 +1,7 @@
+tests.config.test\_loader module
+================================
+
+.. automodule:: tests.config.test_loader
+   :members:
+   :undoc-members:
+   :show-inheritance:

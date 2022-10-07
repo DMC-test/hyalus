@@ -15,3 +15,5 @@ Submodules
    hyalus.utils.file_utils
    hyalus.utils.json_utils
    hyalus.utils.logging_utils
+   hyalus.utils.pandas_utils
+   hyalus.utils.typing_utils

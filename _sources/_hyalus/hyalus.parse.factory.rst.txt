@@ -1,7 +1,7 @@
-tests.testing\_utils module
+hyalus.parse.factory module
 ===========================
 
-.. automodule:: tests.testing_utils
+.. automodule:: hyalus.parse.factory
    :members:
    :undoc-members:
    :show-inheritance:

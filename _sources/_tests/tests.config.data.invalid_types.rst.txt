@@ -1,0 +1,7 @@
+tests.config.data.invalid\_types module
+=======================================
+
+.. automodule:: tests.config.data.invalid_types
+   :members:
+   :undoc-members:
+   :show-inheritance:

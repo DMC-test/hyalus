@@ -1,7 +1,0 @@
-tests.config.tags package
-=========================
-
-.. automodule:: tests.config.tags
-   :members:
-   :undoc-members:
-   :show-inheritance:

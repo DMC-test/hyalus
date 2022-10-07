@@ -13,3 +13,4 @@ Submodules
    :maxdepth: 4
 
    hyalus.config.tags.base
+   hyalus.config.tags.runtime
