@@ -1,0 +1,20 @@
+/* Taken from https://sphinx-argparse.readthedocs.io/en/stable/misc.html for table rendering */
+.wy-table-responsive table td {
+    white-space: normal !important;
+}
+
+table {
+    table-layout: fixed;
+}
+
+td {
+    word-wrap:break-word;
+}
+
+.wy-table-responsive {
+    overflow: visible !important;
+}
+
+.wy-nav-content {
+    max-width: 80vw !important;
+}
