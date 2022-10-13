@@ -99,39 +99,6 @@
 <span id="hyalus-run-pytest-module"></span><h1>hyalus.run.pytest module<a class="headerlink" href="#module-hyalus.run.pytest" title="Permalink to this heading"></a></h1>
 <p>Functionality related to running hyalus Steps in the context of a pytest-style test</p>
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.run.pytest._get_code">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">_get_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest._get_code" title="Permalink to this definition"></a></dt>
-<dd><p>Helper method for run_steps. Gets the string representation of the lines of code in the body of the given
-function by trimming off decorators and the <code class="docutils literal notranslate"><span class="pre">def</span></code> line(s)</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>fn</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Callable" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>) – The function to inspect</p>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> – A string representing the body of the function</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.run.pytest._get_signature">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">_get_signature</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">add_run_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest._get_signature" title="Permalink to this definition"></a></dt>
-<dd><p>Helper method for run_steps. Gets the signature for the given function including any type annotations for params
-and return types, and optionally adds run_dir as a positional argument for the signature if not already present</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>fn</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Callable" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>) – The function to inspect for signature creation</p></li>
-<li><p><strong>add_run_dir</strong> – Whether to add run_dir as a positional argument or not if not already present</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns</dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> – The new signature, with type annotations including return type annotation</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="hyalus.run.pytest._make_run_dir">
 <span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">_make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outer_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest._make_run_dir" title="Permalink to this definition"></a></dt>
 <dd><p>Given a directory, create input, output, tmp, and hyalus subdirectories if they do not already exist</p>
@@ -197,52 +164,80 @@ runtime there won’t be any issues.</p>
 <dt class="sig sig-object py" id="hyalus.run.pytest.fixture_run_dir">
 <span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">fixture_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest.fixture_run_dir" title="Permalink to this definition"></a></dt>
 <dd><p>Fixture that wraps tmp_path, creating relevant hyalus run subdirectories</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only defined if pytest is installed - won’t be used in any other instance anyway</p>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="hyalus.run.pytest.run_steps">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">run_steps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">use_run_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest.run_steps" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">run_steps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">running_pytest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest.run_steps" title="Permalink to this definition"></a></dt>
 <dd><p>Decorator that will create a temp directory if needed and run given Steps prior to execution of a function.
 For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@run_steps</span><span class="p">(</span><span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">use_run_dir</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@run_steps</span><span class="p">(</span><span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">running_pytest</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">three_input_sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
 </pre></div>
 </div>
-<p>would end up as a function defined as:</p>
+<p>would be roughly equivalent to:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">three_input_sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">some_temp_dir_path</span><span class="o">&gt;</span><span class="p">)</span>
-    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">some_temp_dir_path</span><span class="o">&gt;</span><span class="p">)</span>
+    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;&lt;some_temp_dir_path&gt;&quot;</span><span class="p">)</span>
+    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;&lt;some_temp_dir_path&gt;&quot;</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">+</span> <span class="n">c</span>
 </pre></div>
 </div>
-<p>When used in the context of a pytest-style test, the <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> fixture (defined in this module) may be used
-instead of an arbitrary temp directory:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@run_steps</span><span class="p">(</span><span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">use_run_dir</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<p>When used in the context of a pytest-style test, the <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> fixture (defined in this module) is used instead
+of an arbitrary temp directory:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@run_steps</span><span class="p">(</span><span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">running_pytest</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="k">def</span> <span class="nf">test_something</span><span class="p">(</span><span class="n">run_dir</span><span class="p">):</span>
+    <span class="n">my_condition</span> <span class="o">=</span> <span class="n">some_module</span><span class="o">.</span><span class="n">function_call</span><span class="p">(</span><span class="n">run_dir</span><span class="p">)</span>
+
+    <span class="k">assert</span> <span class="n">my_condition</span>
+</pre></div>
+</div>
+<p>would be roughly equivalent to:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_something</span><span class="p">(</span><span class="n">run_dir</span><span class="p">):</span>
+    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
+    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
+    <span class="n">my_condition</span> <span class="o">=</span> <span class="n">some_module</span><span class="o">.</span><span class="n">function_call</span><span class="p">(</span><span class="n">run_dir</span><span class="p">)</span>
+
+    <span class="k">assert</span> <span class="n">my_condition</span>
+</pre></div>
+</div>
+<p>The test function does not need to specify the <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> fixture. The decorator will act like the fixture is
+present either way when <code class="docutils literal notranslate"><span class="pre">running_pytest</span></code> is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>. For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@run_steps</span><span class="p">(</span><span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">running_pytest</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
 <span class="k">def</span> <span class="nf">test_something</span><span class="p">():</span>
     <span class="n">my_condition</span> <span class="o">=</span> <span class="n">some_module</span><span class="o">.</span><span class="n">function_call</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 
     <span class="k">assert</span> <span class="n">my_condition</span>
 </pre></div>
 </div>
-<p>would end up as (note the addition of <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> as a function parameter):</p>
+<p>would be roughly equivalent to (note the addition of <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> as a fixture):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">test_something</span><span class="p">(</span><span class="n">run_dir</span><span class="p">):</span>
-    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">some_temp_dir_path</span><span class="o">&gt;</span><span class="p">)</span>
-    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">some_temp_dir_path</span><span class="o">&gt;</span><span class="p">)</span>
+    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
+    <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
     <span class="n">my_condition</span> <span class="o">=</span> <span class="n">some_module</span><span class="o">.</span><span class="n">function_call</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
 
     <span class="k">assert</span> <span class="n">my_condition</span>
 </pre></div>
 </div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Scope still applies and if <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> is not originally in the function’s signature, it may not be
+directly used by the code originally defined within the decorated function</p>
+</div>
 <p><a class="reference internal" href="#hyalus.run.pytest.run_steps" title="hyalus.run.pytest.run_steps"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_steps()</span></code></a> can also be used with the <a class="reference internal" href="#hyalus.run.pytest.applydecorator" title="hyalus.run.pytest.applydecorator"><code class="xref py py-func docutils literal notranslate"><span class="pre">applydecorator()</span></code></a> class decorator to apply the given Step
-execution prior to all defined tests under a test class with a single line of code.</p>
+execution prior to all defined tests under a test class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>*steps</strong> – Steps to run prior to function execution. Steps <em>must</em> define a <code class="docutils literal notranslate"><span class="pre">__str__</span></code> method that returns a
-string representing syntactically what would have to be written to initialize the Step</p></li>
-<li><p><strong>use_run_dir</strong> – Use the <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> fixture as opposed to dynamically creating a temp directory for the Step to
-run in</p></li>
+<li><p><strong>*steps</strong> – Steps to run prior to function execution</p></li>
+<li><p><strong>running_pytest</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">True</span></code>) – Flag that tells the decorator whether the function is expected to be executed via pytest.
+When set to True, the <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> fixture will be used and the function will be decorated in a way that pytest
+can handle.</p></li>
+<li><p><strong>temp_dir</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Union" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Union</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – Use the given temp directory to run Steps in - not used if <code class="docutils literal notranslate"><span class="pre">running_pytest</span></code> is <code class="docutils literal notranslate"><span class="pre">True</span></code></p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>

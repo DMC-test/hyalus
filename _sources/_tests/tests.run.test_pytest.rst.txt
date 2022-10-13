@@ -1,0 +1,7 @@
+tests.run.test\_pytest module
+=============================
+
+.. automodule:: tests.run.test_pytest
+   :members:
+   :undoc-members:
+   :show-inheritance:

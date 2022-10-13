@@ -15,4 +15,5 @@ Subpackages
    tests.assertions
    tests.config
    tests.parse
+   tests.run
    tests.utils
