@@ -1,7 +1,7 @@
-hyalus.run.pytest module
+hyalus.run.python module
 ========================
 
-.. automodule:: hyalus.run.pytest
+.. automodule:: hyalus.run.python
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,7 +1,7 @@
-tests.run.test\_pytest module
+tests.run.test\_python module
 =============================
 
-.. automodule:: tests.run.test_pytest
+.. automodule:: tests.run.test_python
    :members:
    :undoc-members:
    :show-inheritance:

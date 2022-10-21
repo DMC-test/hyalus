@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>hyalus.run.pytest module &mdash; Hyalus 1.0 documentation</title>
+  <title>hyalus.run.python module &mdash; Hyalus 1.0 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
@@ -86,9 +86,9 @@
           <li><a href="modules.html">hyalus</a> &raquo;</li>
           <li><a href="hyalus.html">hyalus package</a> &raquo;</li>
           <li><a href="hyalus.run.html">hyalus.run package</a> &raquo;</li>
-      <li>hyalus.run.pytest module</li>
+      <li>hyalus.run.python module</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/_hyalus/hyalus.run.pytest.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/_hyalus/hyalus.run.python.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -96,12 +96,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-hyalus.run.pytest">
-<span id="hyalus-run-pytest-module"></span><h1>hyalus.run.pytest module<a class="headerlink" href="#module-hyalus.run.pytest" title="Permalink to this heading"></a></h1>
-<p>Functionality related to running hyalus Steps in the context of a pytest-style test</p>
+  <section id="module-hyalus.run.python">
+<span id="hyalus-run-python-module"></span><h1>hyalus.run.python module<a class="headerlink" href="#module-hyalus.run.python" title="Permalink to this heading"></a></h1>
+<p>Functionality related to running hyalus Steps in the context of python functions and/or pytest</p>
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.run.pytest._make_run_dir">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">_make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outer_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest._make_run_dir" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="hyalus.run.python._make_run_dir">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.python.</span></span><span class="sig-name descname"><span class="pre">_make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outer_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.python._make_run_dir" title="Permalink to this definition"></a></dt>
 <dd><p>Given a directory, create input, output, tmp, and hyalus subdirectories if they do not already exist</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -114,8 +114,8 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.run.pytest.applydecorator">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">applydecorator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decorator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest.applydecorator" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="hyalus.run.python.applydecorator">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.python.</span></span><span class="sig-name descname"><span class="pre">applydecorator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decorator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.python.applydecorator" title="Permalink to this definition"></a></dt>
 <dd><p>Decorator that applies a given decorator to all defined methods of a class. For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@applydecorator</span><span class="p">(</span><span class="nb">staticmethod</span><span class="p">)</span>
 <span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
@@ -162,8 +162,8 @@ runtime there won’t be any issues.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.run.pytest.fixture_run_dir">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">fixture_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest.fixture_run_dir" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="hyalus.run.python.fixture_run_dir">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.python.</span></span><span class="sig-name descname"><span class="pre">fixture_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.python.fixture_run_dir" title="Permalink to this definition"></a></dt>
 <dd><p>Fixture that wraps tmp_path, creating relevant hyalus run subdirectories</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -172,8 +172,8 @@ runtime there won’t be any issues.</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.run.pytest.run_steps">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.pytest.</span></span><span class="sig-name descname"><span class="pre">run_steps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">running_pytest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.pytest.run_steps" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="hyalus.run.python.run_steps">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.python.</span></span><span class="sig-name descname"><span class="pre">run_steps</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">steps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">running_pytest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">temp_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.python.run_steps" title="Permalink to this definition"></a></dt>
 <dd><p>Decorator that will create a temp directory if needed and run given Steps prior to execution of a function.
 For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@run_steps</span><span class="p">(</span><span class="n">ExampleStep</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">ExampleStep</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">running_pytest</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
@@ -229,7 +229,7 @@ present either way when <code class="docutils literal notranslate"><span class="
 <p>Scope still applies and if <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> is not originally in the function’s signature, it may not be
 directly used by the code originally defined within the decorated function</p>
 </div>
-<p><a class="reference internal" href="#hyalus.run.pytest.run_steps" title="hyalus.run.pytest.run_steps"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_steps()</span></code></a> can also be used with the <a class="reference internal" href="#hyalus.run.pytest.applydecorator" title="hyalus.run.pytest.applydecorator"><code class="xref py py-func docutils literal notranslate"><span class="pre">applydecorator()</span></code></a> class decorator to apply the given Step
+<p><a class="reference internal" href="#hyalus.run.python.run_steps" title="hyalus.run.python.run_steps"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_steps()</span></code></a> can also be used with the <a class="reference internal" href="#hyalus.run.python.applydecorator" title="hyalus.run.python.applydecorator"><code class="xref py py-func docutils literal notranslate"><span class="pre">applydecorator()</span></code></a> class decorator to apply the given Step
 execution prior to all defined tests under a test class.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
