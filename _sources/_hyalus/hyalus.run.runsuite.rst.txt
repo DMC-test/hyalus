@@ -1,0 +1,7 @@
+hyalus.run.runsuite module
+==========================
+
+.. automodule:: hyalus.run.runsuite
+   :members:
+   :undoc-members:
+   :show-inheritance:

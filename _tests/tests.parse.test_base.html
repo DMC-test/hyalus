@@ -106,49 +106,49 @@
 <p>Unit tests for the DataFrameParser base class functionality</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_abc_honored">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_abc_honored" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_abc_honored" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that the DataFrameParser class cannot be instantiated</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_eq_false">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_false" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_false" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths and different content are treated as unequal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_eq_true_file_path">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_file_path" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_file_path" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with the same file path are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_eq_true_parse">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_parse" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths but the same parsed content are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_parse">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that an input file is properly parsed into a DataFrame</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_parse_kwargs">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse_kwargs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse_kwargs" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_parse_kwargs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse_kwargs" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that kwargs are properly passed into the <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> call</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_search">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search" title="Permalink to this definition"></a></dt>
 <dd><p>Test subsetting of DataFrame with one valid constraint</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_search_multiple">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_search_multiple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search_multiple" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_search_multiple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search_multiple" title="Permalink to this definition"></a></dt>
 <dd><p>Test subsetting of DataFrame with multiple valid constraints</p>
 </dd></dl>
 
@@ -161,37 +161,37 @@
 <p>Unit tests for the KeyValueParser base class functionality</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_abc_honored">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_abc_honored" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_abc_honored" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that the KeyValueParser class cannot be instantiated</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_eq_false">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_false" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_false" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths and different content are treated as unequal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_eq_true_file_path">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_file_path" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_file_path" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with the same file path are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_eq_true_parse">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_kv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_parse" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_kv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths but the same content are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_parse">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_parse" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that an input file is properly parsed into a dictionary of key-value pairs</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_search">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_search" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_search" title="Permalink to this definition"></a></dt>
 <dd><p>Test searching for a given key</p>
 </dd></dl>
 
@@ -204,25 +204,25 @@
 <p>Unit tests for the ResultsParser base class functionality</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_abc_honored">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_abc_honored" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_abc_honored" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that the ResultsParser class cannot be instantiated</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_parse_cache_off">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse_cache_off</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_off" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_parse_cache_off</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_off" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that parsing functions as expected and results are not cached when turned off</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_parse_cache_on">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_parse_cache_on</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_on" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_parse_cache_on</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_on" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that parsing functions as expected and results are cached as expected when turned on</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_use_glob_true">
-<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_use_glob_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_use_glob_true" title="Permalink to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">test_use_glob_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_use_glob_true" title="Permalink to this definition"></a></dt>
 <dd><p>Test integration of globbing functionality when giving a valid wildcard</p>
 </dd></dl>
 
@@ -231,12 +231,14 @@
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.parse.test_base.fixture_tmp_tsv_df">
 <span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_tsv_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.fixture_tmp_tsv_df" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Copy TSV DataFrame to temp directory and return path to it</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.parse.test_base.fixture_tmp_tsv_kv">
 <span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_tsv_kv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.fixture_tmp_tsv_kv" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>Copy TSV key/value file to temp directory and return path to it</p>
+</dd></dl>
 
 </section>
 

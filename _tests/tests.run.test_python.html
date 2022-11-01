@@ -168,13 +168,13 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_python.TestPytestRunSteps.test_run_steps_staticmethod_with_run_dir_fixture">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_run_steps_staticmethod_with_run_dir_fixture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_python.TestPytestRunSteps.test_run_steps_staticmethod_with_run_dir_fixture" title="Permalink to this definition"></a></dt>
-<dd><p>Tests that a staticmethod being run by pytest that uses the run_dir fixture is decorated as expected</p>
+<dd><p>Tests that a staticmethod being run by pytest that uses the run_dir fixture is correctly decorated</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_python.TestPytestRunSteps.test_run_steps_staticmethod_without_run_dir_fixture">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_run_steps_staticmethod_without_run_dir_fixture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_python.TestPytestRunSteps.test_run_steps_staticmethod_without_run_dir_fixture" title="Permalink to this definition"></a></dt>
-<dd><p>Tests that a staticmethod being run by pytest that does not use the run_dir fixture is decorated as expected</p>
+<dd><p>Tests that a staticmethod being run by pytest that does not use the run_dir fixture is correctly decorated</p>
 </dd></dl>
 
 <dl class="py method">
@@ -256,6 +256,7 @@
 <dt class="sig sig-object py" id="tests.run.test_python.ToDecorate">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_python.</span></span><span class="sig-name descname"><span class="pre">ToDecorate</span></span><a class="headerlink" href="#tests.run.test_python.ToDecorate" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Example class with methods being decorated as staticmethods using the applydecorator decorator</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_python.ToDecorate.some_method">
 <em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">some_method</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_python.ToDecorate.some_method" title="Permalink to this definition"></a></dt>

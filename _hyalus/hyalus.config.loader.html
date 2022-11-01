@@ -219,6 +219,20 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.from_run_dir">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.from_run_dir" title="Permalink to this definition"></a></dt>
+<dd><p>Create a ConfigLoader instance from a run directory path</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>run_dir</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – The run directory to search for a config file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.TypeVar" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TypeVar</span></code></a>(<code class="docutils literal notranslate"><span class="pre">T</span></code>, bound= <a class="reference internal" href="#hyalus.config.loader.ConfigLoader" title="hyalus.config.loader.ConfigLoader"><code class="xref py py-class docutils literal notranslate"><span class="pre">ConfigLoader</span></code></a>) – Instantiated ConfigLoader</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.run">
 <span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.run" title="Permalink to this definition"></a></dt>
 <dd><p>Load the module from the given config path and lint it</p>
