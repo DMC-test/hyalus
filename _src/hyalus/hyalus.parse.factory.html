@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hyalus.parse.factory module &mdash; Hyalus 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/format-overrides.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script src="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.js"></script>
+        <script src="../../_static/traceability.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="hyalus.parse.gtf module" href="hyalus.parse.gtf.html" />
+    <link rel="prev" title="hyalus.parse.csv module" href="hyalus.parse.csv.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> Hyalus
+          </a>
+              <div class="version">
+                0.0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../../readme.html">README</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">hyalus</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="hyalus.html">hyalus package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="hyalus.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="hyalus.assertions.html">hyalus.assertions package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="hyalus.config.html">hyalus.config package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="hyalus.parse.html">hyalus.parse package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="hyalus.run.html">hyalus.run package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="hyalus.utils.html">hyalus.utils package</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../_tests/modules.html">tests</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../releases.html">Releases</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Hyalus</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">hyalus</a> &raquo;</li>
+          <li><a href="hyalus.html">hyalus package</a> &raquo;</li>
+          <li><a href="hyalus.parse.html">hyalus.parse package</a> &raquo;</li>
+      <li>hyalus.parse.factory module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/_src/hyalus/hyalus.parse.factory.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-hyalus.parse.factory">
+<span id="hyalus-parse-factory-module"></span><h1>hyalus.parse.factory module<a class="headerlink" href="#module-hyalus.parse.factory" title="Permalink to this heading"></a></h1>
+<p>Functionality for generating ResultsParser instances from file paths</p>
+<dl class="py data">
+<dt class="sig sig-object py" id="hyalus.parse.factory._ext_map">
+<span class="sig-prename descclassname"><span class="pre">hyalus.parse.factory.</span></span><span class="sig-name descname"><span class="pre">_ext_map</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Type" title="(in Python v3.10)"><span class="pre">Type</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="hyalus.parse.base.html#hyalus.parse.base.ResultsParser" title="hyalus.parse.base.ResultsParser"><span class="pre">hyalus.parse.base.ResultsParser</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'*.csv':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.csv.CSVDataFrameParser'&gt;,</span> <span class="pre">'*.gtf':</span> <span class="pre">None,</span> <span class="pre">'*.json':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.json.JSONParser'&gt;,</span> <span class="pre">'*.tsv':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.tsv.TSVDataFrameParser'&gt;,</span> <span class="pre">'*.vcf':</span> <span class="pre">None}</span></em><a class="headerlink" href="#hyalus.parse.factory._ext_map" title="Permalink to this definition"></a></dt>
+<dd><p>Controls the ResultsParser class that is associated with certain extensions</p>
+</dd></dl>
+
+<dl class="py data">
+<dt class="sig sig-object py" id="hyalus.parse.factory._name_map">
+<span class="sig-prename descclassname"><span class="pre">hyalus.parse.factory.</span></span><span class="sig-name descname"><span class="pre">_name_map</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#dict" title="(in Python v3.10)"><span class="pre">dict</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Type" title="(in Python v3.10)"><span class="pre">Type</span></a><span class="p"><span class="pre">[</span></span><a class="reference internal" href="hyalus.parse.base.html#hyalus.parse.base.ResultsParser" title="hyalus.parse.base.ResultsParser"><span class="pre">hyalus.parse.base.ResultsParser</span></a><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#hyalus.parse.factory._name_map" title="Permalink to this definition"></a></dt>
+<dd><p>Controls the ResultsParser class that is associated with specific file names - takes priority over extension</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.parse.factory.get_parser">
+<span class="sig-prename descclassname"><span class="pre">hyalus.parse.factory.</span></span><span class="sig-name descname"><span class="pre">get_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name_map={}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ext_map={'*.csv':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.csv.CSVDataFrameParser'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'*.gtf':</span> <span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'*.json':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.json.JSONParser'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'*.tsv':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.tsv.TSVDataFrameParser'&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">'*.vcf':</span> <span class="pre">None}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.parse.factory.get_parser" title="Permalink to this definition"></a></dt>
+<dd><p>Based on a given path’s filename/extension, determine which applicable ResultsParser, if any, should parse it and
+create an instance of that parser</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – The path corresponding to the file to parse</p></li>
+<li><p><strong>name_map</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#dict" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Type" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code></a>[<a class="reference internal" href="hyalus.parse.base.html#hyalus.parse.base.ResultsParser" title="hyalus.parse.base.ResultsParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResultsParser</span></code></a>]], default: <code class="docutils literal notranslate"><span class="pre">{}</span></code>) – The mapping of file name to ResultsParser class to use, defaulting to <a class="reference internal" href="#hyalus.parse.factory._name_map" title="hyalus.parse.factory._name_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_name_map</span></code></a></p></li>
+<li><p><strong>ext_map</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#dict" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Type" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Type</span></code></a>[<a class="reference internal" href="hyalus.parse.base.html#hyalus.parse.base.ResultsParser" title="hyalus.parse.base.ResultsParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResultsParser</span></code></a>]], default: <code class="docutils literal notranslate"><span class="pre">{'*.csv':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.csv.CSVDataFrameParser'&gt;,</span> <span class="pre">'*.gtf':</span> <span class="pre">None,</span> <span class="pre">'*.json':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.json.JSONParser'&gt;,</span> <span class="pre">'*.tsv':</span> <span class="pre">&lt;class</span> <span class="pre">'hyalus.parse.tsv.TSVDataFrameParser'&gt;,</span> <span class="pre">'*.vcf':</span> <span class="pre">None}</span></code>) – The mapping of file extension to ResultsParser class to use, defaulting to <a class="reference internal" href="#hyalus.parse.factory._ext_map" title="hyalus.parse.factory._ext_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">_ext_map</span></code></a></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><code class="xref py py-class docutils literal notranslate"><span class="pre">Optional</span></code>[<a class="reference internal" href="hyalus.parse.base.html#hyalus.parse.base.ResultsParser" title="hyalus.parse.base.ResultsParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">ResultsParser</span></code></a>] – The instantiated ResultsParser or None if no corresponding parser could be found</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hyalus.parse.csv.html" class="btn btn-neutral float-left" title="hyalus.parse.csv module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="hyalus.parse.gtf.html" class="btn btn-neutral float-right" title="hyalus.parse.gtf module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Genapsys.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
