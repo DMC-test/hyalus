@@ -100,6 +100,20 @@
 <span id="hyalus-run-common-module"></span><h1>hyalus.run.common module<a class="headerlink" href="#module-hyalus.run.common" title="Permalink to this heading"></a></h1>
 <p>Common functionality for running hyalus-style tests</p>
 <dl class="py function">
+<dt class="sig sig-object py" id="hyalus.run.common.cwd_reset">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">cwd_reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.common.cwd_reset" title="Permalink to this definition"></a></dt>
+<dd><p>Decorator - keep track of working directory at function call time and always reset it after the function executes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>fn</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Callable" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/constants.html#Ellipsis" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>]) – The function to decorate</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Callable" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/constants.html#Ellipsis" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>] – Wrapper function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hyalus.run.common.make_run_dir">
 <span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">outer_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.common.make_run_dir" title="Permalink to this definition"></a></dt>
 <dd><p>Given a directory, create input, output, tmp, and hyalus subdirectories if they do not already exist</p>

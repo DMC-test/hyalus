@@ -1,0 +1,7 @@
+tests.run.test\_dir\_2.runtest\_3.config module
+===============================================
+
+.. automodule:: tests.run.test_dir_2.runtest_3.config
+   :members:
+   :undoc-members:
+   :show-inheritance:

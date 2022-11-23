@@ -100,6 +100,25 @@
 <span id="tests-run-test-common-module"></span><h1>tests.run.test_common module<a class="headerlink" href="#module-tests.run.test_common" title="Permalink to this heading"></a></h1>
 <p>Tests for the hyalus.run.common module</p>
 <dl class="py class">
+<dt class="sig sig-object py" id="tests.run.test_common.TestCwdReset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestCwdReset</span></span><a class="headerlink" href="#tests.run.test_common.TestCwdReset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the cwd_reset decorator</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestCwdReset.test_cwd_reset_function_exception">
+<span class="sig-name descname"><span class="pre">test_cwd_reset_function_exception</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestCwdReset.test_cwd_reset_function_exception" title="Permalink to this definition"></a></dt>
+<dd><p>Test the cwd_reset decorator resets the directory when an Exception is raised in the decorated function</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestCwdReset.test_cwd_reset_function_successful">
+<span class="sig-name descname"><span class="pre">test_cwd_reset_function_successful</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestCwdReset.test_cwd_reset_function_successful" title="Permalink to this definition"></a></dt>
+<dd><p>Test the cwd_reset decorator properly executes a function and resets the working directory</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="tests.run.test_common.TestMakeRunDir">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestMakeRunDir</span></span><a class="headerlink" href="#tests.run.test_common.TestMakeRunDir" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>

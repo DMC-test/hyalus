@@ -129,21 +129,28 @@ when it finds multiple tests with the same name in the given search_dirs</p></li
 <dd><p>Find the test to run based on the given name/path and test directories to search</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> – The Path of the test to run</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> – The absolute Path of the test to run</p>
 </dd>
 <dt class="field-even">Raises</dt>
-<dd class="field-even"><p><a class="reference internal" href="#hyalus.run.runtest.TestNotFound" title="hyalus.run.runtest.TestNotFound"><strong>TestNotFound</strong></a> – If the test given to run could not be found</p>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference internal" href="#hyalus.run.runtest.TestNotFound" title="hyalus.run.runtest.TestNotFound"><strong>TestNotFound</strong></a> – If the test given to run could not be found</p></li>
+<li><p><a class="reference internal" href="#hyalus.run.runtest.DuplicateTests" title="hyalus.run.runtest.DuplicateTests"><strong>DuplicateTests</strong></a> – If the test given to run was found more than once in the given search directories</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.run.runtest.HyalusRunner._make_run_dir">
-<span class="sig-name descname"><span class="pre">_make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">alphanumeric_chars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner._make_run_dir" title="Permalink to this definition"></a></dt>
-<dd><p>Create a run directory for the test run in the location specified according to the name of the test</p>
+<span class="sig-name descname"><span class="pre">_make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphanumeric_chars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner._make_run_dir" title="Permalink to this definition"></a></dt>
+<dd><p>Create a run directory for the test run in the location specified according to the name of the test. Copies
+over all files from the test config directory to the run directory</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>alphanumeric_chars</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">8</span></code>) – The number of alphanumeric characters to add to the directory name</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>test_path</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – Absolute path to the test config directory for the test being run</p></li>
+<li><p><strong>alphanumeric_chars</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">8</span></code>) – The number of alphanumeric characters to add to the directory name</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> – The Path of the created run directory</p>
@@ -154,14 +161,10 @@ when it finds multiple tests with the same name in the given search_dirs</p></li
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.run.runtest.HyalusRunner.run">
 <span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner.run" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py property">
-<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusRunner.search_dir_names">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">search_dir_names</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><span class="pre">list</span></a><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><span class="pre">str</span></a><span class="p"><span class="pre">]</span></span></em><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner.search_dir_names" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>]</p>
+<dd><p>Create the test run directory and then run the test</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True/False based on whether the test passed or not</p>
 </dd>
 </dl>
 </dd></dl>
