@@ -1,7 +1,10 @@
-tests.run.test\_dir\_2 namespace
-================================
+tests.run.test\_dir\_2 package
+==============================
 
-.. py:module:: tests.run.test_dir_2
+.. automodule:: tests.run.test_dir_2
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
 Subpackages
 -----------

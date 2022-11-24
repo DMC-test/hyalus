@@ -6,6 +6,15 @@ tests.run package
    :undoc-members:
    :show-inheritance:
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tests.run.test_dir_1
+   tests.run.test_dir_2
+
 Submodules
 ----------
 

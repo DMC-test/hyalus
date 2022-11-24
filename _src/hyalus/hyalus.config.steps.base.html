@@ -200,18 +200,14 @@
 <dt class="sig sig-object py" id="hyalus.config.steps.base.StepError">
 <em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.steps.base.</span></span><span class="sig-name descname"><span class="pre">StepError</span></span><a class="headerlink" href="#hyalus.config.steps.base.StepError" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
-</dd></dl>
-
-<dl class="py exception">
-<dt class="sig sig-object py" id="hyalus.config.steps.base.StepFailure">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.steps.base.</span></span><span class="sig-name descname"><span class="pre">StepFailure</span></span><a class="headerlink" href="#hyalus.config.steps.base.StepFailure" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>Error to be raised when Step execution ends in error</p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="hyalus.config.steps.base.StepOutput">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.steps.base.</span></span><span class="sig-name descname"><span class="pre">StepOutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.steps.base.StepOutput" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.config.steps.base.</span></span><span class="sig-name descname"><span class="pre">StepOutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><span class="pre">Any</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">status</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#hyalus.config.steps.base.StepStatus" title="hyalus.config.steps.base.StepStatus"><span class="pre">StepStatus</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.steps.base.StepOutput" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.NamedTuple" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></a></p>
+<p>Tuple containing Step output and PASS/FAIL/ERROR status of the execution</p>
 <p>Create new instance of StepOutput(output, status)</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.steps.base.StepOutput._asdict">
@@ -278,9 +274,13 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.steps.base.StepStatus.get_by_bool">
 <em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_by_bool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.steps.base.StepStatus.get_by_bool" title="Permalink to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference internal" href="#hyalus.config.steps.base.StepStatus" title="hyalus.config.steps.base.StepStatus"><code class="xref py py-class docutils literal notranslate"><span class="pre">StepStatus</span></code></a></p>
+<dd><p>Get a StepStatus instance from a boolean value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>) – The bool</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><a class="reference internal" href="#hyalus.config.steps.base.StepStatus" title="hyalus.config.steps.base.StepStatus"><code class="xref py py-class docutils literal notranslate"><span class="pre">StepStatus</span></code></a> – PASS if given True, else FAIL</p>
 </dd>
 </dl>
 </dd></dl>
