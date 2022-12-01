@@ -99,6 +99,31 @@
   <section id="module-hyalus.run.common">
 <span id="hyalus-run-common-module"></span><h1>hyalus.run.common module<a class="headerlink" href="#module-hyalus.run.common" title="Permalink to this heading"></a></h1>
 <p>Common functionality for running hyalus-style tests</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="hyalus.run.common.Duplicate">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">Duplicate</span></span><a class="headerlink" href="#hyalus.run.common.Duplicate" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>To be raised when more than one filesystem object with the given name is found</p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="hyalus.run.common.NotFound">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">NotFound</span></span><a class="headerlink" href="#hyalus.run.common.NotFound" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>To be raised when a given filesystem object cannot be found</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.run.common._parse_test_suite">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">_parse_test_suite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_suite</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.common._parse_test_suite" title="Permalink to this definition"></a></dt>
+<dd><p>We should actually allow comments in the file here etc but ok for now</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
 <dl class="py function">
 <dt class="sig sig-object py" id="hyalus.run.common.cwd_reset">
 <span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">cwd_reset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">fn</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.common.cwd_reset" title="Permalink to this definition"></a></dt>
@@ -109,6 +134,36 @@
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Callable" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/constants.html#Ellipsis" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>] – Wrapper function</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.run.common.find_fs_obj">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">find_fs_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_find</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.common.find_fs_obj" title="Permalink to this definition"></a></dt>
+<dd><p>Given a path, attempt to find a match in from the current the given search directories</p>
+<p>TODO: yeah
+:return: <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> – The absolute Path to the filesystem object, if a single instance was found
+:raises NotFound: If the given filesystem object could not be found in any of the given search directories
+:raises Duplicate: If the given filesystem object was found more than once in the given search directories</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.run.common.find_tests_by_name">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">find_tests_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.common.find_tests_by_name" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.run.common.find_tests_by_tag">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.common.</span></span><span class="sig-name descname"><span class="pre">find_tests_by_tag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tags</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_operator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.common.find_tests_by_tag" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>]</p>
 </dd>
 </dl>
 </dd></dl>

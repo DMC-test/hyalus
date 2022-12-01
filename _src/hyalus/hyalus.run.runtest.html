@@ -99,16 +99,9 @@
   <section id="module-hyalus.run.runtest">
 <span id="hyalus-run-runtest-module"></span><h1>hyalus.run.runtest module<a class="headerlink" href="#module-hyalus.run.runtest" title="Permalink to this heading"></a></h1>
 <p>Hyalus test running via configuration file input</p>
-<dl class="py exception">
-<dt class="sig sig-object py" id="hyalus.run.runtest.DuplicateTests">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runtest.</span></span><span class="sig-name descname"><span class="pre">DuplicateTests</span></span><a class="headerlink" href="#hyalus.run.runtest.DuplicateTests" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
-<p>To be raised when more than one test with the given name is found</p>
-</dd></dl>
-
 <dl class="py class">
-<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusRunner">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runtest.</span></span><span class="sig-name descname"><span class="pre">HyalusRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_run</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cleanup_on_pass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusTestRunner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runtest.</span></span><span class="sig-name descname"><span class="pre">HyalusTestRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_run</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cleanup_on_pass</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusTestRunner" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Config parsing and Step running orchestrator</p>
 <p>Ctor.</p>
@@ -124,25 +117,8 @@ when it finds multiple tests with the same name in the given search_dirs</p></li
 </dd>
 </dl>
 <dl class="py method">
-<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusRunner._find_test">
-<span class="sig-name descname"><span class="pre">_find_test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner._find_test" title="Permalink to this definition"></a></dt>
-<dd><p>Find the test to run based on the given name/path and test directories to search</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> – The absolute Path of the test to run</p>
-</dd>
-<dt class="field-even">Raises</dt>
-<dd class="field-even"><ul class="simple">
-<li><p><a class="reference internal" href="#hyalus.run.runtest.TestNotFound" title="hyalus.run.runtest.TestNotFound"><strong>TestNotFound</strong></a> – If the test given to run could not be found</p></li>
-<li><p><a class="reference internal" href="#hyalus.run.runtest.DuplicateTests" title="hyalus.run.runtest.DuplicateTests"><strong>DuplicateTests</strong></a> – If the test given to run was found more than once in the given search directories</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusRunner._make_run_dir">
-<span class="sig-name descname"><span class="pre">_make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphanumeric_chars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner._make_run_dir" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusTestRunner._make_run_dir">
+<span class="sig-name descname"><span class="pre">_make_run_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphanumeric_chars</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusTestRunner._make_run_dir" title="Permalink to this definition"></a></dt>
 <dd><p>Create a run directory for the test run in the location specified according to the name of the test. Copies
 over all files from the test config directory to the run directory</p>
 <dl class="field-list simple">
@@ -159,8 +135,8 @@ over all files from the test config directory to the run directory</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusRunner.run">
-<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusRunner.run" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusTestRunner.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runtest.HyalusTestRunner.run" title="Permalink to this definition"></a></dt>
 <dd><p>Create the test run directory and then run the test</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -169,13 +145,16 @@ over all files from the test config directory to the run directory</p>
 </dl>
 </dd></dl>
 
+<dl class="py property">
+<dt class="sig sig-object py" id="hyalus.run.runtest.HyalusTestRunner.test_path">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test_path</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><span class="pre">Path</span></a></em><a class="headerlink" href="#hyalus.run.runtest.HyalusTestRunner.test_path" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a></p>
+</dd>
+</dl>
 </dd></dl>
 
-<dl class="py exception">
-<dt class="sig sig-object py" id="hyalus.run.runtest.TestNotFound">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runtest.</span></span><span class="sig-name descname"><span class="pre">TestNotFound</span></span><a class="headerlink" href="#hyalus.run.runtest.TestNotFound" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
-<p>To be raised when a given test cannot be found</p>
 </dd></dl>
 
 </section>

@@ -99,6 +99,7 @@
  | <a href="#R"><strong>R</strong></a>
  | <a href="#S"><strong>S</strong></a>
  | <a href="#T"><strong>T</strong></a>
+ | <a href="#U"><strong>U</strong></a>
  | <a href="#V"><strong>V</strong></a>
  | <a href="#W"><strong>W</strong></a>
  | <a href="#Y"><strong>Y</strong></a>
@@ -129,9 +130,13 @@
         <li><a href="_src/hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepOutput._fields">(hyalus.config.steps.base.StepOutput attribute)</a>
 </li>
       </ul></li>
-      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusRunner._find_test">_find_test() (hyalus.run.runtest.HyalusRunner method)</a>
+      <li><a href="_src/hyalus/hyalus.run.runsuite.html#hyalus.run.runsuite.HyalusSuiteRunner._find_tests_from_names">_find_tests_from_names() (hyalus.run.runsuite.HyalusSuiteRunner method)</a>
+</li>
+      <li><a href="_src/hyalus/hyalus.run.runsuite.html#hyalus.run.runsuite.HyalusSuiteRunner._find_tests_from_tags">_find_tests_from_tags() (hyalus.run.runsuite.HyalusSuiteRunner method)</a>
 </li>
       <li><a href="_src/hyalus/hyalus.config.steps.run.html#hyalus.config.steps.run.RunFunctionStep._get_arg_str">_get_arg_str() (hyalus.config.steps.run.RunFunctionStep method)</a>
+</li>
+      <li><a href="_src/hyalus/hyalus.run.runsuite.html#hyalus.run.runsuite.HyalusSuiteRunner._get_tests">_get_tests() (hyalus.run.runsuite.HyalusSuiteRunner method)</a>
 </li>
       <li><a href="_src/hyalus/hyalus.config.loader.html#hyalus.config.loader.ConfigLoader._lint">_lint() (hyalus.config.loader.ConfigLoader method)</a>
 </li>
@@ -149,7 +154,7 @@
         <li><a href="_src/hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepOutput._make">(hyalus.config.steps.base.StepOutput class method)</a>
 </li>
       </ul></li>
-      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusRunner._make_run_dir">_make_run_dir() (hyalus.run.runtest.HyalusRunner method)</a>
+      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusTestRunner._make_run_dir">_make_run_dir() (hyalus.run.runtest.HyalusTestRunner method)</a>
 </li>
       <li><a href="_src/hyalus/hyalus.parse.factory.html#hyalus.parse.factory._name_map">_name_map (in module hyalus.parse.factory)</a>
 </li>
@@ -165,6 +170,8 @@
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_src/hyalus/hyalus.run.common.html#hyalus.run.common._parse_test_suite">_parse_test_suite() (in module hyalus.run.common)</a>
+</li>
       <li><a href="_src/hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase._post_process">_post_process() (hyalus.config.steps.base.StepBase method)</a>
 </li>
       <li><a href="_src/hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase._pre_process">_pre_process() (hyalus.config.steps.base.StepBase method)</a>
@@ -349,7 +356,7 @@
 </li>
       <li><a href="_tests/tests.config.data.missing_tags.html#tests.config.data.missing_tags.DummyTag">DummyTag (class in tests.config.data.missing_tags)</a>
 </li>
-      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.DuplicateTests">DuplicateTests</a>
+      <li><a href="_src/hyalus/hyalus.run.common.html#hyalus.run.common.Duplicate">Duplicate</a>
 </li>
   </ul></td>
 </tr></table>
@@ -391,7 +398,13 @@
 </li>
       <li><a href="_src/hyalus/hyalus.config.common.html#hyalus.config.common.Failure">Failure</a>
 </li>
+      <li><a href="_src/hyalus/hyalus.run.common.html#hyalus.run.common.find_fs_obj">find_fs_obj() (in module hyalus.run.common)</a>
+</li>
       <li><a href="_src/hyalus/hyalus.utils.logging_utils.html#hyalus.utils.logging_utils.find_handler">find_handler() (in module hyalus.utils.logging_utils)</a>
+</li>
+      <li><a href="_src/hyalus/hyalus.run.common.html#hyalus.run.common.find_tests_by_name">find_tests_by_name() (in module hyalus.run.common)</a>
+</li>
+      <li><a href="_src/hyalus/hyalus.run.common.html#hyalus.run.common.find_tests_by_tag">find_tests_by_tag() (in module hyalus.run.common)</a>
 </li>
       <li><a href="_tests/tests.config.steps.test_verify.html#tests.config.steps.test_verify.fixture_empty_json">fixture_empty_json() (in module tests.config.steps.test_verify)</a>
 </li>
@@ -403,12 +416,12 @@
 </li>
       <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.fixture_hyalus_log_record">fixture_hyalus_log_record() (in module tests.utils.test_logging_utils)</a>
 </li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_tests/tests.config.steps.test_verify.html#tests.config.steps.test_verify.fixture_json_file">fixture_json_file() (in module tests.config.steps.test_verify)</a>
 </li>
       <li><a href="_src/hyalus/hyalus.run.python.html#hyalus.run.python.fixture_run_dir">fixture_run_dir() (in module hyalus.run.python)</a>
 </li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.fixture_runs_dir">fixture_runs_dir() (in module tests.run.test_runtest)</a>
 </li>
       <li><a href="_tests/tests.utils.test_json_utils.html#tests.utils.test_json_utils.fixture_test_array">fixture_test_array() (in module tests.utils.test_json_utils)</a>
@@ -588,8 +601,6 @@
         <li><a href="_src/hyalus/hyalus.parse.base.html#module-hyalus.parse.base">module</a>
 </li>
       </ul></li>
-  </ul></td>
-  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     hyalus.parse.csv
 
@@ -597,6 +608,8 @@
         <li><a href="_src/hyalus/hyalus.parse.csv.html#module-hyalus.parse.csv">module</a>
 </li>
       </ul></li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
       <li>
     hyalus.parse.factory
 
@@ -713,9 +726,11 @@
 </li>
       <li><a href="_src/hyalus/hyalus.utils.logging_utils.html#hyalus.utils.logging_utils.HyalusLogFormatter">HyalusLogFormatter (class in hyalus.utils.logging_utils)</a>
 </li>
-      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusRunner">HyalusRunner (class in hyalus.run.runtest)</a>
-</li>
       <li><a href="_src/hyalus/hyalus.utils.logging_utils.html#hyalus.utils.logging_utils.HyalusStreamHandler">HyalusStreamHandler (class in hyalus.utils.logging_utils)</a>
+</li>
+      <li><a href="_src/hyalus/hyalus.run.runsuite.html#hyalus.run.runsuite.HyalusSuiteRunner">HyalusSuiteRunner (class in hyalus.run.runsuite)</a>
+</li>
+      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusTestRunner">HyalusTestRunner (class in hyalus.run.runtest)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -996,6 +1011,8 @@
 </li>
       <li><a href="_src/hyalus/hyalus.assertions.compare.html#hyalus.assertions.compare.not_in">not_in() (in module hyalus.assertions.compare)</a>
 </li>
+      <li><a href="_src/hyalus/hyalus.run.common.html#hyalus.run.common.NotFound">NotFound</a>
+</li>
   </ul></td>
 </tr></table>
 
@@ -1085,12 +1102,16 @@
       <ul>
         <li><a href="_src/hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase.run">(hyalus.config.steps.base.StepBase method)</a>
 </li>
-        <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusRunner.run">(hyalus.run.runtest.HyalusRunner method)</a>
+        <li><a href="_src/hyalus/hyalus.run.runsuite.html#hyalus.run.runsuite.HyalusSuiteRunner.run">(hyalus.run.runsuite.HyalusSuiteRunner method)</a>
+</li>
+        <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusTestRunner.run">(hyalus.run.runtest.HyalusTestRunner method)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="_src/hyalus/hyalus.run.python.html#hyalus.run.python.run_steps">run_steps() (in module hyalus.run.python)</a>
+</li>
+      <li><a href="_src/hyalus/hyalus.run.runsuite.html#hyalus.run.runsuite.HyalusSuiteRunner.run_test">run_test() (hyalus.run.runsuite.HyalusSuiteRunner method)</a>
 </li>
       <li><a href="_src/hyalus/hyalus.config.steps.run.html#hyalus.config.steps.run.RunFunctionStep">RunFunctionStep (class in hyalus.config.steps.run)</a>
 </li>
@@ -1252,23 +1273,23 @@
 </li>
       <li><a href="_tests/tests.parse.test_factory.html#tests.parse.test_factory.TestGetParser.test_ext_map_vcf">test_ext_map_vcf() (tests.parse.test_factory.TestGetParser method)</a>
 </li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj.test_find_fs_obj_absolute_path">test_find_fs_obj_absolute_path() (tests.run.test_common.TestFindFsObj method)</a>
+</li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj.test_find_fs_obj_cwd">test_find_fs_obj_cwd() (tests.run.test_common.TestFindFsObj method)</a>
+</li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj.test_find_fs_obj_duplicate">test_find_fs_obj_duplicate() (tests.run.test_common.TestFindFsObj method)</a>
+</li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj.test_find_fs_obj_in_search_dirs_absolute_path">test_find_fs_obj_in_search_dirs_absolute_path() (tests.run.test_common.TestFindFsObj method)</a>
+</li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj.test_find_fs_obj_in_search_dirs_relative_path">test_find_fs_obj_in_search_dirs_relative_path() (tests.run.test_common.TestFindFsObj method)</a>
+</li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj.test_find_fs_obj_not_found">test_find_fs_obj_not_found() (tests.run.test_common.TestFindFsObj method)</a>
+</li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj.test_find_fs_obj_relative_path">test_find_fs_obj_relative_path() (tests.run.test_common.TestFindFsObj method)</a>
+</li>
       <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestFindHandler.test_find_handler_match">test_find_handler_match() (tests.utils.test_logging_utils.TestFindHandler method)</a>
 </li>
       <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestFindHandler.test_find_handler_no_match">test_find_handler_no_match() (tests.utils.test_logging_utils.TestFindHandler method)</a>
-</li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_find_test_duplicate">test_find_test_duplicate() (tests.run.test_runtest.TestHyalusRunner method)</a>
-</li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_find_test_in_search_dirs_absolute_path">test_find_test_in_search_dirs_absolute_path() (tests.run.test_runtest.TestHyalusRunner method)</a>
-</li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_find_test_in_search_dirs_relative_path">test_find_test_in_search_dirs_relative_path() (tests.run.test_runtest.TestHyalusRunner method)</a>
-</li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_find_test_is_dir_absolute_path">test_find_test_is_dir_absolute_path() (tests.run.test_runtest.TestHyalusRunner method)</a>
-</li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_find_test_is_dir_cwd">test_find_test_is_dir_cwd() (tests.run.test_runtest.TestHyalusRunner method)</a>
-</li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_find_test_is_dir_relative_path">test_find_test_is_dir_relative_path() (tests.run.test_runtest.TestHyalusRunner method)</a>
-</li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_find_test_not_found">test_find_test_not_found() (tests.run.test_runtest.TestHyalusRunner method)</a>
 </li>
       <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format">test_format() (tests.utils.test_logging_utils.TestHyalusLogFormatter method)</a>
 </li>
@@ -1386,9 +1407,9 @@
 </li>
       <li><a href="_tests/tests.assertions.test_compare.html#tests.assertions.test_compare.test_lt_true">test_lt_true() (in module tests.assertions.test_compare)</a>
 </li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_make_run_dir">test_make_run_dir() (tests.run.test_runtest.TestHyalusRunner method)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_make_run_dir">test_make_run_dir() (tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_make_run_dir_collision">test_make_run_dir_collision() (tests.run.test_runtest.TestHyalusRunner method)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_make_run_dir_collision">test_make_run_dir_collision() (tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
       <li><a href="_tests/tests.config.steps.test_run.html#tests.config.steps.test_run.TestRunFunctionStep.test_make_script_both_arguments">test_make_script_both_arguments() (tests.config.steps.test_run.TestRunFunctionStep method)</a>
 </li>
@@ -1424,6 +1445,8 @@
 </li>
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestDataFrameParser.test_parse_kwargs">test_parse_kwargs() (tests.parse.test_base.TestDataFrameParser method)</a>
 </li>
+      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.HyalusTestRunner.test_path">test_path (hyalus.run.runtest.HyalusTestRunner property)</a>
+</li>
       <li><a href="_tests/tests.config.steps.test_verify.html#tests.config.steps.test_verify.TestAssertionStep.test_pre_process_multiple_parsers">test_pre_process_multiple_parsers() (tests.config.steps.test_verify.TestAssertionStep method)</a>
 </li>
       <li><a href="_tests/tests.config.steps.test_verify.html#tests.config.steps.test_verify.TestAssertionStep.test_pre_process_no_parsers">test_pre_process_no_parsers() (tests.config.steps.test_verify.TestAssertionStep method)</a>
@@ -1444,7 +1467,7 @@
 </li>
       <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestAddRemoveFileHandler.test_remove_file_handler_not_found">test_remove_file_handler_not_found() (tests.utils.test_logging_utils.TestAddRemoveFileHandler method)</a>
 </li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_run_error">test_run_error() (tests.run.test_runtest.TestHyalusRunner method)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_run_error">test_run_error() (tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
       <li><a href="_tests/tests.config.steps.test_run.html#tests.config.steps.test_run.TestRunFunctionStep.test_run_fail">test_run_fail() (tests.config.steps.test_run.TestRunFunctionStep method)</a>
 
@@ -1479,14 +1502,14 @@
 </li>
         <li><a href="_tests/tests.config.steps.test_verify.html#tests.config.steps.test_verify.TestVerifyValuesContain.test_run_fail">(tests.config.steps.test_verify.TestVerifyValuesContain method)</a>
 </li>
-        <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_run_fail">(tests.run.test_runtest.TestHyalusRunner method)</a>
+        <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_run_fail">(tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
       </ul></li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_run_fail_cleanup_run">test_run_fail_cleanup_run() (tests.run.test_runtest.TestHyalusRunner method)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_cleanup_run">test_run_fail_cleanup_run() (tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_run_fail_halt_on_error">test_run_fail_halt_on_error() (tests.run.test_runtest.TestHyalusRunner method)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_halt_on_error">test_run_fail_halt_on_error() (tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_run_fail_raise_exception">test_run_fail_raise_exception() (tests.run.test_runtest.TestHyalusRunner method)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_raise_exception">test_run_fail_raise_exception() (tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
       <li><a href="_tests/tests.config.steps.test_run.html#tests.config.steps.test_run.TestRunFunctionStep.test_run_pass">test_run_pass() (tests.config.steps.test_run.TestRunFunctionStep method)</a>
 
@@ -1521,12 +1544,12 @@
 </li>
         <li><a href="_tests/tests.config.steps.test_verify.html#tests.config.steps.test_verify.TestVerifyValuesContain.test_run_pass">(tests.config.steps.test_verify.TestVerifyValuesContain method)</a>
 </li>
-        <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_run_pass">(tests.run.test_runtest.TestHyalusRunner method)</a>
+        <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_run_pass">(tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner.test_run_pass_cleanup_run">test_run_pass_cleanup_run() (tests.run.test_runtest.TestHyalusRunner method)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner.test_run_pass_cleanup_run">test_run_pass_cleanup_run() (tests.run.test_runtest.TestHyalusTestRunner method)</a>
 </li>
       <li><a href="_tests/tests.config.steps.test_run.html#tests.config.steps.test_run.TestRunFunctionStep.test_run_recursion">test_run_recursion() (tests.config.steps.test_run.TestRunFunctionStep method)</a>
 </li>
@@ -1640,6 +1663,8 @@
 </li>
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestDataFrameParser">TestDataFrameParser (class in tests.parse.test_base)</a>
 </li>
+      <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestFindFsObj">TestFindFsObj (class in tests.run.test_common)</a>
+</li>
       <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestFindHandler">TestFindHandler (class in tests.utils.test_logging_utils)</a>
 </li>
       <li><a href="_tests/tests.parse.test_factory.html#tests.parse.test_factory.TestGetParser">TestGetParser (class in tests.parse.test_factory)</a>
@@ -1648,7 +1673,7 @@
 </li>
       <li><a href="_tests/tests.utils.test_logging_utils.html#tests.utils.test_logging_utils.TestHyalusLogFormatter">TestHyalusLogFormatter (class in tests.utils.test_logging_utils)</a>
 </li>
-      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusRunner">TestHyalusRunner (class in tests.run.test_runtest)</a>
+      <li><a href="_tests/tests.run.test_runtest.html#tests.run.test_runtest.TestHyalusTestRunner">TestHyalusTestRunner (class in tests.run.test_runtest)</a>
 </li>
       <li><a href="_tests/tests.utils.test_json_utils.html#tests.utils.test_json_utils.TestJsonAppend">TestJsonAppend (class in tests.utils.test_json_utils)</a>
 </li>
@@ -1661,8 +1686,6 @@
       <li><a href="_tests/tests.parse.test_base.html#tests.parse.test_base.TestKeyValueParser">TestKeyValueParser (class in tests.parse.test_base)</a>
 </li>
       <li><a href="_tests/tests.run.test_common.html#tests.run.test_common.TestMakeRunDir">TestMakeRunDir (class in tests.run.test_common)</a>
-</li>
-      <li><a href="_src/hyalus/hyalus.run.runtest.html#hyalus.run.runtest.TestNotFound">TestNotFound</a>
 </li>
       <li><a href="_tests/tests.run.test_python.html#tests.run.test_python.TestPytestApplyDecoratorRunSteps">TestPytestApplyDecoratorRunSteps (class in tests.run.test_python)</a>
 </li>
@@ -2020,6 +2043,14 @@
       <li><a href="_src/hyalus/hyalus.utils.typing_utils.html#hyalus.utils.typing_utils.type_string">type_string() (in module hyalus.utils.typing_utils)</a>
 </li>
       <li><a href="_src/hyalus/hyalus.config.tags.base.html#hyalus.config.tags.base.TagBase.types">types (hyalus.config.tags.base.TagBase property)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="U">U</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_src/hyalus/hyalus.run.runsuite.html#hyalus.run.runsuite.UnknownTag">UnknownTag</a>
 </li>
   </ul></td>
 </tr></table>

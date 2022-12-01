@@ -98,6 +98,71 @@
              
   <section id="module-hyalus.run.runsuite">
 <span id="hyalus-run-runsuite-module"></span><h1>hyalus.run.runsuite module<a class="headerlink" href="#module-hyalus.run.runsuite" title="Permalink to this heading"></a></h1>
+<p>Collection and running of multiple hyalus tests</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runsuite.</span></span><span class="sig-name descname"><span class="pre">HyalusSuiteRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_run</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runs_dir=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_operator=&lt;built-in</span> <span class="pre">function</span> <span class="pre">and_&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cleanup_on_pass=False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Find relevant tests to run and spin off a process for each one</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner._find_tests_from_names">
+<span class="sig-name descname"><span class="pre">_find_tests_from_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner._find_tests_from_names" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner._find_tests_from_tags">
+<span class="sig-name descname"><span class="pre">_find_tests_from_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner._find_tests_from_tags" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner._get_tests">
+<span class="sig-name descname"><span class="pre">_get_tests</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner._get_tests" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner.run" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner.run_test">
+<span class="sig-name descname"><span class="pre">run_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner.run_test" title="Permalink to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.UnknownTag">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runsuite.</span></span><span class="sig-name descname"><span class="pre">UnknownTag</span></span><a class="headerlink" href="#hyalus.run.runsuite.UnknownTag" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>To be raised when given a Tag</p>
+</dd></dl>
+
 </section>
 
 

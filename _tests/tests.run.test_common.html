@@ -119,6 +119,55 @@
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestFindFsObj</span></span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the find_fs_obj utility function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_absolute_path">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_absolute_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_absolute_path" title="Permalink to this definition"></a></dt>
+<dd><p>Test finding filesystem object when it is an absolute path</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_cwd">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_cwd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_cwd" title="Permalink to this definition"></a></dt>
+<dd><p>Test finding filesystem object in the current working directory</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_duplicate">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_duplicate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_duplicate" title="Permalink to this definition"></a></dt>
+<dd><p>Test that when a filesystem object is found in multiple search dirs, DuplicateTests is raised</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_in_search_dirs_absolute_path">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_in_search_dirs_absolute_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_in_search_dirs_absolute_path" title="Permalink to this definition"></a></dt>
+<dd><p>Test finding filesystem object when it lives in one of the given absolute path search directories</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_in_search_dirs_relative_path">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_in_search_dirs_relative_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_in_search_dirs_relative_path" title="Permalink to this definition"></a></dt>
+<dd><p>Test finding filesystem object when it lives in one of the given relative path search directories</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_not_found">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_not_found</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_not_found" title="Permalink to this definition"></a></dt>
+<dd><p>Test that when giving something that does not exist in cwd or any search dirs, NotFound is raised</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_relative_path">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_relative_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_relative_path" title="Permalink to this definition"></a></dt>
+<dd><p>Test finding filesystem object when it is a relative path from the current working directory</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="tests.run.test_common.TestMakeRunDir">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestMakeRunDir</span></span><a class="headerlink" href="#tests.run.test_common.TestMakeRunDir" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
