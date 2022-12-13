@@ -1,0 +1,12 @@
+tests.run.test\_dir\_2.runtest\_5 namespace
+===========================================
+
+.. py:module:: tests.run.test_dir_2.runtest_5
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   tests.run.test_dir_2.runtest_5.config

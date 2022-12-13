@@ -1,10 +1,7 @@
-tests.run.test\_dir\_2.runtest\_4 package
-=========================================
+tests.run.test\_dir\_2.runtest\_4 namespace
+===========================================
 
-.. automodule:: tests.run.test_dir_2.runtest_4
-   :members:
-   :undoc-members:
-   :show-inheritance:
+.. py:module:: tests.run.test_dir_2.runtest_4
 
 Submodules
 ----------

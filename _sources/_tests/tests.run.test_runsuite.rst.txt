@@ -1,0 +1,7 @@
+tests.run.test\_runsuite module
+===============================
+
+.. automodule:: tests.run.test_runsuite
+   :members:
+   :undoc-members:
+   :show-inheritance:

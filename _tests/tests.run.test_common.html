@@ -24,7 +24,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="tests.run.test_python module" href="tests.run.test_python.html" />
-    <link rel="prev" title="tests.run.test_dir_2.runtest_4.config module" href="tests.run.test_dir_2.runtest_4.config.html" /> 
+    <link rel="prev" title="tests.run package" href="tests.run.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -130,6 +130,12 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_absolute_path_multiple_search_dirs">
+<span class="sig-name descname"><span class="pre">test_find_fs_obj_absolute_path_multiple_search_dirs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_absolute_path_multiple_search_dirs" title="Permalink to this definition"></a></dt>
+<dd><p>Test handling absolute paths when multiple search directories are given</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_common.TestFindFsObj.test_find_fs_obj_cwd">
 <span class="sig-name descname"><span class="pre">test_find_fs_obj_cwd</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindFsObj.test_find_fs_obj_cwd" title="Permalink to this definition"></a></dt>
 <dd><p>Test finding filesystem object in the current working directory</p>
@@ -168,6 +174,68 @@
 </dd></dl>
 
 <dl class="py class">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByName">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestFindTestsByName</span></span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByName" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the find_tests_by_name function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByName.test_list_of_test_names">
+<span class="sig-name descname"><span class="pre">test_list_of_test_names</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByName.test_list_of_test_names" title="Permalink to this definition"></a></dt>
+<dd><p>Test handling of only test names</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByName.test_list_of_tests_suites">
+<span class="sig-name descname"><span class="pre">test_list_of_tests_suites</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByName.test_list_of_tests_suites" title="Permalink to this definition"></a></dt>
+<dd><p>Test handling of only test suites</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByName.test_mixed_list">
+<span class="sig-name descname"><span class="pre">test_mixed_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByName.test_mixed_list" title="Permalink to this definition"></a></dt>
+<dd><p>Test handling of a mix of test name and suite</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByName.test_suite_with_wrong_ext">
+<span class="sig-name descname"><span class="pre">test_suite_with_wrong_ext</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByName.test_suite_with_wrong_ext" title="Permalink to this definition"></a></dt>
+<dd><p>Make sure if a file is given with the expected suite extension, a InvalidTestSuite Exception is raised</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByTag">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestFindTestsByTag</span></span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByTag" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the find_tests_by_tag function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByTag.test_all_tag_operator">
+<span class="sig-name descname"><span class="pre">test_all_tag_operator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByTag.test_all_tag_operator" title="Permalink to this definition"></a></dt>
+<dd><p>Test proper handling of matched tags when using all as the tag operator</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByTag.test_any_tag_operator">
+<span class="sig-name descname"><span class="pre">test_any_tag_operator</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByTag.test_any_tag_operator" title="Permalink to this definition"></a></dt>
+<dd><p>Test proper handling of matched tags when using any as the tag operator</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByTag.test_no_match">
+<span class="sig-name descname"><span class="pre">test_no_match</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByTag.test_no_match" title="Permalink to this definition"></a></dt>
+<dd><p>Test that when we don’t expect any tests to match, we get the empty set back</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestFindTestsByTag.test_no_tags">
+<span class="sig-name descname"><span class="pre">test_no_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestFindTestsByTag.test_no_tags" title="Permalink to this definition"></a></dt>
+<dd><p>Test that if we don’t send in any tags to find, we don’t get any tests out</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="tests.run.test_common.TestMakeRunDir">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestMakeRunDir</span></span><a class="headerlink" href="#tests.run.test_common.TestMakeRunDir" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
@@ -192,13 +260,32 @@
 
 </dd></dl>
 
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.run.test_common.TestParseTestSuite">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_common.</span></span><span class="sig-name descname"><span class="pre">TestParseTestSuite</span></span><a class="headerlink" href="#tests.run.test_common.TestParseTestSuite" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the _parse_test_suite helper function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestParseTestSuite.test_invalid_parse">
+<span class="sig-name descname"><span class="pre">test_invalid_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestParseTestSuite.test_invalid_parse" title="Permalink to this definition"></a></dt>
+<dd><p>Make sure a proper exception is raised when given a test suite that can’t be parsed</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_common.TestParseTestSuite.test_successfull_parse">
+<span class="sig-name descname"><span class="pre">test_successfull_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_common.TestParseTestSuite.test_successfull_parse" title="Permalink to this definition"></a></dt>
+<dd><p>Test proper parsing of test suite file, including ignoring comments and empty lines</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="tests.run.test_dir_2.runtest_4.config.html" class="btn btn-neutral float-left" title="tests.run.test_dir_2.runtest_4.config module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.run.html" class="btn btn-neutral float-left" title="tests.run package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="tests.run.test_python.html" class="btn btn-neutral float-right" title="tests.run.test_python module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

@@ -14,3 +14,4 @@ Submodules
 
    hyalus.config.tags.base
    hyalus.config.tags.runtime
+   hyalus.config.tags.test_type
