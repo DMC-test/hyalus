@@ -1,7 +1,0 @@
-hyalus.parse.vcf module
-=======================
-
-.. automodule:: hyalus.parse.vcf
-   :members:
-   :undoc-members:
-   :show-inheritance:

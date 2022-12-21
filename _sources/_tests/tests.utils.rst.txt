@@ -15,3 +15,4 @@ Submodules
    tests.utils.test_file_utils
    tests.utils.test_json_utils
    tests.utils.test_logging_utils
+   tests.utils.test_typing_utils

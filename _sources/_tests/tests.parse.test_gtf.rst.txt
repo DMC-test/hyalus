@@ -1,7 +1,0 @@
-tests.parse.test\_gtf module
-============================
-
-.. automodule:: tests.parse.test_gtf
-   :members:
-   :undoc-members:
-   :show-inheritance:

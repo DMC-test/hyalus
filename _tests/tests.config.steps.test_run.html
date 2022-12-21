@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tests.config.steps.test_run module &mdash; Hyalus 1.0 documentation</title>
+  <title>tests.config.steps.test_run module &mdash; Hyalus 0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
@@ -35,7 +35,7 @@
             <a href="../index.html" class="icon icon-home"> Hyalus
           </a>
               <div class="version">
-                0.0.1
+                0.1.0-3
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -106,33 +106,45 @@
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Unit tests for the RunFunctionStep</p>
 <dl class="py method">
+<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_args_and_kwargs">
+<span class="sig-name descname"><span class="pre">test_get_arg_str_args_and_kwargs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_args_and_kwargs" title="Permalink to this definition"></a></dt>
+<dd><p>Test arg string creation when giving both positional args and keyword args</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_args_only">
+<span class="sig-name descname"><span class="pre">test_get_arg_str_args_only</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_args_only" title="Permalink to this definition"></a></dt>
+<dd><p>Test arg string creation when only giving positional args</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_kwargs_only">
+<span class="sig-name descname"><span class="pre">test_get_arg_str_kwargs_only</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_kwargs_only" title="Permalink to this definition"></a></dt>
+<dd><p>Test arg string creation when only giving keyword args</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_no_args_or_kwargs">
+<span class="sig-name descname"><span class="pre">test_get_arg_str_no_args_or_kwargs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_get_arg_str_no_args_or_kwargs" title="Permalink to this definition"></a></dt>
+<dd><p>Test arg string creation when no args are given</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_load">
 <span class="sig-name descname"><span class="pre">test_load</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_load" title="Permalink to this definition"></a></dt>
 <dd><p>Make sure script file is properly set up after loading in args</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_make_script_both_arguments">
-<span class="sig-name descname"><span class="pre">test_make_script_both_arguments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_make_script_both_arguments" title="Permalink to this definition"></a></dt>
-<dd><p>Test script formatting when passing both positional and keyword arguments</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_make_script_keyword_arguments">
-<span class="sig-name descname"><span class="pre">test_make_script_keyword_arguments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_make_script_keyword_arguments" title="Permalink to this definition"></a></dt>
-<dd><p>Test script formatting when only passing keyword arguments</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_make_script_positional_arguments">
-<span class="sig-name descname"><span class="pre">test_make_script_positional_arguments</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_make_script_positional_arguments" title="Permalink to this definition"></a></dt>
-<dd><p>Test script formatting when only passing positional arguments</p>
+<dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_run_error">
+<span class="sig-name descname"><span class="pre">test_run_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_run_error" title="Permalink to this definition"></a></dt>
+<dd><p>Make sure stderr is captured and a non-zero return code is returned when a function errors out</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_run.TestRunFunctionStep.test_run_fail">
 <span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_run.TestRunFunctionStep.test_run_fail" title="Permalink to this definition"></a></dt>
-<dd><p>Make sure stderr is captured and a non-zero return code is returned when a function errors out</p>
+<dd><p>Make sure stderr is captured and a non-zero return code is returned when a function assertion fails</p>
 </dd></dl>
 
 <dl class="py method">

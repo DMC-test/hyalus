@@ -13,6 +13,5 @@ Submodules
    :maxdepth: 4
 
    hyalus.config.steps.base
-   hyalus.config.steps.cloud
    hyalus.config.steps.run
    hyalus.config.steps.verify

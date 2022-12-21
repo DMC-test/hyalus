@@ -13,6 +13,9 @@ Submodules
    :maxdepth: 4
 
    tests.run.test_common
+   tests.run.test_list
    tests.run.test_python
    tests.run.test_runsuite
    tests.run.test_runtest
+   tests.run.test_settings
+   tests.run.test_template

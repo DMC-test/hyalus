@@ -1,0 +1,7 @@
+tests.utils.test\_typing\_utils module
+======================================
+
+.. automodule:: tests.utils.test_typing_utils
+   :members:
+   :undoc-members:
+   :show-inheritance:

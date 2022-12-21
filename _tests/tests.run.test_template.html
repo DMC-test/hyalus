@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>tests.parse.test_vcf module &mdash; Hyalus 1.0 documentation</title>
+  <title>tests.run.test_template module &mdash; Hyalus 0.1 documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
@@ -23,8 +23,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="tests.run package" href="tests.run.html" />
-    <link rel="prev" title="tests.parse.test_tsv module" href="tests.parse.test_tsv.html" /> 
+    <link rel="next" title="tests.utils package" href="tests.utils.html" />
+    <link rel="prev" title="tests.run.test_settings module" href="tests.run.test_settings.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -35,7 +35,7 @@
             <a href="../index.html" class="icon icon-home"> Hyalus
           </a>
               <div class="version">
-                0.0.1
+                0.1.0-3
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
@@ -55,8 +55,8 @@
 <li class="toctree-l3 current"><a class="reference internal" href="tests.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4"><a class="reference internal" href="tests.assertions.html">tests.assertions package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tests.config.html">tests.config package</a></li>
-<li class="toctree-l4 current"><a class="reference internal" href="tests.parse.html">tests.parse package</a></li>
-<li class="toctree-l4"><a class="reference internal" href="tests.run.html">tests.run package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tests.parse.html">tests.parse package</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="tests.run.html">tests.run package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="tests.utils.html">tests.utils package</a></li>
 </ul>
 </li>
@@ -85,10 +85,10 @@
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="modules.html">tests</a> &raquo;</li>
           <li><a href="tests.html">tests package</a> &raquo;</li>
-          <li><a href="tests.parse.html">tests.parse package</a> &raquo;</li>
-      <li>tests.parse.test_vcf module</li>
+          <li><a href="tests.run.html">tests.run package</a> &raquo;</li>
+      <li>tests.run.test_template module</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/_tests/tests.parse.test_vcf.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/_tests/tests.run.test_template.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -96,16 +96,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-tests.parse.test_vcf">
-<span id="tests-parse-test-vcf-module"></span><h1>tests.parse.test_vcf module<a class="headerlink" href="#module-tests.parse.test_vcf" title="Permalink to this heading"></a></h1>
+  <section id="module-tests.run.test_template">
+<span id="tests-run-test-template-module"></span><h1>tests.run.test_template module<a class="headerlink" href="#module-tests.run.test_template" title="Permalink to this heading"></a></h1>
+<p>Tests for the hyalus.run.template module</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.run.test_template.TestHyalusTemplateRunner">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_template.</span></span><span class="sig-name descname"><span class="pre">TestHyalusTemplateRunner</span></span><a class="headerlink" href="#tests.run.test_template.TestHyalusTemplateRunner" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the HyalusTemplateRunner class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_template.TestHyalusTemplateRunner.test_run_end_to_end">
+<span class="sig-name descname"><span class="pre">test_run_end_to_end</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_template.TestHyalusTemplateRunner.test_run_end_to_end" title="Permalink to this definition"></a></dt>
+<dd><p>Test basic end-to-end test making functionality</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_template.TestHyalusTemplateRunner.test_run_setting_not_found">
+<span class="sig-name descname"><span class="pre">test_run_setting_not_found</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_template.TestHyalusTemplateRunner.test_run_setting_not_found" title="Permalink to this definition"></a></dt>
+<dd><p>Make sure that if a setting isn’t found, it is left unformatted as a key</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_template.TestHyalusTemplateRunner.test_run_test_already_exists">
+<span class="sig-name descname"><span class="pre">test_run_test_already_exists</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_template.TestHyalusTemplateRunner.test_run_test_already_exists" title="Permalink to this definition"></a></dt>
+<dd><p>Test early return if a test directory already exists when running the template flow</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="tests.parse.test_tsv.html" class="btn btn-neutral float-left" title="tests.parse.test_tsv module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="tests.run.html" class="btn btn-neutral float-right" title="tests.run package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="tests.run.test_settings.html" class="btn btn-neutral float-left" title="tests.run.test_settings module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.utils.html" class="btn btn-neutral float-right" title="tests.utils package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

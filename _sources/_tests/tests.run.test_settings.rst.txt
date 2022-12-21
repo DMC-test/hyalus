@@ -1,0 +1,7 @@
+tests.run.test\_settings module
+===============================
+
+.. automodule:: tests.run.test_settings
+   :members:
+   :undoc-members:
+   :show-inheritance:

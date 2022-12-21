@@ -13,6 +13,9 @@ Submodules
    :maxdepth: 4
 
    hyalus.run.common
+   hyalus.run.list
    hyalus.run.python
    hyalus.run.runsuite
    hyalus.run.runtest
+   hyalus.run.settings
+   hyalus.run.template

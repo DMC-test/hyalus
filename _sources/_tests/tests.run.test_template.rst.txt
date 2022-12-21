@@ -1,0 +1,7 @@
+tests.run.test\_template module
+===============================
+
+.. automodule:: tests.run.test_template
+   :members:
+   :undoc-members:
+   :show-inheritance:
