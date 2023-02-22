@@ -1,0 +1,7 @@
+hyalus.parse.h5 module
+======================
+
+.. automodule:: hyalus.parse.h5
+   :members:
+   :undoc-members:
+   :show-inheritance:

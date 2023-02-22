@@ -111,9 +111,33 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSetting.test_str_constraint">
+<span class="sig-name descname"><span class="pre">test_str_constraint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSetting.test_str_constraint" title="Permalink to this definition"></a></dt>
+<dd><p>Test string formatting when allowable_values is a list of values to match</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSetting.test_str_pattern">
+<span class="sig-name descname"><span class="pre">test_str_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSetting.test_str_pattern" title="Permalink to this definition"></a></dt>
+<dd><p>Test string formatting when allowable_values is a regex pattern</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSetting.test_str_type">
+<span class="sig-name descname"><span class="pre">test_str_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSetting.test_str_type" title="Permalink to this definition"></a></dt>
+<dd><p>Test string formatting when allowable_values is a type</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSetting.test_value_is_valid_false_iterable">
 <span class="sig-name descname"><span class="pre">test_value_is_valid_false_iterable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSetting.test_value_is_valid_false_iterable" title="Permalink to this definition"></a></dt>
 <dd><p>Test input values against iterable constraints that should all fail</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSetting.test_value_is_valid_false_pattern">
+<span class="sig-name descname"><span class="pre">test_value_is_valid_false_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSetting.test_value_is_valid_false_pattern" title="Permalink to this definition"></a></dt>
+<dd><p>Test input values against regex pattern constraints that should all fail</p>
 </dd></dl>
 
 <dl class="py method">
@@ -126,6 +150,12 @@
 <dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSetting.test_value_is_valid_true_iterable">
 <span class="sig-name descname"><span class="pre">test_value_is_valid_true_iterable</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSetting.test_value_is_valid_true_iterable" title="Permalink to this definition"></a></dt>
 <dd><p>Test input values against iterable constraints that should all pass</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSetting.test_value_is_valid_true_pattern">
+<span class="sig-name descname"><span class="pre">test_value_is_valid_true_pattern</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSetting.test_value_is_valid_true_pattern" title="Permalink to this definition"></a></dt>
+<dd><p>Test input values against regex pattern constraints that should all pass</p>
 </dd></dl>
 
 <dl class="py method">
@@ -142,27 +172,51 @@
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the HyalusSettingsRunner class</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_create_settings_file">
-<span class="sig-name descname"><span class="pre">test_create_settings_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_create_settings_file" title="Permalink to this definition"></a></dt>
-<dd><p>Assert that create_settings_file writes all settings in HYALUS_SETTINGS to the settings file</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_print_settings">
 <span class="sig-name descname"><span class="pre">test_print_settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_print_settings" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that settings are printed out in expected format and in expected order</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_run">
-<span class="sig-name descname"><span class="pre">test_run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_run" title="Permalink to this definition"></a></dt>
-<dd><p>Assert that the run method updates settings and then prints current ones out</p>
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_reset_and_update_conflict">
+<span class="sig-name descname"><span class="pre">test_reset_and_update_conflict</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_reset_and_update_conflict" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that when given a setting to both update and reset, ValueError is raised</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_settings">
-<span class="sig-name descname"><span class="pre">test_settings</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_settings" title="Permalink to this definition"></a></dt>
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_reset_invalid_name">
+<span class="sig-name descname"><span class="pre">test_reset_invalid_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_reset_invalid_name" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that when given a setting to reset that is unknown, InvalidSetting is raised</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_reset_valid">
+<span class="sig-name descname"><span class="pre">test_reset_valid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_reset_valid" title="Permalink to this definition"></a></dt>
+<dd><p>Test that the given settings, and only those settings, are correctly reset to their defaults</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_run_descriptions_off">
+<span class="sig-name descname"><span class="pre">test_run_descriptions_off</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_run_descriptions_off" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that the run method updates settings and then prints current ones out, description printing off</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_run_descriptions_on">
+<span class="sig-name descname"><span class="pre">test_run_descriptions_on</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">capsys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_run_descriptions_on" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that the run method prints descriptions, updates settings, and then prints current ones out</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_settings_from_empty_file">
+<span class="sig-name descname"><span class="pre">test_settings_from_empty_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_settings_from_empty_file" title="Permalink to this definition"></a></dt>
 <dd><p>Assert settings file gets parsed correctly when accessing the settings property</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_settings_from_partially_full_file">
+<span class="sig-name descname"><span class="pre">test_settings_from_partially_full_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_settings_from_partially_full_file" title="Permalink to this definition"></a></dt>
+<dd><p>Test retrieval of settings with a settings file that has some but not all settings in it</p>
 </dd></dl>
 
 <dl class="py method">
@@ -172,9 +226,21 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_update_invalid_value">
-<span class="sig-name descname"><span class="pre">test_update_invalid_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_update_invalid_value" title="Permalink to this definition"></a></dt>
-<dd><p>Assert that when given a setting to update with an invalid new value, InvalidSetting is raised</p>
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_update_invalid_value_constraint">
+<span class="sig-name descname"><span class="pre">test_update_invalid_value_constraint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_update_invalid_value_constraint" title="Permalink to this definition"></a></dt>
+<dd><p>Assert when given a setting to update with a new value not matching constraints, InvalidSetting is raised</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_update_invalid_value_type">
+<span class="sig-name descname"><span class="pre">test_update_invalid_value_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_update_invalid_value_type" title="Permalink to this definition"></a></dt>
+<dd><p>Assert when given a setting to update with a new value of an invalid type, InvalidSetting is raised</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_settings.TestHyalusSettingsRunner.test_update_split_str">
+<span class="sig-name descname"><span class="pre">test_update_split_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_settings.TestHyalusSettingsRunner.test_update_split_str" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that list[str] type settings are properly handled in update</p>
 </dd></dl>
 
 <dl class="py method">

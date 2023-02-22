@@ -10,5 +10,6 @@ Subpackages
    :maxdepth: 4
 
    tests.run.test_dir_1.runtest_1
+   tests.run.test_dir_1.runtest_1_2023-02-01_aPoFyar6
    tests.run.test_dir_1.runtest_2
    tests.run.test_dir_1.runtest_7

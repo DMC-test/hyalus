@@ -6,4 +6,4 @@ Releases
 0.1.0
 *****
 
-  * Initial release in GitHub with bare minimum repo setup
+  * Initial release in GitHub / MVP

@@ -1,0 +1,7 @@
+tests.run.test\_clean module
+============================
+
+.. automodule:: tests.run.test_clean
+   :members:
+   :undoc-members:
+   :show-inheritance:

@@ -101,7 +101,7 @@
 <p>Collection and running of multiple hyalus tests</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runsuite.</span></span><span class="sig-name descname"><span class="pre">HyalusSuiteRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_run=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runs_dir=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_op=&lt;built-in</span> <span class="pre">function</span> <span class="pre">all&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cleanup_on_pass=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stdout=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug=False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runsuite.</span></span><span class="sig-name descname"><span class="pre">HyalusSuiteRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_run=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runs_dir=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_op=&lt;built-in</span> <span class="pre">function</span> <span class="pre">all&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cleanup_on_pass=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug=False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Find relevant tests to run and spin off a process for each one</p>
 <p>Ctor.</p>
@@ -116,7 +116,6 @@ when it finds multiple tests with the same name in the given search_dirs</p></li
 <li><p><strong>tag_op</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Callable" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Callable</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/constants.html#Ellipsis" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code></a>, <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">&lt;built-in</span> <span class="pre">function</span> <span class="pre">all&gt;</span></code>) – Operator to apply to tag matching - <code class="docutils literal notranslate"><span class="pre">all</span></code> if test must have all given tags, <code class="docutils literal notranslate"><span class="pre">any</span></code> if the test
 must have any of the given tags</p></li>
 <li><p><strong>cleanup_on_pass</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Flag to remove test run directories if the test passes, default False</p></li>
-<li><p><strong>stdout</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – True if test runs should log to stdout else False</p></li>
 <li><p><strong>debug</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a>, default: <code class="docutils literal notranslate"><span class="pre">False</span></code>) – Debug logging flag</p></li>
 </ul>
 </dd>
@@ -127,7 +126,7 @@ must have any of the given tags</p></li>
 <dd><p>Convenience wrapper for hyalus.run.common.find_tests_by_name</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#set" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>] – Set of Paths to tests matching given test names or test suites</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#set" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a>[<a class="reference internal" href="hyalus.run.common.html#hyalus.run.common.HyalusTest" title="hyalus.run.common.HyalusTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">HyalusTest</span></code></a>] – Set of Paths to tests matching given test names or test suites</p>
 </dd>
 </dl>
 </dd></dl>
@@ -138,7 +137,7 @@ must have any of the given tags</p></li>
 <dd><p>Convenience wrapper for hyalus.run.common.find_tests_by_tag</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#set" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>] – Set of Paths to tests matching given tags</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#set" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">set</span></code></a>[<a class="reference internal" href="hyalus.run.common.html#hyalus.run.common.HyalusTest" title="hyalus.run.common.HyalusTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">HyalusTest</span></code></a>] – Set of Paths to tests matching given tags</p>
 </dd>
 </dl>
 </dd></dl>
@@ -149,7 +148,7 @@ must have any of the given tags</p></li>
 <dd><p>Based on inputs, find the relevant tests to run</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>] – List of uniquified Paths to the tests to run</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#list" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></a>[<a class="reference internal" href="hyalus.run.common.html#hyalus.run.common.HyalusTest" title="hyalus.run.common.HyalusTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">HyalusTest</span></code></a>] – List of uniquified Paths to the tests to run</p>
 </dd>
 </dl>
 </dd></dl>
@@ -168,10 +167,10 @@ must have any of the given tags</p></li>
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner.run_test">
 <span class="sig-name descname"><span class="pre">run_test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner.run_test" title="Permalink to this definition"></a></dt>
-<dd><p>Run a single test. The test Path is expected to be an absolute Path to the test</p>
+<dd><p>Run a single test. The test path is expected to be an absolute path to the test</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
-<dd class="field-odd"><p><strong>test</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – The absolute Path to the test to run</p>
+<dd class="field-odd"><p><strong>test</strong> (<a class="reference internal" href="hyalus.run.common.html#hyalus.run.common.HyalusTest" title="hyalus.run.common.HyalusTest"><code class="xref py py-class docutils literal notranslate"><span class="pre">HyalusTest</span></code></a>) – The absolute Path to the test to run</p>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – The result from running the test</p>

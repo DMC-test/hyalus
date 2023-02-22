@@ -15,5 +15,6 @@ Submodules
    hyalus.parse.base
    hyalus.parse.csv
    hyalus.parse.factory
+   hyalus.parse.h5
    hyalus.parse.json
    hyalus.parse.tsv

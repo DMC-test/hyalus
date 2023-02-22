@@ -1,0 +1,7 @@
+tests.parse.test\_h5 module
+===========================
+
+.. automodule:: tests.parse.test_h5
+   :members:
+   :undoc-members:
+   :show-inheritance:

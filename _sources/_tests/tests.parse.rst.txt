@@ -15,5 +15,6 @@ Submodules
    tests.parse.test_base
    tests.parse.test_csv
    tests.parse.test_factory
+   tests.parse.test_h5
    tests.parse.test_json
    tests.parse.test_tsv

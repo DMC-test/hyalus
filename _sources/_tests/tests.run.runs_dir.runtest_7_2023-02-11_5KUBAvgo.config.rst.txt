@@ -1,0 +1,7 @@
+tests.run.runs\_dir.runtest\_7\_2023\-02\-11\_5KUBAvgo.config module
+====================================================================
+
+.. automodule:: tests.run.runs_dir.runtest_7_2023-02-11_5KUBAvgo.config
+   :members:
+   :undoc-members:
+   :show-inheritance:

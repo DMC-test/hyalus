@@ -12,6 +12,7 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
+   tests.run.test_clean
    tests.run.test_common
    tests.run.test_list
    tests.run.test_python
