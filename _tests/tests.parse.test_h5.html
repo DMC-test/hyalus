@@ -96,8 +96,120 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="tests-parse-test-h5-module">
-<h1>tests.parse.test_h5 module<a class="headerlink" href="#tests-parse-test-h5-module" title="Permalink to this heading"></a></h1>
+  <section id="module-tests.parse.test_h5">
+<span id="tests-parse-test-h5-module"></span><h1>tests.parse.test_h5 module<a class="headerlink" href="#module-tests.parse.test_h5" title="Permalink to this heading"></a></h1>
+<p>Unit tests for the hyalus.parse.h5 module</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestDataset">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_h5.</span></span><span class="sig-name descname"><span class="pre">TestDataset</span></span><a class="headerlink" href="#tests.parse.test_h5.TestDataset" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the Dataset class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestDataset.test_eq_false_bad_type">
+<span class="sig-name descname"><span class="pre">test_eq_false_bad_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestDataset.test_eq_false_bad_type" title="Permalink to this definition"></a></dt>
+<dd><p>Test that values that are not Datasets are not treated as equal</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestDataset.test_eq_false_different_items">
+<span class="sig-name descname"><span class="pre">test_eq_false_different_items</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestDataset.test_eq_false_different_items" title="Permalink to this definition"></a></dt>
+<dd><p>Test Datasets that differ in values are handled correctly and not treated as equal</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestDataset.test_eq_false_different_shape">
+<span class="sig-name descname"><span class="pre">test_eq_false_different_shape</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestDataset.test_eq_false_different_shape" title="Permalink to this definition"></a></dt>
+<dd><p>Test Datasets that differ in shape are handled correctly and not treated as equal</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestDataset.test_eq_true">
+<span class="sig-name descname"><span class="pre">test_eq_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestDataset.test_eq_true" title="Permalink to this definition"></a></dt>
+<dd><p>Test Datasets that are identical are treated as equal</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestGroup">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_h5.</span></span><span class="sig-name descname"><span class="pre">TestGroup</span></span><a class="headerlink" href="#tests.parse.test_h5.TestGroup" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the Group class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestGroup.test_eq_false_bad_type">
+<span class="sig-name descname"><span class="pre">test_eq_false_bad_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestGroup.test_eq_false_bad_type" title="Permalink to this definition"></a></dt>
+<dd><p>Test inequality when giving something other than a Group</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestGroup.test_eq_false_different_datasets">
+<span class="sig-name descname"><span class="pre">test_eq_false_different_datasets</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestGroup.test_eq_false_different_datasets" title="Permalink to this definition"></a></dt>
+<dd><p>Test Group inequality when datasets are different</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestGroup.test_eq_false_different_groups">
+<span class="sig-name descname"><span class="pre">test_eq_false_different_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestGroup.test_eq_false_different_groups" title="Permalink to this definition"></a></dt>
+<dd><p>Test Group inequality when sub groups are different</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestGroup.test_eq_true_simple">
+<span class="sig-name descname"><span class="pre">test_eq_true_simple</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestGroup.test_eq_true_simple" title="Permalink to this definition"></a></dt>
+<dd><p>Test Group equality when no sub groups exist</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestGroup.test_eq_true_subgroups">
+<span class="sig-name descname"><span class="pre">test_eq_true_subgroups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">h5_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestGroup.test_eq_true_subgroups" title="Permalink to this definition"></a></dt>
+<dd><p>Test Group equality when sub groups do exist</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestH5Parser">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_h5.</span></span><span class="sig-name descname"><span class="pre">TestH5Parser</span></span><a class="headerlink" href="#tests.parse.test_h5.TestH5Parser" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the H5Parser class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestH5Parser.test_eq_false">
+<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestH5Parser.test_eq_false" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that two parsers with different file paths and different content are treated as unequal</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestH5Parser.test_eq_true_file_path">
+<span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestH5Parser.test_eq_true_file_path" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that two parsers with the same file path are treated as equal</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestH5Parser.test_eq_true_parse">
+<span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_h5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestH5Parser.test_eq_true_parse" title="Permalink to this definition"></a></dt>
+<dd><p>Assert that two parsers with different file paths but the same parsed content are treated as equal</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_h5.TestH5Parser.test_search">
+<span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.TestH5Parser.test_search" title="Permalink to this definition"></a></dt>
+<dd><p>Test searching through groups/datasets</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.parse.test_h5.fixture_h5_file">
+<span class="sig-prename descclassname"><span class="pre">tests.parse.test_h5.</span></span><span class="sig-name descname"><span class="pre">fixture_h5_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_h5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.fixture_h5_file" title="Permalink to this definition"></a></dt>
+<dd><p>Returns a read-only File created from tmp_h5</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.parse.test_h5.fixture_tmp_h5">
+<span class="sig-prename descclassname"><span class="pre">tests.parse.test_h5.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_h5</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_h5.fixture_tmp_h5" title="Permalink to this definition"></a></dt>
+<dd><p>Copies H5_1 file to a temp directory and returns path to the file</p>
+</dd></dl>
+
 </section>
 
 
