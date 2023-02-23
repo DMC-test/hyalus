@@ -1,7 +1,0 @@
-tests.run.test\_dir\_2.runtest\_4.config module
-===============================================
-
-.. automodule:: tests.run.test_dir_2.runtest_4.config
-   :members:
-   :undoc-members:
-   :show-inheritance:

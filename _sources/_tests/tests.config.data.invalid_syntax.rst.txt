@@ -1,7 +1,0 @@
-tests.config.data.invalid\_syntax module
-========================================
-
-.. automodule:: tests.config.data.invalid_syntax
-   :members:
-   :undoc-members:
-   :show-inheritance:

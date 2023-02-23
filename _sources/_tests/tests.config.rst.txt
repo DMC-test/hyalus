@@ -12,7 +12,6 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   tests.config.data
    tests.config.steps
 
 Submodules

@@ -1,7 +1,0 @@
-tests.config.data.missing\_fields module
-========================================
-
-.. automodule:: tests.config.data.missing_fields
-   :members:
-   :undoc-members:
-   :show-inheritance:
