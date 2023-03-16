@@ -197,6 +197,13 @@
 <span id="hyalus-run-template-module"></span><h1>hyalus.run.template module<a class="headerlink" href="#module-hyalus.run.template" title="Permalink to this heading">¶</a></h1>
 <p>Functionality for creating bare bones hyalus tests from a standard template</p>
 <dl class="py class">
+<dt class="sig sig-object py" id="hyalus.run.template.NoKeyErrors">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.template.</span></span><span class="sig-name descname"><span class="pre">NoKeyErrors</span></span><a class="headerlink" href="#hyalus.run.template.NoKeyErrors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#dict" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
+<p>Dict subclass that will just return the key instead of raising a KeyError when given a key not in the dict</p>
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="hyalus.run.template.HyalusTemplateRunner">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.template.</span></span><span class="sig-name descname"><span class="pre">HyalusTemplateRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">template</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">settings</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.template.HyalusTemplateRunner" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
@@ -236,13 +243,6 @@
 
 </dd></dl>
 
-<dl class="py class">
-<dt class="sig sig-object py" id="hyalus.run.template.NoKeyErrors">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.template.</span></span><span class="sig-name descname"><span class="pre">NoKeyErrors</span></span><a class="headerlink" href="#hyalus.run.template.NoKeyErrors" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#dict" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></a></p>
-<p>Dict subclass that will just return the key instead of raising a KeyError when given a key not in the dict</p>
-</dd></dl>
-
 </section>
 
 
@@ -259,7 +259,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

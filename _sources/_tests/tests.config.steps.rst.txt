@@ -12,6 +12,6 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
+   tests.config.steps.test_assertions
    tests.config.steps.test_base
    tests.config.steps.test_run
-   tests.config.steps.test_verify

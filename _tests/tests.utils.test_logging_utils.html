@@ -196,6 +196,106 @@
   <section id="module-tests.utils.test_logging_utils">
 <span id="tests-utils-test-logging-utils-module"></span><h1>tests.utils.test_logging_utils module<a class="headerlink" href="#module-tests.utils.test_logging_utils" title="Permalink to this heading">¶</a></h1>
 <p>Unit tests for the hyalus.utils.logging_utils module</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.fixture_tmp_log">
+<span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.fixture_tmp_log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write a log.txt file to temp directory and return its path</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.fixture_hyalus_log_record">
+<span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_hyalus_log_record</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.fixture_hyalus_log_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example log record for use in formatting testing</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogRecord">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestHyalusLogRecord</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the HyalusLogRecord class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogRecord.test_find_full_module">
+<span class="sig-name descname"><span class="pre">test_find_full_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hyalus_log_record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogRecord.test_find_full_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test determination of the full_module attribute and that it is determined at time of init</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogFormatter">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestHyalusLogFormatter</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogFormatter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the HyalusLogFormatter class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format">
+<span class="sig-name descname"><span class="pre">test_format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hyalus_log_record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert proper log formatting</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestConfigureLogging</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the configure_logging function. Runs in a separate interpreter session for each test.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.make_cmd">
+<span class="sig-name descname"><span class="pre">make_cmd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_stdout</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.make_cmd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a command to run based on given inputs</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_true">
+<span class="sig-name descname"><span class="pre">test_stdout_true_debug_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert when log_stdout=True and debug=True, info and debug messages are written to the log and stdout</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_false">
+<span class="sig-name descname"><span class="pre">test_stdout_true_debug_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert when log_stdout=True and debug=False, only info messages are written to the log and stdout</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_true">
+<span class="sig-name descname"><span class="pre">test_stdout_false_debug_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert when log_stdout=False and debug=True, info and debug messages are written to log but not stdout</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_false">
+<span class="sig-name descname"><span class="pre">test_stdout_false_debug_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert when log_stdout=False and debug=False, only info messages are written to log, and nothing to stdout</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_double_call">
+<span class="sig-name descname"><span class="pre">test_double_call</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_double_call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert that if configure_logging is called more than once, additional handlers are not added</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestFindHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestFindHandler</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestFindHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the find_handler utility function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestFindHandler.test_find_handler_match">
+<span class="sig-name descname"><span class="pre">test_find_handler_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestFindHandler.test_find_handler_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that a Handler matching the given name is returned as expected</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestFindHandler.test_find_handler_no_match">
+<span class="sig-name descname"><span class="pre">test_find_handler_no_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestFindHandler.test_find_handler_no_match" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that when there are no matching Handlers found, None is returned</p>
+</dd></dl>
+
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestAddRemoveFileHandler">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestAddRemoveFileHandler</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestAddRemoveFileHandler" title="Permalink to this definition">¶</a></dt>
@@ -221,106 +321,6 @@
 
 </dd></dl>
 
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestConfigureLogging</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Unit tests for the configure_logging function. Runs in a separate interpreter session for each test.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.make_cmd">
-<span class="sig-name descname"><span class="pre">make_cmd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_stdout</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.make_cmd" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a command to run based on given inputs</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_double_call">
-<span class="sig-name descname"><span class="pre">test_double_call</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_double_call" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert that if configure_logging is called more than once, additional handlers are not added</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_false">
-<span class="sig-name descname"><span class="pre">test_stdout_false_debug_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert when log_stdout=False and debug=False, only info messages are written to log, and nothing to stdout</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_true">
-<span class="sig-name descname"><span class="pre">test_stdout_false_debug_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_false_debug_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert when log_stdout=False and debug=True, info and debug messages are written to log but not stdout</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_false">
-<span class="sig-name descname"><span class="pre">test_stdout_true_debug_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert when log_stdout=True and debug=False, only info messages are written to the log and stdout</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_true">
-<span class="sig-name descname"><span class="pre">test_stdout_true_debug_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestConfigureLogging.test_stdout_true_debug_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert when log_stdout=True and debug=True, info and debug messages are written to the log and stdout</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestFindHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestFindHandler</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestFindHandler" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Tests for the find_handler utility function</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestFindHandler.test_find_handler_match">
-<span class="sig-name descname"><span class="pre">test_find_handler_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestFindHandler.test_find_handler_match" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that a Handler matching the given name is returned as expected</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestFindHandler.test_find_handler_no_match">
-<span class="sig-name descname"><span class="pre">test_find_handler_no_match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_log</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestFindHandler.test_find_handler_no_match" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that when there are no matching Handlers found, None is returned</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogFormatter">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestHyalusLogFormatter</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogFormatter" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Unit tests for the HyalusLogFormatter class</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format">
-<span class="sig-name descname"><span class="pre">test_format</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hyalus_log_record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogFormatter.test_format" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert proper log formatting</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogRecord">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">TestHyalusLogRecord</span></span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogRecord" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Unit tests for the HyalusLogRecord class</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.TestHyalusLogRecord.test_find_full_module">
-<span class="sig-name descname"><span class="pre">test_find_full_module</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hyalus_log_record</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.TestHyalusLogRecord.test_find_full_module" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test determination of the full_module attribute and that it is determined at time of init</p>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.fixture_hyalus_log_record">
-<span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_hyalus_log_record</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.fixture_hyalus_log_record" title="Permalink to this definition">¶</a></dt>
-<dd><p>Example log record for use in formatting testing</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.utils.test_logging_utils.fixture_tmp_log">
-<span class="sig-prename descclassname"><span class="pre">tests.utils.test_logging_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_logging_utils.fixture_tmp_log" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write a log.txt file to temp directory and return its path</p>
-</dd></dl>
-
 </section>
 
 
@@ -337,7 +337,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

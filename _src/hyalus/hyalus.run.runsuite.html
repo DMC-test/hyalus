@@ -196,6 +196,13 @@
   <section id="module-hyalus.run.runsuite">
 <span id="hyalus-run-runsuite-module"></span><h1>hyalus.run.runsuite module<a class="headerlink" href="#module-hyalus.run.runsuite" title="Permalink to this heading">¶</a></h1>
 <p>Collection and running of multiple hyalus tests</p>
+<dl class="py exception">
+<dt class="sig sig-object py" id="hyalus.run.runsuite.NoTestsFound">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runsuite.</span></span><span class="sig-name descname"><span class="pre">NoTestsFound</span></span><a class="headerlink" href="#hyalus.run.runsuite.NoTestsFound" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
+<p>To be raised when the combination of inputs does not correspond to any tests to run</p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="hyalus.run.runsuite.HyalusSuiteRunner">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runsuite.</span></span><span class="sig-name descname"><span class="pre">HyalusSuiteRunner</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to_run=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">runs_dir=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">search_dirs=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tags=None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag_op=&lt;built-in</span> <span class="pre">function</span> <span class="pre">all&gt;</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cleanup_on_pass=False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">debug=False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.runsuite.HyalusSuiteRunner" title="Permalink to this definition">¶</a></dt>
@@ -277,13 +284,6 @@ must have any of the given tags</p></li>
 
 </dd></dl>
 
-<dl class="py exception">
-<dt class="sig sig-object py" id="hyalus.run.runsuite.NoTestsFound">
-<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.run.runsuite.</span></span><span class="sig-name descname"><span class="pre">NoTestsFound</span></span><a class="headerlink" href="#hyalus.run.runsuite.NoTestsFound" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/exceptions.html#Exception" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></a></p>
-<p>To be raised when the combination of inputs does not correspond to any tests to run</p>
-</dd></dl>
-
 </section>
 
 
@@ -300,7 +300,7 @@ must have any of the given tags</p></li>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

@@ -202,6 +202,24 @@
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.NamedTuple" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">NamedTuple</span></code></a></p>
 <p>Class for defining required config attributes in a hyalus test config file</p>
 <p>Create new instance of ConfigAttr(name, description, type)</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigAttr.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><a class="headerlink" href="#hyalus.config.loader.ConfigAttr.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 0</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigAttr.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><a class="headerlink" href="#hyalus.config.loader.ConfigAttr.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 1</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigAttr.type">
+<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#hyalus.config.loader.ConfigAttr.type" title="hyalus.config.loader.ConfigAttr.type"><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code></a></em><a class="headerlink" href="#hyalus.config.loader.ConfigAttr.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for field number 2</p>
+</dd></dl>
+
 <dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.loader.ConfigAttr._asdict">
 <span class="sig-name descname"><span class="pre">_asdict</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigAttr._asdict" title="Permalink to this definition">¶</a></dt>
@@ -230,24 +248,6 @@
 <dd><p>Return a new ConfigAttr object replacing specified fields with new values</p>
 </dd></dl>
 
-<dl class="py attribute">
-<dt class="sig sig-object py" id="hyalus.config.loader.ConfigAttr.description">
-<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><a class="headerlink" href="#hyalus.config.loader.ConfigAttr.description" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 1</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="hyalus.config.loader.ConfigAttr.name">
-<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a></em><a class="headerlink" href="#hyalus.config.loader.ConfigAttr.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 0</p>
-</dd></dl>
-
-<dl class="py attribute">
-<dt class="sig sig-object py" id="hyalus.config.loader.ConfigAttr.type">
-<span class="sig-name descname"><span class="pre">type</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#hyalus.config.loader.ConfigAttr.type" title="hyalus.config.loader.ConfigAttr.type"><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code></a></em><a class="headerlink" href="#hyalus.config.loader.ConfigAttr.type" title="Permalink to this definition">¶</a></dt>
-<dd><p>Alias for field number 2</p>
-</dd></dl>
-
 </dd></dl>
 
 <dl class="py class">
@@ -262,26 +262,46 @@
 </dd>
 </dl>
 <dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the module from the given config path and lint it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/types.html#types.ModuleType" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModuleType</span></code></a> – The instantiated module object</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.load_module">
+<span class="sig-name descname"><span class="pre">load_module</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.load_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load the hyalus configuration file into a module object for use in running/linting</p>
+<p>NOTE: This function does not load the module into sys.modules - it cannot be imported with an import statement</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.lint">
+<span class="sig-name descname"><span class="pre">lint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.lint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Runs the different available lint checks</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader._field_check">
 <span class="sig-name descname"><span class="pre">_field_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader._field_check" title="Permalink to this definition">¶</a></dt>
 <dd><p>Asserts that all expected fields exist in the config file</p>
 <dl class="field-list simple">
 <dt class="field-odd">Raises<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference internal" href="hyalus.config.common.html#hyalus.config.common.InvalidHyalusConfig" title="hyalus.config.common.InvalidHyalusConfig"><strong>InvalidHyalusConfig</strong></a> – If any fields are missing</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader._tag_check">
-<span class="sig-name descname"><span class="pre">_tag_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader._tag_check" title="Permalink to this definition">¶</a></dt>
-<dd><p>Asserts that required types of tags are present</p>
-<dl class="field-list simple">
-<dt class="field-odd">Raises<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference internal" href="hyalus.config.common.html#hyalus.config.common.InvalidHyalusConfig" title="hyalus.config.common.InvalidHyalusConfig"><strong>InvalidHyalusConfig</strong></a> – If any required tags are missing</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
@@ -304,35 +324,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.lint">
-<span class="sig-name descname"><span class="pre">lint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.lint" title="Permalink to this definition">¶</a></dt>
-<dd><p>Runs the different available lint checks</p>
+<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader._tag_check">
+<span class="sig-name descname"><span class="pre">_tag_check</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader._tag_check" title="Permalink to this definition">¶</a></dt>
+<dd><p>Asserts that required types of tags are present</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="hyalus.config.common.html#hyalus.config.common.InvalidHyalusConfig" title="hyalus.config.common.InvalidHyalusConfig"><strong>InvalidHyalusConfig</strong></a> – If any required tags are missing</p>
 </dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.load_module">
-<span class="sig-name descname"><span class="pre">load_module</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.load_module" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load the hyalus configuration file into a module object for use in running/linting</p>
-<p>NOTE: This function does not load the module into sys.modules - it cannot be imported with an import statement</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="hyalus.config.loader.ConfigLoader.run">
-<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.config.loader.ConfigLoader.run" title="Permalink to this definition">¶</a></dt>
-<dd><p>Load the module from the given config path and lint it</p>
-<dl class="field-list simple">
-<dt class="field-odd">Returns<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/types.html#types.ModuleType" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">ModuleType</span></code></a> – The instantiated module object</p>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -355,7 +355,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

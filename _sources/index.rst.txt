@@ -1,6 +1,10 @@
 ######
-README
+Hyalus
 ######
+
+******
+README
+******
 
 .. toctree::
   :glob:
@@ -8,9 +12,9 @@ README
   readme
 
 
-########
+********
 api-docs
-########
+********
 
 .. toctree::
   :maxdepth: 4
@@ -20,9 +24,9 @@ api-docs
   _tests/modules.rst
 
 
-########
+********
 Releases
-########
+********
 
 .. toctree::
   :glob:

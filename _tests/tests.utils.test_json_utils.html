@@ -196,41 +196,16 @@
   <section id="module-tests.utils.test_json_utils">
 <span id="tests-utils-test-json-utils-module"></span><h1>tests.utils.test_json_utils module<a class="headerlink" href="#module-tests.utils.test_json_utils" title="Permalink to this heading">¶</a></h1>
 <p>Unit tests for the hyalus.utils.json module</p>
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_json_utils.</span></span><span class="sig-name descname"><span class="pre">TestJsonAppend</span></span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Unit tests for the json_append utility function</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_1">
-<span class="sig-name descname"><span class="pre">test_json_append_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_1" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test appending to an outer array</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.fixture_test_array">
+<span class="sig-prename descclassname"><span class="pre">tests.utils.test_json_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_test_array</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.fixture_test_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example array for testing json util functionality</p>
 </dd></dl>
 
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_2">
-<span class="sig-name descname"><span class="pre">test_json_append_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_2" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test appending to an inner array</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_index">
-<span class="sig-name descname"><span class="pre">test_json_append_invalid_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_index" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert an IndexError is raised when path_list contains an index that doesn’t exist</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_key">
-<span class="sig-name descname"><span class="pre">test_json_append_invalid_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_key" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert a KeyError is raised when path_list contains a key that doesn’t exist</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_not_array">
-<span class="sig-name descname"><span class="pre">test_json_append_not_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_not_array" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert a ValueError is raised when trying to append a value to something that is not an array</p>
-</dd></dl>
-
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.fixture_test_object">
+<span class="sig-prename descclassname"><span class="pre">tests.utils.test_json_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_test_object</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.fixture_test_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example object for testing json util functionality</p>
 </dd></dl>
 
 <dl class="py class">
@@ -251,9 +226,9 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_array_fail">
-<span class="sig-name descname"><span class="pre">test_json_get_array_empty_array_fail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_array_fail" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test getting value raises an IndexError when given an empty array as input with an index to process</p>
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_path_list">
+<span class="sig-name descname"><span class="pre">test_json_get_array_empty_path_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_path_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test getting value when given an empty path list returns obj itself</p>
 </dd></dl>
 
 <dl class="py method">
@@ -263,9 +238,9 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_path_list">
-<span class="sig-name descname"><span class="pre">test_json_get_array_empty_path_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_path_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test getting value when given an empty path list returns obj itself</p>
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_array_fail">
+<span class="sig-name descname"><span class="pre">test_json_get_array_empty_array_fail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_array_empty_array_fail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test getting value raises an IndexError when given an empty array as input with an index to process</p>
 </dd></dl>
 
 <dl class="py method">
@@ -287,9 +262,9 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_object_fail">
-<span class="sig-name descname"><span class="pre">test_json_get_object_empty_object_fail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_object_fail" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test getting value raises a KeyError when given an empty object as input with a key to process</p>
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_path_list">
+<span class="sig-name descname"><span class="pre">test_json_get_object_empty_path_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_path_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test getting value when given an empty path list returns obj itself</p>
 </dd></dl>
 
 <dl class="py method">
@@ -299,9 +274,9 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_path_list">
-<span class="sig-name descname"><span class="pre">test_json_get_object_empty_path_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_path_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test getting value when given an empty path list returns obj itself</p>
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_object_fail">
+<span class="sig-name descname"><span class="pre">test_json_get_object_empty_object_fail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonGet.test_json_get_object_empty_object_fail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test getting value raises a KeyError when given an empty object as input with a key to process</p>
 </dd></dl>
 
 <dl class="py method">
@@ -360,12 +335,6 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonSet.test_json_set_object_create_key_true">
-<span class="sig-name descname"><span class="pre">test_json_set_object_create_key_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonSet.test_json_set_object_create_key_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that when giving a key that does not exist and create_key is set to True, the object is updated</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonSet.test_json_set_object_empty_path_list">
 <span class="sig-name descname"><span class="pre">test_json_set_object_empty_path_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonSet.test_json_set_object_empty_path_list" title="Permalink to this definition">¶</a></dt>
 <dd><p>Test that attempting to set a value when giving an empty path list raises a ValueError</p>
@@ -377,18 +346,49 @@
 <dd><p>Test that attempting to set a value when giving a key that does not exist raises a KeyError</p>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonSet.test_json_set_object_create_key_true">
+<span class="sig-name descname"><span class="pre">test_json_set_object_create_key_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_object</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonSet.test_json_set_object_create_key_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that when giving a key that does not exist and create_key is set to True, the object is updated</p>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.fixture_test_array">
-<span class="sig-prename descclassname"><span class="pre">tests.utils.test_json_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_test_array</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.fixture_test_array" title="Permalink to this definition">¶</a></dt>
-<dd><p>Example array for testing json util functionality</p>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.utils.test_json_utils.fixture_test_object">
-<span class="sig-prename descclassname"><span class="pre">tests.utils.test_json_utils.</span></span><span class="sig-name descname"><span class="pre">fixture_test_object</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.fixture_test_object" title="Permalink to this definition">¶</a></dt>
-<dd><p>Example object for testing json util functionality</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_json_utils.</span></span><span class="sig-name descname"><span class="pre">TestJsonAppend</span></span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Unit tests for the json_append utility function</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_1">
+<span class="sig-name descname"><span class="pre">test_json_append_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test appending to an outer array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_2">
+<span class="sig-name descname"><span class="pre">test_json_append_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test appending to an inner array</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_index">
+<span class="sig-name descname"><span class="pre">test_json_append_invalid_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert an IndexError is raised when path_list contains an index that doesn’t exist</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_key">
+<span class="sig-name descname"><span class="pre">test_json_append_invalid_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_invalid_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert a KeyError is raised when path_list contains a key that doesn’t exist</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_json_utils.TestJsonAppend.test_json_append_not_array">
+<span class="sig-name descname"><span class="pre">test_json_append_not_array</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_json_utils.TestJsonAppend.test_json_append_not_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert a ValueError is raised when trying to append a value to something that is not an array</p>
+</dd></dl>
+
 </dd></dl>
 
 </section>
@@ -407,7 +407,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

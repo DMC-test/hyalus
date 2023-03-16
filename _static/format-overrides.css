@@ -3,6 +3,11 @@
     white-space: normal !important;
 }
 
+.wy-table-responsive {
+    overflow: visible !important;
+}
+
+/* Have words wrap correctly in tables */
 table {
     table-layout: fixed;
 }
@@ -11,10 +16,12 @@ td {
     word-wrap:break-word;
 }
 
-.wy-table-responsive {
-    overflow: visible !important;
-}
-
+/* Get rid of the right side bar for more content per line */
 .wy-nav-content {
     max-width: 80vw !important;
+}
+
+/* See https://github.com/readthedocs/sphinx_rtd_theme/issues/1301 - properties stack on the same line without this */
+dl.py.property {
+    display: block !important;
 }

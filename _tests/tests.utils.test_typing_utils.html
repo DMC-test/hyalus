@@ -197,14 +197,45 @@
 <span id="tests-utils-test-typing-utils-module"></span><h1>tests.utils.test_typing_utils module<a class="headerlink" href="#module-tests.utils.test_typing_utils" title="Permalink to this heading">¶</a></h1>
 <p>Unit tests for the hyalus.utils.typing_utils module</p>
 <dl class="py class">
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_typing_utils.</span></span><span class="sig-name descname"><span class="pre">TestTypeString</span></span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Tests for the type_string utility method</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_int">
+<span class="sig-name descname"><span class="pre">test_int</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_int" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that a string with an integer value is converted to an integer</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_float">
+<span class="sig-name descname"><span class="pre">test_float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_float" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that a string with an float value is converted to an float</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_bool">
+<span class="sig-name descname"><span class="pre">test_bool</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_bool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that a string with an bool value is converted to an bool</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_string">
+<span class="sig-name descname"><span class="pre">test_string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that something that cannot be cast as int/float/bool remains a string</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
 <dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_typing_utils.</span></span><span class="sig-name descname"><span class="pre">TestTypeCheck</span></span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the type_check utility method</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_dict_generics">
-<span class="sig-name descname"><span class="pre">test_dict_generics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_dict_generics" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that dict generics are properly type checked</p>
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_non_generic">
+<span class="sig-name descname"><span class="pre">test_non_generic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_non_generic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test proper handling of non-generic types</p>
 </dd></dl>
 
 <dl class="py method">
@@ -220,21 +251,9 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_non_generic">
-<span class="sig-name descname"><span class="pre">test_non_generic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_non_generic" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test proper handling of non-generic types</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_set_generics">
 <span class="sig-name descname"><span class="pre">test_set_generics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_set_generics" title="Permalink to this definition">¶</a></dt>
 <dd><p>Test that set generics are properly type checked</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_sub_generics">
-<span class="sig-name descname"><span class="pre">test_sub_generics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_sub_generics" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test handling of cases of elements of a generic being other generics</p>
 </dd></dl>
 
 <dl class="py method">
@@ -244,40 +263,21 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_dict_generics">
+<span class="sig-name descname"><span class="pre">test_dict_generics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_dict_generics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test that dict generics are properly type checked</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_unsupported_generic">
 <span class="sig-name descname"><span class="pre">test_unsupported_generic</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_unsupported_generic" title="Permalink to this definition">¶</a></dt>
 <dd><p>Test that a ValueError is raised if an unsupported generic is given as a type</p>
 </dd></dl>
 
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.utils.test_typing_utils.</span></span><span class="sig-name descname"><span class="pre">TestTypeString</span></span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
-<p>Tests for the type_string utility method</p>
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_bool">
-<span class="sig-name descname"><span class="pre">test_bool</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_bool" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that a string with an bool value is converted to an bool</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_float">
-<span class="sig-name descname"><span class="pre">test_float</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_float" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that a string with an float value is converted to an float</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_int">
-<span class="sig-name descname"><span class="pre">test_int</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_int" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that a string with an integer value is converted to an integer</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeString.test_string">
-<span class="sig-name descname"><span class="pre">test_string</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeString.test_string" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test that something that cannot be cast as int/float/bool remains a string</p>
+<dt class="sig sig-object py" id="tests.utils.test_typing_utils.TestTypeCheck.test_sub_generics">
+<span class="sig-name descname"><span class="pre">test_sub_generics</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.utils.test_typing_utils.TestTypeCheck.test_sub_generics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test handling of cases of elements of a generic being other generics</p>
 </dd></dl>
 
 </dd></dl>
@@ -298,7 +298,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

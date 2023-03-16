@@ -1,0 +1,7 @@
+tests.config.steps.test\_assertions module
+==========================================
+
+.. automodule:: tests.config.steps.test_assertions
+   :members:
+   :undoc-members:
+   :show-inheritance:

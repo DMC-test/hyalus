@@ -12,6 +12,6 @@ Submodules
 .. toctree::
    :maxdepth: 4
 
+   hyalus.config.steps.assertions
    hyalus.config.steps.base
    hyalus.config.steps.run
-   hyalus.config.steps.verify

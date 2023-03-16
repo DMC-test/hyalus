@@ -197,10 +197,10 @@
 <span id="hyalus-run-python-module"></span><h1>hyalus.run.python module<a class="headerlink" href="#module-hyalus.run.python" title="Permalink to this heading">¶</a></h1>
 <p>Functionality related to running hyalus Steps in the context of python functions and/or pytest</p>
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.run.python.applydecorator">
-<span class="sig-prename descclassname"><span class="pre">hyalus.run.python.</span></span><span class="sig-name descname"><span class="pre">applydecorator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decorator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.python.applydecorator" title="Permalink to this definition">¶</a></dt>
+<dt class="sig sig-object py" id="hyalus.run.python.apply_decorator">
+<span class="sig-prename descclassname"><span class="pre">hyalus.run.python.</span></span><span class="sig-name descname"><span class="pre">apply_decorator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decorator</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.run.python.apply_decorator" title="Permalink to this definition">¶</a></dt>
 <dd><p>Decorator that applies a given decorator to all defined methods of a class. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@applydecorator</span><span class="p">(</span><span class="nb">staticmethod</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@apply_decorator</span><span class="p">(</span><span class="nb">staticmethod</span><span class="p">)</span>
 <span class="k">class</span> <span class="nc">MyClass</span><span class="p">:</span>
 
     <span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;my_fixture&quot;</span><span class="p">)</span>
@@ -312,8 +312,9 @@ present either way when <code class="docutils literal notranslate"><span class="
 <p>Scope still applies and if <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> is not originally in the function’s signature, it may not be
 directly used by the code originally defined within the decorated function</p>
 </div>
-<p><a class="reference internal" href="#hyalus.run.python.run_steps" title="hyalus.run.python.run_steps"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_steps()</span></code></a> can also be used with the <a class="reference internal" href="#hyalus.run.python.applydecorator" title="hyalus.run.python.applydecorator"><code class="xref py py-func docutils literal notranslate"><span class="pre">applydecorator()</span></code></a> class decorator to apply the given Step
-execution prior to all defined tests under a test class.</p>
+<p><a class="reference internal" href="#hyalus.run.python.run_steps" title="hyalus.run.python.run_steps"><code class="xref py py-func docutils literal notranslate"><span class="pre">run_steps()</span></code></a> can also be used with the <a class="reference internal" href="#hyalus.run.python.apply_decorator" title="hyalus.run.python.apply_decorator"><code class="xref py py-func docutils literal notranslate"><span class="pre">apply_decorator()</span></code></a> class decorator to apply the given Step
+execution prior to all defined tests under a test class. When used in this fashion as well as with a constituent
+method of the class, the class-decoration-level steps are run prior to method-decoration-level steps.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -346,7 +347,7 @@ can handle.</p></li>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

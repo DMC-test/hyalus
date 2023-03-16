@@ -197,16 +197,17 @@
 <span id="hyalus-utils-logging-utils-module"></span><h1>hyalus.utils.logging_utils module<a class="headerlink" href="#module-hyalus.utils.logging_utils" title="Permalink to this heading">¶</a></h1>
 <p>Utilities related to logging</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusFileHandler">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusFileHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusFileHandler" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/logging.handlers.html#logging.FileHandler" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileHandler</span></code></a></p>
-<p>Custom FileHandler that uses the HyalusLogFormatter for formatting</p>
-<p>Ctor.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>log_file</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – The path to the log file for the handler</p>
-</dd>
-</dl>
+<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusLogRecord">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusLogRecord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sinfo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusLogRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.LogRecord" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">LogRecord</span></code></a></p>
+<p>A LogRecord that also stores the __name__ attribute of the module from which the logging call was made</p>
+<p>Initialize a logging record with interesting information.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusLogRecord.find_full_module">
+<span class="sig-name descname"><span class="pre">find_full_module</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusLogRecord.find_full_module" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the stack frame of the logging call to get the __name__ attribute from the module the call lives in.</p>
+</dd></dl>
+
 </dd></dl>
 
 <dl class="py class">
@@ -228,17 +229,16 @@ use one of %-formatting, <a class="reference external" href="https://docs.python
 </dd></dl>
 
 <dl class="py class">
-<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusLogRecord">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusLogRecord</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pathname</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lineno</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exc_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sinfo</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusLogRecord" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.LogRecord" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">LogRecord</span></code></a></p>
-<p>A LogRecord that also stores the __name__ attribute of the module from which the logging call was made</p>
-<p>Initialize a logging record with interesting information.</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusLogRecord.find_full_module">
-<span class="sig-name descname"><span class="pre">find_full_module</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusLogRecord.find_full_module" title="Permalink to this definition">¶</a></dt>
-<dd><p>Find the stack frame of the logging call to get the __name__ attribute from the module the call lives in.</p>
-</dd></dl>
-
+<dt class="sig sig-object py" id="hyalus.utils.logging_utils.HyalusFileHandler">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">HyalusFileHandler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.HyalusFileHandler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/logging.handlers.html#logging.FileHandler" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">FileHandler</span></code></a></p>
+<p>Custom FileHandler that uses the HyalusLogFormatter for formatting</p>
+<p>Ctor.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>log_file</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a>) – The path to the log file for the handler</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py class">
@@ -250,20 +250,6 @@ use one of %-formatting, <a class="reference external" href="https://docs.python
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>stream</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.TextIO" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">TextIO</span></code></a>) – The IO stream object to write to</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.utils.logging_utils.add_file_handler">
-<span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">add_file_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.add_file_handler" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given a log file path, create a handler and add it to the root logger</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>log_file</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The log file path</p>
-</dd>
-<dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -292,10 +278,30 @@ use one of %-formatting, <a class="reference external" href="https://docs.python
 <dd><p>Finds the first instance of a Handler with the given name. Returns None if one cannot be found.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The name of the Handler</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The name of the Handler</p></li>
+<li><p><strong>logger</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.Logger" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – The logger to inspect. If none given, the root logger is used.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.Handler" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Handler</span></code></a>] – The corresponding Handler, if any exist, or else None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.utils.logging_utils.add_file_handler">
+<span class="sig-prename descclassname"><span class="pre">hyalus.utils.logging_utils.</span></span><span class="sig-name descname"><span class="pre">add_file_handler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.logging_utils.add_file_handler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a log file path, create a handler and add it to the root logger</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_file</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The log file path</p></li>
+<li><p><strong>logger</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.Logger" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – The logger to update. If none given, the root logger is used.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -306,7 +312,10 @@ use one of %-formatting, <a class="reference external" href="https://docs.python
 <dd><p>Given a log file path, find the corresponding handler if it exists and remove it. If not found, return.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>log_file</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The log file path</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>log_file</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/pathlib.html#pathlib.Path" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The log file path</p></li>
+<li><p><strong>logger</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Optional" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code></a>[<a class="reference external" href="https://docs.python.org/3.10/library/logging.html#logging.Logger" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Logger</span></code></a>], default: <code class="docutils literal notranslate"><span class="pre">None</span></code>) – The logger to inspect. If none given, the root logger is used.</p></li>
+</ul>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
 <dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a></p>
@@ -330,7 +339,7 @@ use one of %-formatting, <a class="reference external" href="https://docs.python
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

@@ -49,7 +49,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="hyalus" href="_src/hyalus/modules.html" />
-    <link rel="prev" title="README" href="index.html" /> 
+    <link rel="prev" title="Hyalus" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -100,11 +100,78 @@
             
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">README</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#hyalus">Hyalus</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#making-changes">Making Changes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#reporting-issues">Reporting Issues</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example-use">Example Use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-changes">Making Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reporting-issues">Reporting Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hyalus-settings">Hyalus Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hyalus-tests">Hyalus Tests</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-tests">Creating Tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hyalus-steps">Hyalus Steps</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#running-tests">Running Tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#test-results">Test Results</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#test-logs">Test Logs</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pytest-integration">Pytest Integration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#fixtures">Fixtures</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#packaged-fixtures">Packaged Fixtures</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#custom-fixtures">Custom Fixtures</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#decorators">Decorators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#run-steps">run_steps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#apply-decorator">apply_decorator</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hyalus-cli">Hyalus CLI</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#settings">Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#help">Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#notes">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#template">Template</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id1">Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id2">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id3">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#list">List</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#runtest">Runtest</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id7">Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id8">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id9">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#runsuite">Runsuite</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id10">Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id11">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id12">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#clean">Clean</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id13">Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id15">Notes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#version">Version</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id16">Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id17">Examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id18">Notes</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -185,24 +252,782 @@
             
   <section id="readme">
 <h1>README<a class="headerlink" href="#readme" title="Permalink to this heading">¶</a></h1>
-<section id="hyalus">
-<h2>Hyalus<a class="headerlink" href="#hyalus" title="Permalink to this heading">¶</a></h2>
-<p>Internal testing tool for verification of functionality of GenapsysInc software</p>
+<p>Hyalus is a testing tool for software verification, designed as a standalone tool as well as a tool that integrates with <a class="reference external" href="https://docs.pytest.org/en/7.2.x/">pytest</a>.</p>
 <section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h3>
-<p>TODO</p>
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h2>
+<p>Hyalus is packaged as a python package, installable with <code class="docutils literal notranslate"><span class="pre">pip</span></code>. It is not currently hosted anywhere other than GitHub, so must be installed with <code class="docutils literal notranslate"><span class="pre">pip</span></code> by pointing to this repo.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;git+https://</span><span class="si">${</span><span class="nv">GITHUB_TOKEN</span><span class="si">}</span><span class="s2">@github.com/GenapsysInc/hyalus@main&quot;</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">${GITHUB_TOKEN}</span></code> is an environment variable corresponding to a <a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">GitHub PAT</a>.</p>
+<p>If a specific version is desired, <code class="docutils literal notranslate"><span class="pre">main</span></code> can be replaced with the version, e.g.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;git+https://</span><span class="si">${</span><span class="nv">GITHUB_TOKEN</span><span class="si">}</span><span class="s2">@github.com/GenapsysInc/hyalus@&lt;version&gt;&quot;</span>
+</pre></div>
+</div>
+<p>Hyalus can also be installed by cloning the <a class="reference external" href="https://github.com/GenapsysInc/hyalus">hyalus git repository</a> and running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">.</span></code> inside the repository. It can be installed in development mode by running <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-e</span> <span class="pre">.</span></code>. This will link <code class="docutils literal notranslate"><span class="pre">src/hyalus</span></code> to the python site-packages directory so that when edited locally, changes are automatically incorporated when changing hyalus functionality. Note that installing in development mode will <em>not</em> update the main entrypoint for hyalus, so to incorporate changes made to <code class="docutils literal notranslate"><span class="pre">src/bin/hyalus</span></code>, hyalus will have to be reinstalled.</p>
 </section>
 <section id="making-changes">
-<h3>Making Changes<a class="headerlink" href="#making-changes" title="Permalink to this heading">¶</a></h3>
-<p>TODO</p>
+<h2>Making Changes<a class="headerlink" href="#making-changes" title="Permalink to this heading">¶</a></h2>
+<p>Submit a pull request at <a class="reference external" href="https://github.com/GenapsysInc/hyalus">https://github.com/GenapsysInc/hyalus</a>. All changes to code are expected to have at least one corresponding test case added/changed to test the changes. All existing tests and new tests must be passing to merge into <code class="docutils literal notranslate"><span class="pre">main</span></code>. Code coverage must also be at or above 90%. Tests can be run locally by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">test</span></code> or <code class="docutils literal notranslate"><span class="pre">python3</span> <span class="pre">-m</span> <span class="pre">pytest</span> <span class="pre">--cov</span></code>. <code class="docutils literal notranslate"><span class="pre">pytest</span></code> and <code class="docutils literal notranslate"><span class="pre">pytest-cov</span></code> must be installed to run tests and gather coverage information. <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">test</span></code> will display both test results as well as code coverage from running the test suite, something like:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; make test
+python3 -m pytest --cov
+======================================================================== test session starts =========================================================================
+platform darwin -- Python 3.10.9, pytest-7.2.1, pluggy-1.0.0
+rootdir: /Users/david.mcconnell/Desktop/git/genapsys/hyalus
+plugins: cov-4.0.0
+collected 373 items
+
+tests/assertions/test_apply.py ....                                                    [  1%]
+tests/assertions/test_compare.py ..................................................    [ 14%]
+tests/config/test_loader.py ......                                                     [ 16%]
+...
+tests/utils/test_json_utils.py ...........................                             [ 93%]
+tests/utils/test_logging_utils.py ............                                         [ 96%]
+tests/utils/test_typing_utils.py ............                                          [100%]
+
+---------- coverage: platform darwin, python 3.10.9-final-0 ----------
+Name                                  Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------
+src/hyalus/__init__.py                    4      0   100%
+src/hyalus/assertions/__init__.py         0      0   100%
+src/hyalus/assertions/apply.py           16      0   100%
+...
+src/hyalus/utils/logging_utils.py        61      4    93%   73-75, 96
+src/hyalus/utils/pandas_utils.py         13      2    85%   11-12
+src/hyalus/utils/typing_utils.py         34      0   100%
+-------------------------------------------------------------------
+TOTAL                                  1450     29    98%
+
+Required test coverage of 90.0% reached. Total coverage: 98.00%
+</pre></div>
+</div>
+<p>Hyalus is a (largely) typed python package. All changes should have typing annotations added as applicable. Static type checking is performed using <a class="reference external" href="https://mypy-lang.org/">mypy</a> as part of the build. <code class="docutils literal notranslate"><span class="pre">mypy</span></code> can be run locally by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">mypy</span></code> or <code class="docutils literal notranslate"><span class="pre">mypy</span> <span class="pre">.</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; make mypy
+mypy .
+Success: no issues found in 68 source files
+</pre></div>
+</div>
+<p>Other static analysis is performed with <a class="reference external" href="https://pypi.org/project/pylint/">pylint</a>. <code class="docutils literal notranslate"><span class="pre">pylint</span></code> can be run locally by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">pylint</span></code> or <code class="docutils literal notranslate"><span class="pre">pylint</span> <span class="pre">--recursive=true</span> <span class="pre">.</span></code>.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; make pylint
+pylint --recursive=true .
+************* Module src.hyalus.parse.h5
+src/hyalus/parse/h5.py:18:1: W0511: TODO: When https://github.com/python/mypy/issues/12280 has been addressed, remove any type: ignore comments (fixme)
+src/hyalus/parse/h5.py:30:9: W0511: TODO: Probably a smarter, less memory intensive way to do this? (fixme)
+************* Module src.hyalus.parse.base
+src/hyalus/parse/base.py:25:1: W0511: TODO: When https://github.com/python/mypy/issues/12280 has been addressed, remove any type: ignore comments (fixme)
+
+------------------------------------------------------------------
+Your code has been rated at 9.99/10 (previous run: 9.99/10, +0.00)
+</pre></div>
+</div>
+<p>Documentation for hyalus code and corresponding tests can be found at <a class="reference external" href="https://genapsysinc.github.io/hyalus">https://genapsysinc.github.io/hyalus</a>. <a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx</a> and <a class="reference external" href="https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html">sphinx-apidoc</a> are used to render code documentation. Docstrings should be added to new modules, classes, methods, functions, etc. in valid <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/domains.html#signatures">Python Signatures format</a> where applicable. Documentation can be rendered locally by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">html</span></code>. The output from the doc build will be in <code class="docutils literal notranslate"><span class="pre">_builder/html</span></code>.</p>
+<p>The hyalus <em>package</em> versioning follows <a class="reference external" href="https://semver.org/">Semantic Versioning</a>, in the format <code class="docutils literal notranslate"><span class="pre">MAJOR.MINOR.PATCH</span></code>. The hyalus <em>repository</em> versioning includes a <code class="docutils literal notranslate"><span class="pre">-RELEASE</span></code> number appended onto the package version, where <code class="docutils literal notranslate"><span class="pre">RELEASE</span></code> corresponds to a change made to the repository that has no impact on functionality, such as changes to documentation. Changes made to hyalus should incur a change in version based on the nature of the change. The version is configured at <code class="docutils literal notranslate"><span class="pre">src/hyalus/metadata.json</span></code>. The hyalus repository itself will be tagged according to the configured version, with GitHub Actions automatically incrementing the version.</p>
 </section>
 <section id="reporting-issues">
-<h3>Reporting Issues<a class="headerlink" href="#reporting-issues" title="Permalink to this heading">¶</a></h3>
-<p>TODO</p>
+<h2>Reporting Issues<a class="headerlink" href="#reporting-issues" title="Permalink to this heading">¶</a></h2>
+<p>Create a issue at <a class="reference external" href="https://github.com/GenapsysInc/hyalus/issues">https://github.com/GenapsysInc/hyalus/issues</a>. Describe what the problem is, including expected behavior, observed behavior, and any information to reproduce the issue, such as <code class="docutils literal notranslate"><span class="pre">hyalus</span></code> version, python version, and operating system. The issue template will have sections to fill out with this sort of information.</p>
 </section>
-<section id="example-use">
-<h3>Example Use<a class="headerlink" href="#example-use" title="Permalink to this heading">¶</a></h3>
-<p>TODO</p>
+<section id="hyalus-settings">
+<h2>Hyalus Settings<a class="headerlink" href="#hyalus-settings" title="Permalink to this heading">¶</a></h2>
+<p>Hyalus uses settings to configure how the application is run. These settings are stored by user based on the returned value from <code class="docutils literal notranslate"><span class="pre">getpass.getuser()</span></code>. Settings can be printed, updated, and/or reset using the <code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">settings</span></code> command. Descriptions for each setting can also be reported using this command, with the <code class="docutils literal notranslate"><span class="pre">-d/--descriptions</span></code> flag, e.g.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus settings -d
+debug (allowable values - bool, default False): Debug mode for hyalus - turns on debug logging, test runs will always be kept. Overrides cleanup_on_pass
+stdout (allowable values - bool, default False): Log test run messages to stdout
+config_author (allowable values - str, default &#39;&#39;): Name of author field for the template command. Also used for the credits field
+template_output_dir (allowable values - str, default &#39;.&#39;): Path to the output directory when running the template command. Note if given a relative path, it will be relative to where hyalus is run from
+runs_dir (allowable values - str, default &#39;.&#39;): Directory to output test runs to. Note if given a relative path, it will be relative to where hyalus is run from
+search_dirs (allowable values - list[str], default [&#39;.&#39;]): Comma-delimited list of directories to search for hyalus tests in. Note if given a relative path, it will be relative to where hyalus is run from
+cleanup_on_pass (allowable values - bool, default False): Cleanup passing test runs
+tag_operator (allowable values - [&#39;all&#39;, &#39;any&#39;], default &#39;any&#39;): Operator to use when searching for tests matching given tags when using the runsuite command
+oldest_test_run (allowable values - ^\d{4}-\d{2}-\d{2}|\d+$, default &#39;0001-01-01&#39;): Either the oldest date or the number of days from today for a test run to be kept when using hyalus clean
+newest_test_run (allowable values - ^\d{4}-\d{2}-\d{2}|\d+$, default &#39;9999-12-31&#39;): The newest date for a test run to be kept when using hyalus clean
+force_clean (allowable values - bool, default False): Flag to indicate that rest runs should be removed without confirmation when using hyalus clean
+</pre></div>
+</div>
+<p>The values for certain settings can be overridden at runtime by passing flags for commands, but the default values for those flags will be set based on values in the user settings file itself. Hyalus will type/value check settings at runtime and will exit if any setting is found to have an invalid value based on the constraints for each setting. This is to prevent manually updating the settings files to something not allowed.</p>
+</section>
+<section id="hyalus-tests">
+<h2>Hyalus Tests<a class="headerlink" href="#hyalus-tests" title="Permalink to this heading">¶</a></h2>
+<section id="creating-tests">
+<h3>Creating Tests<a class="headerlink" href="#creating-tests" title="Permalink to this heading">¶</a></h3>
+<p>Hyalus will consider any directory with a file called <code class="docutils literal notranslate"><span class="pre">config.py</span></code> in it to be a “test”. The <code class="docutils literal notranslate"><span class="pre">config.py</span></code> tells hyalus what it should do to run the test, and defines fields intended for people looking at the test to understand what the test accomplishes, and why. Any other files that will be used in the test should be placed in a subdirectory called <code class="docutils literal notranslate"><span class="pre">input</span></code>. Hyalus <em>requires</em> the following fields in the <code class="docutils literal notranslate"><span class="pre">config.py</span></code> before it will run a test:</p>
+<p><code class="docutils literal notranslate"><span class="pre">AUTHOR</span> <span class="pre">(str)</span></code> - Who wrote the test?</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREDITS</span> <span class="pre">(list[str])</span></code> - Who contributed to the creation of the test?</p>
+<p><code class="docutils literal notranslate"><span class="pre">CREATED_ON</span> <span class="pre">(str)</span></code> - The date on which the test was created.</p>
+<p><code class="docutils literal notranslate"><span class="pre">TEST_DESCRIPTION</span> <span class="pre">(str)</span></code> - A description of the test. Information should include what the test is accomplishing, why, links to any relevant issues (GitHub, Jira, etc.), and any other pertinent information.</p>
+<p><code class="docutils literal notranslate"><span class="pre">INPUT_DATA</span> <span class="pre">(str)</span></code> - If the test has a set of input files being used, this section should include information on where the files came from, any modifications, and any relevant information about what is special about the data set. If no input files are being used, set to “N/A”.</p>
+<p><code class="docutils literal notranslate"><span class="pre">STEPS</span> <span class="pre">(list[StepBase])</span></code> - The list of hyalus steps to be run. Steps are classes that define required inputs and run some sort of functionality. Examples are running a software pipeline, or making an assertion that a result is as expected. Steps that hyalus directly supports can be found <a class="reference external" href="https://genapsysinc.github.io/hyalus/_src/hyalus/hyalus.config.steps.html">here</a>. Test engineers can create their own Steps by subclassing the <a class="reference external" href="https://genapsysinc.github.io/hyalus/_src/hyalus/hyalus.config.steps.base.html#hyalus.config.steps.base.StepBase">StepBase class</a>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">TAGS</span> <span class="pre">(list[TagBase])</span></code> - A list of Tags for the test. Each Tag defines some sort of metadata for the test, such as expected runtime or the type of test (unit, integration, end-to-end, regression, etc.). The list of Tags <em>must</em> include a <a class="reference external" href="https://genapsysinc.github.io/hyalus/_src/hyalus/hyalus.config.tags.runtime.html">RuntimeTag</a> at the very least in order to be considered valid.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">config.py</span></code> can import anything available by the Python interpreter that was used to install hyalus. Hyalus is intentionally developed with very minimal use of third-party packages so that it can be installed in any Python 3.10/3.11 environment and directly integrated with the software undergoing test with minimal possibility for dependency conflicts. This means that in a <code class="docutils literal notranslate"><span class="pre">config.py</span></code> file, you can directly import a class/function/etc. undergoing test and use it in whatever way you want. The only third-party package explicitly required is <a class="reference external" href="https://pypi.org/project/typing-extensions/">typing-extensions</a>, which has no third-party dependencies, for typing compatibility between Python versions. Some functionality is dependent on <a class="reference external" href="https://www.h5py.org/">h5py</a> and <a class="reference external" href="https://pandas.pydata.org/">pandas</a>, with the expectation being that if HDF5 files or dataframes are wanted to be used, the respective packages are to be installed. Hyalus conditionally includes the relevant functionality based on whether it is able to import the given package.</p>
+<section id="hyalus-steps">
+<h4>Hyalus Steps<a class="headerlink" href="#hyalus-steps" title="Permalink to this heading">¶</a></h4>
+<p>Since Steps are the core functionality of how hyalus runs, understanding how they work and how they are defined is essentially required for using hyalus. This section will go over the basic Steps that hyalus explicitly supports and how to define new Steps.</p>
+<section id="using-steps">
+<h5>Using Steps<a class="headerlink" href="#using-steps" title="Permalink to this heading">¶</a></h5>
+<p>As noted above, the Steps for a given hyalus test are defined with the <code class="docutils literal notranslate"><span class="pre">STEPS</span></code> field. It might look something like:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+
+<span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">RunFunctionStep</span><span class="p">,</span> <span class="n">AssertEQ</span>
+
+<span class="k">def</span> <span class="nf">custom_func</span><span class="p">(</span><span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">,</span> <span class="n">kwarg1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">kwarg2</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">arg1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">arg2</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;file.json&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">fh</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;values&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;kwarg_sum&quot;</span><span class="p">:</span> <span class="n">kwarg_1</span> <span class="o">+</span> <span class="n">kwarg2</span><span class="p">}]})</span>
+
+<span class="n">STEPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">RunFunctionStep</span><span class="p">(</span><span class="n">custom_func</span><span class="p">,</span> <span class="s2">&quot;arg1&quot;</span><span class="p">,</span> <span class="s2">&quot;arg2&quot;</span><span class="p">,</span> <span class="n">kwarg1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">kwarg2</span><span class="o">=</span><span class="mi">2</span><span class="p">),</span>
+    <span class="n">AssertEQ</span><span class="p">(</span><span class="s2">&quot;file.json&quot;</span><span class="p">,</span> <span class="p">{</span><span class="s2">&quot;values&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="s2">&quot;kwarg_sum&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}]}),</span>
+    <span class="n">AssertEQ</span><span class="p">((</span><span class="s2">&quot;file.json&quot;</span><span class="p">,</span> <span class="s2">&quot;values&quot;</span><span class="p">),</span> <span class="p">[{</span><span class="s2">&quot;kwarg_sum&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">}]),</span>
+    <span class="n">AssertEQ</span><span class="p">((</span><span class="s2">&quot;file.json&quot;</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;values&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;kwarg_sum&quot;</span><span class="p">]),</span> <span class="mi">3</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>There are a few things going on here:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>* The first Step, `RunFunctionStep`, is executing the `custom_func` function and passing given arguments to the function at runtime. This function makes some assertions and then writes some things to a file called `file.json`.
+* The second Step, `AssertEQ`, is asserting that the contents of `file.json` are equal to `{&quot;values&quot;: [{&quot;kwarg_sum&quot;: 3}]}`. Any AssertionStep will automatically parse any file given as input into a corresponding data structure. In this case, it is parsing a JSON file into a dictionary as was written in `custom_func`.
+* The third Step, `AssertEQ` is asserting that the value for `&quot;values&quot;` within `file.json` is equal to `[{&quot;kwarg_sum&quot;: 3}]`. If a length-2 tuple is given as a value to an AssertionStep, hyalus will try to parse the first element of the tuple if it is a file, and then use the second element to &quot;search&quot; the file. In the case of a JSON file, the second element is used to index into the parsed JSON content.
+* The last Step, `AssertEQ` is asserting that the value for `&quot;values&quot;` -&gt; `0` -&gt; `&quot;kwarg_sum&quot;` within `file.json` is equal to `3`. In the case of the second element of a tuple within an assertion being a list, hyalus will use each element to progressively search a parsed file. So in this case we have (under the hood) `json_content[&quot;values&quot;][0][&quot;kwarg_sum&quot;] == 3` as the assertion being made.
+</pre></div>
+</div>
+<p>To note is that contents of multiple files can be compared to each other by giving multiple tuples. This lets you make an assertion like “assert the value at position x in file 1 == the value at position y in file 2”. If hyalus cannot find a file to parse when a filepath is given, it will treat the value as a string literal instead.</p>
+</section>
+<section id="pre-defined-steps">
+<h5>Pre-defined Steps<a class="headerlink" href="#pre-defined-steps" title="Permalink to this heading">¶</a></h5>
+<p><a class="reference external" href="https://genapsysinc.github.io/hyalus/_src/hyalus/hyalus.config.steps.run.html#hyalus.config.steps.run.SubprocessStep">SubprocessStep</a> - This step will run a subprocess command with any given kwargs applied to the subprocess call.</p>
+<blockquote>
+<div><p><strong><em>NOTE:</em></strong> <code class="docutils literal notranslate"><span class="pre">capture_output</span></code> will always be set to <code class="docutils literal notranslate"><span class="pre">True</span></code> and <code class="docutils literal notranslate"><span class="pre">check</span></code> will always be set to <code class="docutils literal notranslate"><span class="pre">False</span></code> when running a subprocess - these cannot be overridden.</p>
+</div></blockquote>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">SubprocessStep</span>
+
+<span class="n">STEPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Run &quot;my_app&quot; with given flags, redirecting stdout to some_file.txt&quot;</span>
+    <span class="n">SubprocessStep</span><span class="p">([</span><span class="s2">&quot;my_app&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag1&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag2&quot;</span><span class="p">],</span> <span class="n">stdout</span><span class="o">=</span><span class="s2">&quot;some_file.txt&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://genapsysinc.github.io/hyalus/_src/hyalus/hyalus.config.steps.run.html#hyalus.config.steps.run.RunFunctionStep">RunFunctionStep</a> - This step will run a given function with given args/kwargs</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">RunFunctionStep</span>
+
+<span class="k">def</span> <span class="nf">write_to_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">to_write</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_fh</span><span class="p">:</span>
+        <span class="n">out_fh</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">to_write</span><span class="p">)</span>
+
+<span class="n">STEPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Runs write_to_file with file_name=&quot;output_file.txt&quot; and to_write=&quot;some content\n&quot;</span>
+    <span class="n">RunFunctionStep</span><span class="p">(</span><span class="n">write_to_file</span><span class="p">,</span> <span class="s2">&quot;output_file.txt&quot;</span><span class="p">,</span> <span class="n">to_write</span><span class="o">=</span><span class="s2">&quot;some content</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p><a class="reference external" href="https://genapsysinc.github.io/hyalus/_src/hyalus/hyalus.config.steps.assertions.html#hyalus.config.steps.assertions.AssertionStep">AssertionSteps</a> - Multiple subclasses of this Step exist, which all perform some sort of assertion. Specific assertions are defined within the <code class="docutils literal notranslate"><span class="pre">hyalus.config.steps.assertions</span></code> module.</p>
+<p>Available Assertions:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>AssertEQ - Assert that all given arguments are equal to each other
+AssertNE - Assert that none of the given arguments are equal to each other
+AssertGT - Assert that given arguments are given in a strictly descending order
+AssertGE - Assert that given arguments are given in a non-increasing order
+AssertLT - Assert that given arguments are given in a strictly ascending order
+AssertLE - Assert that given arguments are given in a non-decreasing order
+AssertIn - Assert the first argument is in the second argument
+AssertNotIn - Assert the first argument is not in the second argument
+AssertContains - Assert the first argument contains the second argument
+AssertDoesNotContain - Assert the first argument does not contain the second argument
+AssertKeysContain - Assert the first argument&#39;s keys (dict) contain the second argument
+AssertValuesContain - Assert the first argument&#39;s values (dict) contain the second argument
+AssertItemsContain - Assert the first argument&#39;s items (dict) contain the second argument
+AssertDataFrameContains - Assert the first argument (DataFrame) contains a record/row matching a list of column/value pairs
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">RunFunctionStep</span><span class="p">,</span> <span class="n">AssertEQ</span>
+
+<span class="k">def</span> <span class="nf">write_to_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">to_write</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_fh</span><span class="p">:</span>
+        <span class="n">out_fh</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">to_write</span><span class="p">)</span>
+
+<span class="n">STEPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="c1"># Runs write_to_file with file_name=&quot;output_file.txt&quot; and to_write=&quot;some content\n&quot;</span>
+    <span class="n">RunFunctionStep</span><span class="p">(</span><span class="n">write_to_file</span><span class="p">,</span> <span class="s2">&quot;output_file.txt&quot;</span><span class="p">,</span> <span class="n">to_write</span><span class="o">=</span><span class="s2">&quot;some content</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">),</span>
+    <span class="c1"># Assert that the contents of &quot;output_file.txt&quot; are &quot;some content\n&quot;</span>
+    <span class="n">AssertEQ</span><span class="p">(</span><span class="s2">&quot;output_file.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;some content</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="running-tests">
+<h3>Running Tests<a class="headerlink" href="#running-tests" title="Permalink to this heading">¶</a></h3>
+<p>Hyalus runs a test by loading the <code class="docutils literal notranslate"><span class="pre">config.py</span></code> and inspecting the <code class="docutils literal notranslate"><span class="pre">STEPS</span></code> field. Each element of the list of <code class="docutils literal notranslate"><span class="pre">STEPS</span></code> will be executed sequentially. If any Step fails or errors, hyalus will stop execution of subsequent Steps. Certain Steps (such as <code class="docutils literal notranslate"><span class="pre">AssertionSteps</span></code>) will <em>not</em> cause hyalus to stop on failure, but will still cause hyalus to stop on error. This functionality is defined by the <code class="docutils literal notranslate"><span class="pre">halt_on_failure</span></code> property of each Step class. Hyalus will keep track of each Step and whether or not it was successful, writing information to a log file specific to each Step. At the end, based on whether all Steps executed successfully and passed, or if any Step failed or had an error, hyalus will output an overall test result.</p>
+<p>Hyalus tests can be run using two commands via the CLI, <code class="docutils literal notranslate"><span class="pre">runtest</span></code> and <code class="docutils literal notranslate"><span class="pre">runsuite</span></code>, which run a single test or a suite of tests, respectively. Both commands take test name(s) or direct path(s) to the test to run. If giving test name(s), hyalus will search directories set in the <code class="docutils literal notranslate"><span class="pre">search_dirs</span></code> hyalus setting to find the test(s) to run. The <code class="docutils literal notranslate"><span class="pre">list</span></code> command will also search this directory to find tests. <code class="docutils literal notranslate"><span class="pre">runsuite</span></code> can also take a “test suite” file, with extension <code class="docutils literal notranslate"><span class="pre">.ste</span></code>. This file should contain a newline-delimited list of test names or other test suites. By parsing a test suite file, hyalus will figure out all the relevant tests to run. Test suites can be created for purposes such as regression tests, smoke tests, release testing, etc. <code class="docutils literal notranslate"><span class="pre">runsuite</span></code> is able to take test names/suites as input from stdin as well, allowing a combination of <code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">list</span></code> and <code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">runsuite</span></code> to be used to find relevant tests, and then run them all.</p>
+<p>Examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Runs test_001 if it can be found in the current working directory or any directory in the `search_dirs` setting</span>
+<span class="o">&gt;</span> <span class="n">hyalus</span> <span class="n">runtest</span> <span class="n">test_001</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Will run test_001 by following the given path</span>
+<span class="o">&gt;</span> <span class="n">hyalus</span> <span class="n">runtest</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">test_001</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Runs test_001, test_002, and test_003 if they can all be found</span>
+<span class="o">&gt;</span> <span class="n">hyalus</span> <span class="n">runsuite</span> <span class="n">test_001</span> <span class="n">test_002</span> <span class="n">test_003</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Runs all tests in the regression and smoke test suites, as well as test_001</span>
+<span class="o">&gt;</span> <span class="n">hyalus</span> <span class="n">runsuite</span> <span class="n">regression</span><span class="o">.</span><span class="n">ste</span> <span class="n">smoke</span><span class="o">.</span><span class="n">ste</span> <span class="n">test_001</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Runs all tests found by hyalus list</span>
+<span class="o">&gt;</span> <span class="n">hyalus</span> <span class="nb">list</span> <span class="o">|</span> <span class="n">hyalus</span> <span class="n">runsuite</span>
+</pre></div>
+</div>
+<section id="test-results">
+<h4>Test Results<a class="headerlink" href="#test-results" title="Permalink to this heading">¶</a></h4>
+<p>When running <code class="docutils literal notranslate"><span class="pre">runtest</span></code> or <code class="docutils literal notranslate"><span class="pre">runsuite</span></code>, hyalus will create a run directory for the output of each test that was run. The name of the directory is created using the name of the test, the date the test run was started, and a random alphanumeric string. Hyalus will create <code class="docutils literal notranslate"><span class="pre">output</span></code>, <code class="docutils literal notranslate"><span class="pre">tmp</span></code>, and <code class="docutils literal notranslate"><span class="pre">hyalus</span></code> subdirectories within each run directory. When configuring tests, a test engineer can assume that at runtime these directories will exist, and should attempt to write output files to <code class="docutils literal notranslate"><span class="pre">output</span></code> and temporary files to <code class="docutils literal notranslate"><span class="pre">tmp</span></code>. the <code class="docutils literal notranslate"><span class="pre">hyalus</span></code> subdirectory is used for information about the hyalus run itself. It will contain test logs for each Step that was run, as well as a test log for the overall test run.</p>
+<section id="runtest-results">
+<h5>Runtest Results<a class="headerlink" href="#runtest-results" title="Permalink to this heading">¶</a></h5>
+<p>The result of running a given hyalus test will be output to the console as <code class="docutils literal notranslate"><span class="pre">SUCCESS</span></code>, <code class="docutils literal notranslate"><span class="pre">FAILURE</span></code>, or <code class="docutils literal notranslate"><span class="pre">ERROR</span></code>, depending on the results of the constituent Steps for a given test. <code class="docutils literal notranslate"><span class="pre">SUCCESS</span></code> means that all Steps executed successfully, and any assertions made were found to be true. <code class="docutils literal notranslate"><span class="pre">FAILURE</span></code> means that all Steps executed successfully, but at least one assertion made was found to be false. <code class="docutils literal notranslate"><span class="pre">ERROR</span></code> means that hyalus could not successfully execute all of the given Steps because an error occurred. Hyalus will also exit with an exit code of 0 when the test result was <code class="docutils literal notranslate"><span class="pre">SUCCESS</span></code>, and with an exit code of 1 when the test result was <code class="docutils literal notranslate"><span class="pre">FAILURE</span></code> or <code class="docutils literal notranslate"><span class="pre">ERROR</span></code>.</p>
+</section>
+<section id="runsuite-results">
+<h5>Runsuite Results<a class="headerlink" href="#runsuite-results" title="Permalink to this heading">¶</a></h5>
+<p>The result of each individual hyalus test run will be output to the console, as <code class="docutils literal notranslate"><span class="pre">SUCCESS</span></code>, <code class="docutils literal notranslate"><span class="pre">FAILURE</span></code>, or <code class="docutils literal notranslate"><span class="pre">ERROR</span></code>, just like with <code class="docutils literal notranslate"><span class="pre">runtest</span></code>. However, the exit code of <code class="docutils literal notranslate"><span class="pre">runsuite</span></code> is 0 if <em>all</em> tests had a result of <code class="docutils literal notranslate"><span class="pre">SUCCESS</span></code>, and 1 if <em>any</em> test result was <code class="docutils literal notranslate"><span class="pre">FAILURE</span></code> or <code class="docutils literal notranslate"><span class="pre">ERROR</span></code>.</p>
+</section>
+</section>
+<section id="test-logs">
+<h4>Test Logs<a class="headerlink" href="#test-logs" title="Permalink to this heading">¶</a></h4>
+<p>Hyalus will write a log file for each Step run as part of a given test, as well as a log for the overall test run. The name for each Step’s log is created based on sequentially which Step it is in the list of <code class="docutils literal notranslate"><span class="pre">STEPS</span></code>, the name of the Step class, and a log file suffix <code class="docutils literal notranslate"><span class="pre">_log.txt</span></code>. Specifics for each Step will be in their respective Step log files, as well as the overall test run log. The overall test run log is called <code class="docutils literal notranslate"><span class="pre">hyalus.log</span></code>. During Step execution, any logging from called code will be written to the Step’s log as well as anywhere else it should go, such as an app-specific log.</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">RunFunctionStep</span><span class="p">,</span> <span class="n">AssertEQ</span>
+
+<span class="k">def</span> <span class="nf">write_to_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">to_write</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">out_fh</span><span class="p">:</span>
+        <span class="n">out_fh</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">to_write</span><span class="p">)</span>
+
+<span class="n">STEPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">RunFunctionStep</span><span class="p">(</span><span class="n">write_to_file</span><span class="p">,</span> <span class="s2">&quot;output/output_file.txt&quot;</span><span class="p">,</span> <span class="n">to_write</span><span class="o">=</span><span class="s2">&quot;some content</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">),</span>
+    <span class="n">RunFunctionStep</span><span class="p">(</span><span class="n">write_to_file</span><span class="p">,</span> <span class="s2">&quot;tmp/tmp_file.txt&quot;</span><span class="p">,</span> <span class="n">to_write</span><span class="o">=</span><span class="s2">&quot;I am a temp file</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">),</span>
+    <span class="n">AssertEQ</span><span class="p">(</span><span class="s2">&quot;output/output_file.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;some content</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">),</span>
+    <span class="n">AssertEQ</span><span class="p">(</span><span class="s2">&quot;tmp/tmp_file.txt&quot;</span><span class="p">,</span> <span class="s2">&quot;I am a temp file</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="c1"># Expected logs would be:</span>
+<span class="c1"># &gt; ls -1</span>
+<span class="c1"># 1_RunFunctionStep_log.txt</span>
+<span class="c1"># 2_RunFunctionStep_log.txt</span>
+<span class="c1"># 3_AssertEQ_log.txt</span>
+<span class="c1"># 4_AssertEQ_log.txt</span>
+<span class="c1"># hyalus.log</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="pytest-integration">
+<h2>Pytest Integration<a class="headerlink" href="#pytest-integration" title="Permalink to this heading">¶</a></h2>
+<p>In addition to acting as a standalone tool, hyalus is also packaged with some functionality that supports integration with <a class="reference external" href="https://docs.pytest.org/en/7.2.x/">pytest</a>. All of this functionality lives in the <code class="docutils literal notranslate"><span class="pre">hyalus.run.python</span></code> module. Hyalus Steps can be run prior to running test cases through pytest’s built-in fixture system, as well as with some custom decorators that are shipped with hyalus. Hyalus also comes with the <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> fixture that, when requested, will create a hyalus run directory from pytest’s <code class="docutils literal notranslate"><span class="pre">tmp_path</span></code> fixture. The benefits to using hyalus functionality in this way are not substantial compared to just creating custom fixtures that run specific pieces of code, but does allow for custom Steps to be used in both a pytest setting as well as a standalone hyalus setting.</p>
+<section id="fixtures">
+<h3>Fixtures<a class="headerlink" href="#fixtures" title="Permalink to this heading">¶</a></h3>
+<section id="packaged-fixtures">
+<h4>Packaged Fixtures<a class="headerlink" href="#packaged-fixtures" title="Permalink to this heading">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">hyalus.run.python.fixture_run_dir</span></code> fixture (named <code class="docutils literal notranslate"><span class="pre">run_dir</span></code>) can be used by any test. It will create <code class="docutils literal notranslate"><span class="pre">input</span></code>, output<code class="docutils literal notranslate"><span class="pre">,</span> </code>tmp<code class="docutils literal notranslate"><span class="pre">,</span> <span class="pre">and</span> </code>hyalus<code class="docutils literal notranslate"><span class="pre">subdirectories</span> <span class="pre">in</span> <span class="pre">whatever</span> <span class="pre">directory</span> <span class="pre">is</span> <span class="pre">pointed</span> <span class="pre">to</span> <span class="pre">by</span> <span class="pre">the</span></code>tmp_path<code class="docutils literal notranslate"> <span class="pre">fixture,</span> <span class="pre">and</span> <span class="pre">return</span> <span class="pre">a</span> <span class="pre">[</span></code>HyalusRun<code class="docutils literal notranslate"><span class="pre">](https://genapsysinc.github.io/hyalus/_src/hyalus/hyalus.run.common.html#hyalus.run.common.HyalusRun)</span> <span class="pre">object.</span> <span class="pre">This</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">properties</span> <span class="pre">that</span> <span class="pre">can</span> <span class="pre">be</span> <span class="pre">used</span> <span class="pre">to</span> <span class="pre">access</span> <span class="pre">the</span> <span class="pre">relevant</span> <span class="pre">subdirectories,</span> <span class="pre">namely</span> </code>input_dir<code class="docutils literal notranslate"><span class="pre">,</span> </code>output_dir<code class="docutils literal notranslate"><span class="pre">,</span> </code>tmp_dir<code class="docutils literal notranslate"><span class="pre">,</span> <span class="pre">and</span> </code>hyalus_dir<code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">The</span> </code>run_dir` can then be used with hyalus Steps within the body of a test.</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">SubprocessStep</span>
+<span class="kn">from</span> <span class="nn">hyalus.run.python</span> <span class="kn">import</span> <span class="n">fixture_run_dir</span>
+
+<span class="k">def</span> <span class="nf">test_step_output</span><span class="p">(</span><span class="n">run_dir</span><span class="p">):</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="n">RunSubprocessStep</span><span class="p">([</span><span class="s2">&quot;my_app&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag1&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag2&quot;</span><span class="p">,</span> <span class="s2">&quot;-o&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">run_dir</span><span class="o">.</span><span class="n">output_dir</span><span class="p">)])</span>
+    <span class="n">step</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
+
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">run_dir</span><span class="o">.</span><span class="n">output_dir</span> <span class="o">/</span> <span class="s2">&quot;my_app_output.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="n">fh</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;expected_content&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="custom-fixtures">
+<h4>Custom Fixtures<a class="headerlink" href="#custom-fixtures" title="Permalink to this heading">¶</a></h4>
+<p>If the above didn’t seem that useful (couldn’t you just do a <code class="docutils literal notranslate"><span class="pre">subprocess.call</span></code>?), custom fixtures using <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> and Steps will start to give a little more flexibility. By abstracting the Step running into another fixture, this allows reuse of the Steps for multiple test cases.</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">SubprocessStep</span>
+<span class="kn">from</span> <span class="nn">hyalus.run.python</span> <span class="kn">import</span> <span class="n">fixture_run_dir</span>
+<span class="kn">import</span> <span class="nn">pytest</span>
+
+<span class="c1"># Scope the fixture to the module so we only run it once</span>
+<span class="nd">@pytest</span><span class="o">.</span><span class="n">fixture</span><span class="p">(</span><span class="n">scope</span><span class="o">=</span><span class="s2">&quot;module&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">my_app_step</span><span class="p">(</span><span class="n">run_dir</span><span class="p">):</span>
+    <span class="n">step</span> <span class="o">=</span> <span class="n">RunSubprocessStep</span><span class="p">([</span><span class="s2">&quot;my_app&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag1&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag2&quot;</span><span class="p">,</span> <span class="s2">&quot;-o&quot;</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">run_dir</span><span class="o">.</span><span class="n">output_dir</span><span class="p">)])</span>
+    <span class="k">return</span> <span class="n">step</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">)</span>
+
+
+<span class="c1"># Check that output content matches what was expected</span>
+<span class="k">def</span> <span class="nf">test_step_output</span><span class="p">(</span><span class="n">my_app_step</span><span class="p">,</span> <span class="n">run_dir</span><span class="p">):</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">run_dir</span><span class="o">.</span><span class="n">output_dir</span> <span class="o">/</span> <span class="s2">&quot;my_app_output.txt&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="n">fh</span><span class="o">.</span><span class="n">read</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;expected_content&quot;</span>
+
+
+<span class="c1"># Assert the app exited with an exit code of 0</span>
+<span class="k">def</span> <span class="nf">test_returncode</span><span class="p">(</span><span class="n">my_app_step</span><span class="p">):</span>
+    <span class="k">assert</span> <span class="n">run_my_app</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="decorators">
+<h3>Decorators<a class="headerlink" href="#decorators" title="Permalink to this heading">¶</a></h3>
+<p>Hyalus also comes with a few decorators intended to be similar to pytest fixtures but with a bit more flexibility. Fixtures cannot take input, but these decorators can, in the form of Steps.</p>
+<section id="run-steps">
+<h4>run_steps<a class="headerlink" href="#run-steps" title="Permalink to this heading">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">hyalus.run.python.run_steps</span></code> decorator takes n Steps as input, and will run them prior to function execution. The Steps can be reused by any number of tests. When using this decorator on a pytest test, the <code class="docutils literal notranslate"><span class="pre">run_dir</span></code> fixture is automatically requested and used by each Step. If the test does not explicitly request the fixture, it cannot be used, however.</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">SubprocessStep</span>
+<span class="kn">from</span> <span class="nn">hyalus.run.python</span> <span class="kn">import</span> <span class="n">run_steps</span>
+
+<span class="c1"># For the sake of example, say we have 3 apps. pre_process will exit with code 0 always. my_app will exit with code 0 if</span>
+<span class="c1"># the last command run was pre_process, otherwise with code 1. post_process will exit with code 0 if the last command</span>
+<span class="c1"># run was my_app, otherwise with code 1.</span>
+<span class="n">step_1</span> <span class="o">=</span> <span class="n">SubprocessStep</span><span class="p">([</span><span class="s2">&quot;pre_process&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag1&quot;</span><span class="p">])</span>
+<span class="n">step_2</span> <span class="o">=</span> <span class="n">SubprocessStep</span><span class="p">([</span><span class="s2">&quot;my_app&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag1&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag2&quot;</span><span class="p">])</span>
+<span class="n">step_3</span> <span class="o">=</span> <span class="n">SubprocessStep</span><span class="p">([</span><span class="s2">&quot;post_process&quot;</span><span class="p">,</span> <span class="s2">&quot;--flag1&quot;</span><span class="p">])</span>
+<span class="c1"># &quot;Flush&quot; the last call</span>
+<span class="n">step_4</span> <span class="o">=</span> <span class="n">SubprocessStep</span><span class="p">([</span><span class="s2">&quot;ls&quot;</span><span class="p">])</span>
+
+<span class="c1"># Steps are run at function call time, not definition time...</span>
+<span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_1</span><span class="p">,</span> <span class="n">step_2</span><span class="p">,</span> <span class="n">step_4</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_pre_process_and_app_call</span><span class="p">():</span>
+    <span class="c1"># ... so inside the body of the function, we can inspect the Steps and see how they were run</span>
+    <span class="k">assert</span> <span class="n">step_1</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">step_2</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span>
+
+
+<span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_1</span><span class="p">,</span> <span class="n">step_3</span><span class="p">,</span> <span class="n">step_4</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_pre_process_and_post_process</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">step_1</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">step_3</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">1</span>
+
+
+<span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_2</span><span class="p">,</span> <span class="n">step_3</span><span class="p">,</span> <span class="n">step_4</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_app_call_and_post_process</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">step_2</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="k">assert</span> <span class="n">step_3</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">1</span>
+
+
+<span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_1</span><span class="p">,</span> <span class="n">step_2</span><span class="p">,</span> <span class="n">step_3</span><span class="p">,</span> <span class="n">step_4</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">test_all_calls</span><span class="p">():</span>
+    <span class="k">assert</span> <span class="n">step_1</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">step_2</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span>
+    <span class="k">assert</span> <span class="n">step_3</span><span class="o">.</span><span class="n">returncode</span> <span class="o">==</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">run_steps</span></code> can also be used outside of the scope of pytest. This can be done by setting the kwarg <code class="docutils literal notranslate"><span class="pre">running_pytest</span></code> to <code class="docutils literal notranslate"><span class="pre">False</span></code> when decorating.</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">RunFunctionStep</span>
+<span class="kn">from</span> <span class="nn">hyalus.run.python</span> <span class="kn">import</span> <span class="n">run_steps</span><span class="p">,</span> <span class="n">apply_decorator</span>
+
+<span class="n">step_1</span> <span class="o">=</span> <span class="n">RunFunctionStep</span><span class="p">(</span><span class="nb">print</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="n">step_2</span> <span class="o">=</span> <span class="n">RunFunctionStep</span><span class="p">(</span><span class="nb">print</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">)</span>
+
+<span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_1</span><span class="p">,</span> <span class="n">step_2</span><span class="p">,</span> <span class="n">running_pytest</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">print_lots</span><span class="p">(</span><span class="o">*</span><span class="n">to_print</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">to_print</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+
+<span class="c1"># Prints 1, 2, 3, 4, and 5</span>
+<span class="n">print_lots</span><span class="p">(</span><span class="s2">&quot;3&quot;</span><span class="p">,</span> <span class="s2">&quot;4&quot;</span><span class="p">,</span> <span class="s2">&quot;5&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="apply-decorator">
+<h4>apply_decorator<a class="headerlink" href="#apply-decorator" title="Permalink to this heading">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">hyalus.run.python.apply_decorator</span></code> decorator specifically decorates <em>all methods of a class</em> with a given decorator. In conjunction with the <code class="docutils literal notranslate"><span class="pre">run_steps</span></code> decorator, this lets you run a specific set of Steps prior to every single test method of a test class. Additionally, each test method can also be decorated with the <code class="docutils literal notranslate"><span class="pre">run_steps</span></code> decorator individually, which will cause Steps to be run <em>after</em> the Steps from the class-level decoration.</p>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hyalus.config.steps</span> <span class="kn">import</span> <span class="n">RunFunctionStep</span>
+<span class="kn">from</span> <span class="nn">hyalus.run.python</span> <span class="kn">import</span> <span class="n">run_steps</span><span class="p">,</span> <span class="n">apply_decorator</span>
+
+<span class="n">step_1</span> <span class="o">=</span> <span class="n">RunFunctionStep</span><span class="p">(</span><span class="nb">print</span><span class="p">,</span> <span class="s2">&quot;1&quot;</span><span class="p">)</span>
+<span class="n">step_2</span> <span class="o">=</span> <span class="n">RunFunctionStep</span><span class="p">(</span><span class="nb">print</span><span class="p">,</span> <span class="s2">&quot;2&quot;</span><span class="p">)</span>
+<span class="n">step_3</span> <span class="o">=</span> <span class="n">RunFunctionStep</span><span class="p">(</span><span class="nb">print</span><span class="p">,</span> <span class="s2">&quot;3&quot;</span><span class="p">)</span>
+
+<span class="nd">@apply_decorator</span><span class="p">(</span><span class="n">run_steps</span><span class="p">(</span><span class="n">step_1</span><span class="p">,</span> <span class="n">step_2</span><span class="p">))</span>
+<span class="k">class</span> <span class="nc">TestMyApp</span><span class="p">:</span>
+
+    <span class="c1"># Results in 1, 2, and 4 being printed in that order</span>
+    <span class="k">def</span> <span class="nf">test_1</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Results in 1, 2, 3, and 4 being printed in that order</span>
+    <span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_3</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_2</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Results in 1, 2, 3, 2, 1, and 4 being printed in that order</span>
+    <span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_3</span><span class="p">)</span>
+    <span class="nd">@run_steps</span><span class="p">(</span><span class="n">step_2</span><span class="p">,</span> <span class="n">step_1</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_3</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;4&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+<section id="hyalus-cli">
+<h2>Hyalus CLI<a class="headerlink" href="#hyalus-cli" title="Permalink to this heading">¶</a></h2>
+<section id="settings">
+<h3>Settings<a class="headerlink" href="#settings" title="Permalink to this heading">¶</a></h3>
+<p>Update user settings for hyalus.</p>
+<section id="help">
+<h4>Help<a class="headerlink" href="#help" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus settings -h
+usage: hyalus settings [-h] [-d] [-u UPDATE [UPDATE ...]] [-r RESET [RESET ...]]
+
+options:
+  -h, --help            show this help message and exit
+  -d, --descriptions    Print descriptions for all settings prior to outputting current setting values
+  -u UPDATE [UPDATE ...], --update UPDATE [UPDATE ...]
+                        Setting/value pairs in the format &#39;&lt;setting&gt;=&lt;value&gt;&#39; to use to update hyalus configuration.
+  -r RESET [RESET ...], --reset RESET [RESET ...]
+                        Setting names to reset to default value.
+</pre></div>
+</div>
+</section>
+<section id="examples">
+<h4>Examples<a class="headerlink" href="#examples" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus settings
+debug: False
+stdout: True
+config_author:
+template_output_dir: .
+runs_dir: .
+search_dirs: [&#39;/path/to/tests&#39;, &#39;/path/to/separate/tests&#39;]
+cleanup_on_pass: False
+tag_operator: any
+oldest_test_run: 0001-01-01
+newest_test_run: 9999-12-31
+force_clean: False
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus settings --update stdout=false
+debug: False
+stdout: False
+config_author:
+template_output_dir: .
+runs_dir: .
+search_dirs: [&#39;/Users/david.mcconnell/Desktop/git/genapsys/hyalus/tests/run/test_dir_1&#39;]
+cleanup_on_pass: False
+tag_operator: any
+oldest_test_run: 0001-01-01
+newest_test_run: 9999-12-31
+force_clean: False
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus settings --reset stdout
+debug: False
+stdout: False
+config_author:
+template_output_dir: .
+runs_dir: .
+search_dirs: [&#39;/Users/david.mcconnell/Desktop/git/genapsys/hyalus/tests/run/test_dir_1&#39;]
+cleanup_on_pass: False
+tag_operator: any
+oldest_test_run: 0001-01-01
+newest_test_run: 9999-12-31
+force_clean: False
+</pre></div>
+</div>
+</section>
+<section id="notes">
+<h4>Notes<a class="headerlink" href="#notes" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">settings</span></code> cannot be run with both <code class="docutils literal notranslate"><span class="pre">--update</span></code> and <code class="docutils literal notranslate"><span class="pre">--reset</span></code> simultaneously if a setting is specified in both sections - should it be updated or reset?</p>
+<p><code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">settings</span></code> will automatically add new settings when they are added to hyalus.</p>
+</section>
+</section>
+<section id="template">
+<h3>Template<a class="headerlink" href="#template" title="Permalink to this heading">¶</a></h3>
+<p>Create a new hyalus test from a template config file.</p>
+<section id="id1">
+<h4>Help<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus template -h
+usage: hyalus template [-h] [-o OUTPUT_DIR] [-c CONFIG_TEMPLATE] tests [tests ...]
+
+positional arguments:
+  tests                 List of names of template tests to make.
+
+options:
+  -h, --help            show this help message and exit
+  -o OUTPUT_DIR, --output-dir OUTPUT_DIR
+                        Output directory path for the generated template tests. Defaults to the template_output_directory config setting.
+  -c CONFIG_TEMPLATE, --config-template CONFIG_TEMPLATE
+                        Use a given config file template instead of the default hyalus one.
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h4>Examples<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus template test_1 -o .
+&gt; ls test_1
+config.py input     output    tmp
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h4>Notes<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">template</span></code> will output generated template tests to the directory pointed at by the <code class="docutils literal notranslate"><span class="pre">template_output_directory</span></code> user setting.</p>
+<p>The only field used in the default config template is <code class="docutils literal notranslate"><span class="pre">config_author</span></code>. This template can be changed with the <code class="docutils literal notranslate"><span class="pre">-c</span></code> option.</p>
+<p>The default config template can be found at <code class="docutils literal notranslate"><span class="pre">src/hyalus/run/static/config_template</span></code>. Fields are filled out based on user setting values using the <code class="docutils literal notranslate"><span class="pre">str.format</span></code> method. So in the template, <code class="docutils literal notranslate"><span class="pre">{config_author}</span></code> will be replaced with whatever <code class="docutils literal notranslate"><span class="pre">config_author</span></code> is set to in the user settings.</p>
+</section>
+</section>
+<section id="list">
+<h3>List<a class="headerlink" href="#list" title="Permalink to this heading">¶</a></h3>
+<p>List available tests, optionally matching given tags.</p>
+<section id="id4">
+<h4>Help<a class="headerlink" href="#id4" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus list -h
+usage: hyalus list [-h] [-t TAGS [TAGS ...]] [-o {any,all}]
+
+options:
+  -h, --help            show this help message and exit
+  -t TAGS [TAGS ...], --tags TAGS [TAGS ...]
+                        List of tags to compare against hyalus test config files which when matched will result in a given test being run, e.g. &#39;Short&#39; will run all
+                        tests tagged with the &#39;Short&#39; tag. Tags are case insensitive. If multiple tags are given, tests will have to meet either any of or all of
+                        the given tags based on the tag operator.
+  -o {any,all}, --tag-op {any,all}
+                        Operator to apply to tag searching. &#39;any&#39; means config must match one or more of specified tags, &#39;all&#39; means config must match all of the
+                        specified tags.
+</pre></div>
+</div>
+</section>
+<section id="id5">
+<h4>Examples<a class="headerlink" href="#id5" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus list
+runtest_1
+runtest_2
+runtest_7
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus list -t short
+runtest_1
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus list -t short medium -o any
+runtest_1
+runtest_2
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus list -t short medium -o all
+(no output)
+</pre></div>
+</div>
+</section>
+<section id="id6">
+<h4>Notes<a class="headerlink" href="#id6" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">list</span></code> searches directories stored in the <code class="docutils literal notranslate"><span class="pre">search_dirs</span></code> user setting for tests. It does not check for validity of <code class="docutils literal notranslate"><span class="pre">config.py</span></code> files, only that they exist.</p>
+<p>If no tags are given, <em>all</em> tests found will be reported.</p>
+<p>The tag operator defaults to whatever the <code class="docutils literal notranslate"><span class="pre">tag_operator</span></code> user setting is set to.</p>
+<p>Output from <code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">list</span></code> can be piped into <code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">runsuite</span></code> to find given tests and then execute them.</p>
+</section>
+</section>
+<section id="runtest">
+<h3>Runtest<a class="headerlink" href="#runtest" title="Permalink to this heading">¶</a></h3>
+<p>Run a single hyalus test.</p>
+<section id="id7">
+<h4>Help<a class="headerlink" href="#id7" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus runtest -h
+usage: hyalus runtest [-h] test
+
+positional arguments:
+  test        Name or path of test to run. Hyalus will look in the current working directory as well as any directories pointed to in the search_dirs config setting
+              if a name is given. If a path is given, hyalus will grab the test directly from that path, relative to the current working directory.
+
+options:
+  -h, --help  show this help message and exit
+</pre></div>
+</div>
+</section>
+<section id="id8">
+<h4>Examples<a class="headerlink" href="#id8" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus runtest runtest_1
+/path/to/runs_dir/runtest_1_2023-03-15_yJ4Pev5q: SUCCESS
+&gt; echo $?
+0
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span> &gt; hyalus runtest runtest_2
+/path/to/runs_dir/runtest_2_2023-03-15_mG06KqXT: FAILURE
+&gt; echo $?
+1
+</pre></div>
+</div>
+</section>
+<section id="id9">
+<h4>Notes<a class="headerlink" href="#id9" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">runtest</span></code> searches directories in the <code class="docutils literal notranslate"><span class="pre">search_dirs</span></code> user setting for tests, and will output them in the directory pointed to by the <code class="docutils literal notranslate"><span class="pre">runs_dir</span></code> user setting.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">cleanup_on_pass</span></code> user setting can be set to <code class="docutils literal notranslate"><span class="pre">True</span></code> to automatically remove passing tests after they have been run. When the <code class="docutils literal notranslate"><span class="pre">debug</span></code> user setting is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, the <code class="docutils literal notranslate"><span class="pre">cleanup_on_pass</span></code> flag is ignored.</p>
+<p>If the <code class="docutils literal notranslate"><span class="pre">stdout</span></code> user setting is set to True or the <code class="docutils literal notranslate"><span class="pre">-s</span></code> flag is provided to hyalus, logging will be written to stdout as well as hyalus log files.</p>
+</section>
+</section>
+<section id="runsuite">
+<h3>Runsuite<a class="headerlink" href="#runsuite" title="Permalink to this heading">¶</a></h3>
+<p>Run multiple tests and/or suites of tests, optionally only matching giving tags.</p>
+<section id="id10">
+<h4>Help<a class="headerlink" href="#id10" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus runsuite -h
+usage: hyalus runsuite [-h] [-t TAGS [TAGS ...]] [-o {any,all}] [tests ...]
+
+positional arguments:
+  tests                 Names or paths of tests/test plans to run. Hyalus will look in the current working directory as well as any directories pointed to in the
+                        search_dirs config setting to find tests and test plans to run if just names are given. If paths are given, hyalus will grab the tests and
+                        test plans directly from those paths, relative to the current working directory.
+
+options:
+  -h, --help            show this help message and exit
+  -t TAGS [TAGS ...], --tags TAGS [TAGS ...]
+                        List of tags to compare against hyalus test config files which when matched will result in a given test being run, e.g. &#39;Short&#39; will run all
+                        tests tagged with the &#39;Short&#39; tag. Tags are case insensitive. If multiple tags are given, tests will have to meet either any of or all of
+                        the given tags based on the tag operator.
+  -o {any,all}, --tag-op {any,all}
+                        Operator to apply to tag searching. &#39;any&#39; means config must match one or more of specified tags, &#39;all&#39; means config must match all of the
+                        specified tags.
+</pre></div>
+</div>
+</section>
+<section id="id11">
+<h4>Examples<a class="headerlink" href="#id11" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus runsuite runtest_1 runtest_7
+/path/to/runs_dir/runtest_7_2023-03-15_3eLw7E3H: SUCCESS
+/path/to/runs_dir/runtest_1_2023-03-15_oBhA7lnX: SUCCESS
+&gt; echo $?
+0
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus runsuite runtest_1 runtest_2
+/path/to/runs_dir/runtest_1_2023-03-15_ciPf1Ghk: SUCCESS
+/path/to/runs_dir/runtest_2_2023-03-15_fDe4oamx: FAILURE
+&gt; echo $?
+1
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus runsuite test_plan.ste
+/path/to/runs_dir/runtest_7_2023-03-15_3eLw7E3H: SUCCESS
+/path/to/runs_dir/runtest_1_2023-03-15_oBhA7lnX: SUCCESS
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus list | hyalus runsuite
+/path/to/runs_dir/runtest_1_2023-03-15_fQD2dzBJ: SUCCESS
+/path/to/runs_dir/runtest_2_2023-03-15_yg18c260: FAILURE
+/path/to/runs_dir/runtest_7_2023-03-15_oB5wtusU: SUCCESS
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus list -t short medium -o any | hyalus runsuite
+/path/to/runs_dir/runtest_1_2023-03-15_ttS3C9jA: SUCCESS
+/path/to/runs_dir/runtest_2_2023-03-15_OYPzP3G9: FAILURE
+</pre></div>
+</div>
+</section>
+<section id="id12">
+<h4>Notes<a class="headerlink" href="#id12" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">runsuite</span></code> uses the same user settings as <code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">runtest</span></code>, in addition to the <code class="docutils literal notranslate"><span class="pre">tag_operator</span></code> setting.</p>
+<p>Tests are run in parallel, and the results of each test are output to the console in whatever order they finish in. This is <em>not</em> guaranteed to be the same across multiple runs!</p>
+<p>Any logging to stdout is turned <em>off</em> with <code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">runsuite</span></code>. This is to prevent log streams showing up from different tests at the same time on the console, which is inherently confusing and actively unhelpful.</p>
+</section>
+</section>
+<section id="clean">
+<h3>Clean<a class="headerlink" href="#clean" title="Permalink to this heading">¶</a></h3>
+<p>Clean up old hyalus test runs based on matching tags and date criteria.</p>
+<section id="id13">
+<h4>Help<a class="headerlink" href="#id13" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus clean -h
+usage: hyalus clean [-h] [-t TAGS [TAGS ...]] [-o {any,all}] [--oldest OLDEST] [--newest NEWEST] [-f] [test_names ...]
+
+positional arguments:
+  test_names            Names of tests to match against test runs. If none provided, all test runs will be considered matched.
+
+options:
+  -h, --help            show this help message and exit
+  -t TAGS [TAGS ...], --tags TAGS [TAGS ...]
+                        List of tags to compare against hyalus test config files which when matched will result in a given test being run, e.g. &#39;Short&#39; will run all
+                        tests tagged with the &#39;Short&#39; tag. Tags are case insensitive. If multiple tags are given, tests will have to meet either any of or all of
+                        the given tags based on the tag operator.
+  -o {any,all}, --tag-op {any,all}
+                        Operator to apply to tag searching. &#39;any&#39; means config must match one or more of specified tags, &#39;all&#39; means config must match all of the
+                        specified tags.
+  --oldest OLDEST       Date in the format YYYY-MM-DD OR integer specifying the oldest date a test run should be kept, or the number of days from today a test run
+                        should be kept, respectively. Defaults to the oldest_test_run config setting.
+  --newest NEWEST       Date in the format YYYY-MM-DD specifying the newest date a test run should be kept. Defaults to the newest_test_run config setting.
+  -f, --force           Force clean any test runs found to match criteria
+</pre></div>
+</div>
+</section>
+<section id="id14">
+<h4>Examples<a class="headerlink" href="#id14" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus clean
+12 test runs marked for removal. Are you sure you want to proceed? Y/N
+y
+12 old test runs have been removed
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus clean
+12 test runs marked for removal. Are you sure you want to proceed? Y/N
+n
+Test run removal canceled
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus clean -f
+6 old test runs have been removed
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus clean -t short
+4 test runs marked for removal. Are you sure you want to proceed? Y/N
+y
+4 old test runs have been removed
+</pre></div>
+</div>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus clean --oldest 30
+2 test runs marked for removal. Are you sure you want to proceed? Y/N
+y
+2 old test runs have been removed
+</pre></div>
+</div>
+</section>
+<section id="id15">
+<h4>Notes<a class="headerlink" href="#id15" title="Permalink to this heading">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">hyalus</span> <span class="pre">clean</span></code> will look in the directory pointed at by the <code class="docutils literal notranslate"><span class="pre">runs_dir</span></code> user setting and remove tests accordingly.</p>
+<p>By default, the user is prompted to confirm test removal, but by setting the <code class="docutils literal notranslate"><span class="pre">force_clean</span></code> user setting to <code class="docutils literal notranslate"><span class="pre">True</span></code>, or giving the <code class="docutils literal notranslate"><span class="pre">-f</span></code> flag, this confirmation is skipped.</p>
+<p>When no arguments are given, all tests will be marked for removal!</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">--oldest</span></code> and <code class="docutils literal notranslate"><span class="pre">--newest</span></code> flags, and their corresponding user settings <code class="docutils literal notranslate"><span class="pre">oldest_test_run</span></code> and <code class="docutils literal notranslate"><span class="pre">newest_test_run</span></code>, can be used in conjunction with Cron jobs or something similar to automatically remove old test runs after a given amount of time.</p>
+</section>
+</section>
+<section id="version">
+<h3>Version<a class="headerlink" href="#version" title="Permalink to this heading">¶</a></h3>
+<p>Display the version of hyalus currently installed.</p>
+<section id="id16">
+<h4>Help<a class="headerlink" href="#id16" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus version -h
+usage: hyalus version [-h]
+
+options:
+  -h, --help  show this help message and exit
+</pre></div>
+</div>
+</section>
+<section id="id17">
+<h4>Examples<a class="headerlink" href="#id17" title="Permalink to this heading">¶</a></h4>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; hyalus version
+hyalus version: 0.1.0
+</pre></div>
+</div>
+</section>
+<section id="id18">
+<h4>Notes<a class="headerlink" href="#id18" title="Permalink to this heading">¶</a></h4>
+<p>The version can also be retrieved from within a python interpreter session by accessing <code class="docutils literal notranslate"><span class="pre">hyalus.__version__</span></code>, e.g.</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; python
+Python 3.10.9 (main, Jan 18 2023, 17:16:21) [Clang 13.1.6 (clang-1316.0.21.2.5)] on darwin
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt; import hyalus
+&gt;&gt;&gt; hyalus.__version__
+&#39;0.1.0&#39;
+</pre></div>
+</div>
+<p>The version itself is configured/updated at <code class="docutils literal notranslate"><span class="pre">src/hyalus/metadata.json</span></code>.</p>
+</section>
 </section>
 </section>
 </section>
@@ -214,14 +1039,14 @@
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
         <a href="_src/hyalus/modules.html" class="btn btn-neutral float-right" title="hyalus" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="index.html" class="btn btn-neutral float-left" title="README" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Hyalus" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

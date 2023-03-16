@@ -197,9 +197,9 @@
 <span id="tests-assertions-test-compare-module"></span><h1>tests.assertions.test_compare module<a class="headerlink" href="#module-tests.assertions.test_compare" title="Permalink to this heading">¶</a></h1>
 <p>Unit tests for the hyalus.assert.compare module</p>
 <dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.fixture_example_df">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">fixture_example_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.fixture_example_df" title="Permalink to this definition">¶</a></dt>
-<dd><p>Example DataFrame for containment checks</p>
+<dt class="sig sig-object py" id="tests.assertions.test_compare.fixture_example_list">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">fixture_example_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.fixture_example_list" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example list for containment checks</p>
 </dd></dl>
 
 <dl class="py function">
@@ -209,309 +209,309 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.fixture_example_list">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">fixture_example_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.fixture_example_list" title="Permalink to this definition">¶</a></dt>
-<dd><p>Example list for containment checks</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_contains_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_contains_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_contains_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the contains function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_contains_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_contains_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_contains_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the contains function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for dataframe_contains where the given criteria do not match any records</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_1">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_1" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for dataframe_contains where the given criteria match one record</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_2">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_2" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for dataframe_contains where the given criteria match more than one record</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_3">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_3" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for dataframe_contains where no criteria are given</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_does_not_contain_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_does_not_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_does_not_contain_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the does_not_contain function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_does_not_contain_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_does_not_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_does_not_contain_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the does_not_contain function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the eq function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the eq function where no arguments are given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the eq function where a single argument is given, should be True</p>
+<dt class="sig sig-object py" id="tests.assertions.test_compare.fixture_example_df">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">fixture_example_df</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.fixture_example_df" title="Permalink to this definition">¶</a></dt>
+<dd><p>Example DataFrame for containment checks</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_true">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the eq function where the test result should be True</p>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.eq</span></code> function where the test result should be True</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ge function where the test result should be False</p>
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.eq</span></code> function where the test result should be False</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ge function where no arguments are given, should be True</p>
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.eq</span></code> function where no arguments are given, should be True</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ge function where a single argument is given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ge function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the gt function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the gt function where no arguments are given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the gt function where a single argument is given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the gt function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_in_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_in_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_in_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the in function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_in_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_in_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_in_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the in function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is function where no arguments are given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is_not function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is_not function where no arguments are given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is_not function where a single argument is given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is_not function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is function where a single argument is given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the is function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_items_contain_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_items_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_items_contain_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the items_contain function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_items_contain_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_items_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_items_contain_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the items_contain function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_keys_contain_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_keys_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_keys_contain_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the keys_contain function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_keys_contain_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_keys_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_keys_contain_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the keys_contain function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the le function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the le function where no arguments are given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the le function where a single argument is given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the le function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the lt function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the lt function where no arguments are given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the lt function where a single argument is given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_true">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the lt function where the test result should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ne function where the test result should be False</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_no_args">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_no_args" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ne function where no arguments are given, should be True</p>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_one_arg">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_one_arg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ne function where a single argument is given, should be True</p>
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_eq_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_eq_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_eq_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.eq</span></code> function where a single argument is given, should be True</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_true">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test case for the ne function where the test result should be True</p>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ne</span></code> function where the test result should be True</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_not_in_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_not_in_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_not_in_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the not_in function where the test result should be False</p>
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ne</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ne</span></code> function where no arguments are given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ne_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ne_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ne_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ne</span></code> function where a single argument is given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.gt</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.gt</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.gt</span></code> function where no arguments are given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_gt_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_gt_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_gt_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.gt</span></code> function where a single argument is given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ge</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ge</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ge</span></code> function where no arguments are given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_ge_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_ge_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_ge_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.ge</span></code> function where a single argument is given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.lt</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.lt</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.lt</span></code> function where no arguments are given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_lt_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_lt_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_lt_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.lt</span></code> function where a single argument is given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.le</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.le</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.le</span></code> function where no arguments are given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_le_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_le_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_le_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.le</span></code> function where a single argument is given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_</span></code> function where no arguments are given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_</span></code> function where a single argument is given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_not</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_not</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_no_args">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_no_args</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_no_args" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_not</span></code> function where no arguments are given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_is_not_one_arg">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_is_not_one_arg</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_is_not_one_arg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for the <code class="docutils literal notranslate"><span class="pre">compare.is_not</span></code> function where a single argument is given, should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_in_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_in_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_in_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.in_</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_in_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_in_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_in_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.in_</span></code> function where the test result should be False</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.assertions.test_compare.test_not_in_true">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_not_in_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_not_in_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the not_in function where the test result should be True</p>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.not_in</span></code> function where the test result should be True</p>
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="tests.assertions.test_compare.test_values_contain_false">
-<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_values_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_values_contain_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the values_contain function where the test result should be False</p>
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_not_in_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_not_in_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_not_in_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.not_in</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_contains_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_contains_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_contains_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.contains</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_contains_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_contains_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_contains_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.contains</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_does_not_contain_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_does_not_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_does_not_contain_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.does_not_contain</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_does_not_contain_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_does_not_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_does_not_contain_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.does_not_contain</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_keys_contain_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_keys_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_keys_contain_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.keys_contain</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_keys_contain_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_keys_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_keys_contain_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.keys_contain</span></code> function where the test result should be False</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.assertions.test_compare.test_values_contain_true">
 <span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_values_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_values_contain_true" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple test case for the values_contain function where the test result should be True</p>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.values_contain</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_values_contain_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_values_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_values_contain_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.values_contain</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_items_contain_true">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_items_contain_true</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_items_contain_true" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.items_contain</span></code> function where the test result should be True</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_items_contain_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_items_contain_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_dict</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_items_contain_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple test case for the <code class="docutils literal notranslate"><span class="pre">compare.items_contain</span></code> function where the test result should be False</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_1">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_1" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for <code class="docutils literal notranslate"><span class="pre">compare.dataframe_contains</span></code> where the given criteria match one record</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_2">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for <code class="docutils literal notranslate"><span class="pre">compare.dataframe_contains</span></code> where the given criteria match more than one record</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_true_3">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_true_3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_true_3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for <code class="docutils literal notranslate"><span class="pre">compare.dataframe_contains</span></code> where no criteria are given</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.assertions.test_compare.test_dataframe_contains_false">
+<span class="sig-prename descclassname"><span class="pre">tests.assertions.test_compare.</span></span><span class="sig-name descname"><span class="pre">test_dataframe_contains_false</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">example_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.assertions.test_compare.test_dataframe_contains_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test case for <code class="docutils literal notranslate"><span class="pre">compare.dataframe_contains</span></code> where the given criteria do not match any records</p>
 </dd></dl>
 
 </section>
@@ -530,7 +530,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

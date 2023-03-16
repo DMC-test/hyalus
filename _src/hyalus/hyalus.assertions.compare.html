@@ -197,39 +197,6 @@
 <span id="hyalus-assertions-compare-module"></span><h1>hyalus.assertions.compare module<a class="headerlink" href="#module-hyalus.assertions.compare" title="Permalink to this heading">¶</a></h1>
 <p>Comparator functions for expected and observed values. Expected to be used in the context of an assertion.</p>
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.contains">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.contains" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">in</span> <span class="pre">a</span></code></p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.dataframe_contains">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">dataframe_contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.dataframe_contains" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return True if at least one record in the given DataFrame matches all given pairs of column/value, else False</p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.does_not_contain">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">does_not_contain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.does_not_contain" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">a</span></code></p>
-<dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
 <dt class="sig sig-object py" id="hyalus.assertions.compare.eq">
 <span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">eq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.eq" title="Permalink to this definition">¶</a></dt>
 <dd><p>Boolean check for whether the given values are all equal to each other</p>
@@ -244,15 +211,15 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.ge">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">ge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.ge" title="Permalink to this definition">¶</a></dt>
-<dd><p>Boolean check for whether the given values are, in order, greater than or equal to the next value</p>
+<dt class="sig sig-object py" id="hyalus.assertions.compare.ne">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">ne</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.ne" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean check for whether the given values are all unequal to each other - no 2 values may be equal</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – Values, in order, for the comparison</p>
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if values are, in order, greater than or equal to the next value</p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if no values are equal, otherwise False</p>
 </dd>
 </dl>
 </dd></dl>
@@ -272,12 +239,43 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.in_">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">in_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.in_" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">in</span> <span class="pre">b</span></code></p>
+<dt class="sig sig-object py" id="hyalus.assertions.compare.ge">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">ge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.ge" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean check for whether the given values are, in order, greater than or equal to the next value</p>
 <dl class="field-list simple">
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – Values, in order, for the comparison</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if values are, in order, greater than or equal to the next value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.assertions.compare.lt">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">lt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.lt" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean check for whether the given values are, in order, less than the next value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – Values, in order, for the comparison</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if values are, in order, less than the next value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.assertions.compare.le">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">le</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.le" title="Permalink to this definition">¶</a></dt>
+<dd><p>Boolean check for whether the given values are, in order, less than or equal to the next value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – Values, in order, for the comparison</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if values are, in order, less than or the next value</p>
 </dd>
 </dl>
 </dd></dl>
@@ -311,9 +309,42 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.items_contain">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">items_contain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.items_contain" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">in</span> <span class="pre">a.items()</span></code></p>
+<dt class="sig sig-object py" id="hyalus.assertions.compare.in_">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">in_</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.in_" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">in</span> <span class="pre">b</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.assertions.compare.not_in">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">not_in</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.not_in" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">b</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.assertions.compare.contains">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.contains" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">in</span> <span class="pre">a</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.assertions.compare.does_not_contain">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">does_not_contain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.does_not_contain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">a</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
@@ -333,51 +364,9 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.le">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">le</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.le" title="Permalink to this definition">¶</a></dt>
-<dd><p>Boolean check for whether the given values are, in order, less than or equal to the next value</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – Values, in order, for the comparison</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if values are, in order, less than or the next value</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.lt">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">lt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.lt" title="Permalink to this definition">¶</a></dt>
-<dd><p>Boolean check for whether the given values are, in order, less than the next value</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – Values, in order, for the comparison</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if values are, in order, less than the next value</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.ne">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">ne</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.ne" title="Permalink to this definition">¶</a></dt>
-<dd><p>Boolean check for whether the given values are all unequal to each other - no 2 values may be equal</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>args</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/typing.html#typing.Any" title="(in Python v3.10)"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></a>) – Values, in order, for the comparison</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> – True if no values are equal, otherwise False</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.not_in">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">not_in</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.not_in" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">b</span></code></p>
+<dt class="sig sig-object py" id="hyalus.assertions.compare.values_contain">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">values_contain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.values_contain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">in</span> <span class="pre">a.values()</span></code></p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
@@ -386,9 +375,20 @@
 </dd></dl>
 
 <dl class="py function">
-<dt class="sig sig-object py" id="hyalus.assertions.compare.values_contain">
-<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">values_contain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.values_contain" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">in</span> <span class="pre">a.values()</span></code></p>
+<dt class="sig sig-object py" id="hyalus.assertions.compare.items_contain">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">items_contain</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.items_contain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the outcome of the test <code class="docutils literal notranslate"><span class="pre">b</span> <span class="pre">in</span> <span class="pre">a.items()</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="hyalus.assertions.compare.dataframe_contains">
+<span class="sig-prename descclassname"><span class="pre">hyalus.assertions.compare.</span></span><span class="sig-name descname"><span class="pre">dataframe_contains</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.assertions.compare.dataframe_contains" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return True if at least one record in the given DataFrame matches all given pairs of column/value, else False</p>
 <dl class="field-list simple">
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
 <dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a></p>
@@ -412,7 +412,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

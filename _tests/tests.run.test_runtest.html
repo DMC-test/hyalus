@@ -196,6 +196,12 @@
   <section id="module-tests.run.test_runtest">
 <span id="tests-run-test-runtest-module"></span><h1>tests.run.test_runtest module<a class="headerlink" href="#module-tests.run.test_runtest" title="Permalink to this heading">¶</a></h1>
 <p>Tests for the hyalus.run.runtest module</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.run.test_runtest.fixture_runs_dir">
+<span class="sig-prename descclassname"><span class="pre">tests.run.test_runtest.</span></span><span class="sig-name descname"><span class="pre">fixture_runs_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path_factory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.fixture_runs_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Module-scope temp directory</p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_runtest.</span></span><span class="sig-name descname"><span class="pre">TestHyalusTestRunner</span></span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner" title="Permalink to this definition">¶</a></dt>
@@ -214,9 +220,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_error">
-<span class="sig-name descname"><span class="pre">test_run_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_error" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test handling of running Step that is expected to error out</p>
+<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_pass">
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running a test that should have a passing result</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_pass_cleanup_run">
+<span class="sig-name descname"><span class="pre">test_run_pass_cleanup_run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_pass_cleanup_run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test cleanup of passing test run</p>
 </dd></dl>
 
 <dl class="py method">
@@ -232,21 +244,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_halt_on_error">
-<span class="sig-name descname"><span class="pre">test_run_fail_halt_on_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_halt_on_error" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test handling of running Step that is expected to fail which has halt_on_error set to True</p>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_raise_exception">
 <span class="sig-name descname"><span class="pre">test_run_fail_raise_exception</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_raise_exception" title="Permalink to this definition">¶</a></dt>
 <dd><p>Test failing Step with its error flag set to True causes the run to exit before executing more Steps</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_invalid_config">
-<span class="sig-name descname"><span class="pre">test_run_invalid_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_invalid_config" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test handling of loading an invalid config file</p>
+<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_error">
+<span class="sig-name descname"><span class="pre">test_run_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test handling of running Step that is expected to error out</p>
 </dd></dl>
 
 <dl class="py method">
@@ -256,23 +262,17 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_pass" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running a test that should have a passing result</p>
+<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_invalid_config">
+<span class="sig-name descname"><span class="pre">test_run_invalid_config</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_invalid_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test handling of loading an invalid config file</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_pass_cleanup_run">
-<span class="sig-name descname"><span class="pre">test_run_pass_cleanup_run</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_pass_cleanup_run" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test cleanup of passing test run</p>
+<dt class="sig sig-object py" id="tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_halt_on_error">
+<span class="sig-name descname"><span class="pre">test_run_fail_halt_on_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.TestHyalusTestRunner.test_run_fail_halt_on_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test handling of running Step that is expected to fail which has halt_on_error set to True</p>
 </dd></dl>
 
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.run.test_runtest.fixture_runs_dir">
-<span class="sig-prename descclassname"><span class="pre">tests.run.test_runtest.</span></span><span class="sig-name descname"><span class="pre">fixture_runs_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path_factory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runtest.fixture_runs_dir" title="Permalink to this definition">¶</a></dt>
-<dd><p>Module-scope temp directory</p>
 </dd></dl>
 
 </section>
@@ -291,7 +291,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

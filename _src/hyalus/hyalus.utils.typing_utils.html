@@ -197,6 +197,20 @@
 <span id="hyalus-utils-typing-utils-module"></span><h1>hyalus.utils.typing_utils module<a class="headerlink" href="#module-hyalus.utils.typing_utils" title="Permalink to this heading">¶</a></h1>
 <p>Utilities related to typing and type casting values</p>
 <dl class="py function">
+<dt class="sig sig-object py" id="hyalus.utils.typing_utils.type_string">
+<span class="sig-prename descclassname"><span class="pre">hyalus.utils.typing_utils.</span></span><span class="sig-name descname"><span class="pre">type_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.typing_utils.type_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a string, try type casting to int/float/bool accordingly</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>string</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The string to type cast</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#float" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> – The type-casted value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="hyalus.utils.typing_utils.type_check">
 <span class="sig-prename descclassname"><span class="pre">hyalus.utils.typing_utils.</span></span><span class="sig-name descname"><span class="pre">type_check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">item</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.typing_utils.type_check" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks if the given item is an instance of the given type. Mostly a wrapper around the builtin isinstance with
@@ -217,20 +231,6 @@ support for type checking against generics in which the class is either list, se
 </dl>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="hyalus.utils.typing_utils.type_string">
-<span class="sig-prename descclassname"><span class="pre">hyalus.utils.typing_utils.</span></span><span class="sig-name descname"><span class="pre">type_string</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hyalus.utils.typing_utils.type_string" title="Permalink to this definition">¶</a></dt>
-<dd><p>Given a string, try type casting to int/float/bool accordingly</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>string</strong> (<a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a>) – The string to type cast</p>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3.10/library/functions.html#int" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#float" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#bool" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></a> | <a class="reference external" href="https://docs.python.org/3.10/library/stdtypes.html#str" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></a> – The type-casted value</p>
-</dd>
-</dl>
-</dd></dl>
-
 </section>
 
 
@@ -247,7 +247,7 @@ support for type checking against generics in which the class is either list, se
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

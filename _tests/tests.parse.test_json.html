@@ -196,17 +196,17 @@
   <section id="module-tests.parse.test_json">
 <span id="tests-parse-test-json-module"></span><h1>tests.parse.test_json module<a class="headerlink" href="#module-tests.parse.test_json" title="Permalink to this heading">¶</a></h1>
 <p>Unit tests for the hyalus.parse.json module</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.parse.test_json.fixture_tmp_json">
+<span class="sig-prename descclassname"><span class="pre">tests.parse.test_json.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_json.fixture_tmp_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copies JSON_1 file to a temp directory and returns path to the file</p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.parse.test_json.TestJSONParser">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_json.</span></span><span class="sig-name descname"><span class="pre">TestJSONParser</span></span><a class="headerlink" href="#tests.parse.test_json.TestJSONParser" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Unit tests for the JSONParser class</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_json.TestJSONParser.test_eq_false">
-<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_json.TestJSONParser.test_eq_false" title="Permalink to this definition">¶</a></dt>
-<dd><p>Assert that two parsers with different file paths and different content are treated as unequal</p>
-</dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_json.TestJSONParser.test_eq_true_file_path">
 <span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_json.TestJSONParser.test_eq_true_file_path" title="Permalink to this definition">¶</a></dt>
@@ -220,9 +220,9 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.parse.test_json.TestJSONParser.test_search_multiple_key">
-<span class="sig-name descname"><span class="pre">test_search_multiple_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_json.TestJSONParser.test_search_multiple_key" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test searching through a JSON file when giving a single key</p>
+<dt class="sig sig-object py" id="tests.parse.test_json.TestJSONParser.test_eq_false">
+<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_json.TestJSONParser.test_eq_false" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assert that two parsers with different file paths and different content are treated as unequal</p>
 </dd></dl>
 
 <dl class="py method">
@@ -231,12 +231,12 @@
 <dd><p>Test searching through a JSON file when giving a single key</p>
 </dd></dl>
 
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.parse.test_json.TestJSONParser.test_search_multiple_key">
+<span class="sig-name descname"><span class="pre">test_search_multiple_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_json.TestJSONParser.test_search_multiple_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test searching through a JSON file when giving a single key</p>
 </dd></dl>
 
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.parse.test_json.fixture_tmp_json">
-<span class="sig-prename descclassname"><span class="pre">tests.parse.test_json.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_json.fixture_tmp_json" title="Permalink to this definition">¶</a></dt>
-<dd><p>Copies JSON_1 file to a temp directory and returns path to the file</p>
 </dd></dl>
 
 </section>
@@ -255,7 +255,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>

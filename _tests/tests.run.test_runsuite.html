@@ -196,23 +196,17 @@
   <section id="module-tests.run.test_runsuite">
 <span id="tests-run-test-runsuite-module"></span><h1>tests.run.test_runsuite module<a class="headerlink" href="#module-tests.run.test_runsuite" title="Permalink to this heading">¶</a></h1>
 <p>Tests for the hyalus.run.runsuite module</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.fixture_runs_dir">
+<span class="sig-prename descclassname"><span class="pre">tests.run.test_runsuite.</span></span><span class="sig-name descname"><span class="pre">fixture_runs_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path_factory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.fixture_runs_dir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Module-scope temp directory</p>
+</dd></dl>
+
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.run.test_runsuite.</span></span><span class="sig-name descname"><span class="pre">TestHyalusSuiteRunner</span></span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the HyalusSuiteRunner class</p>
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_all">
-<span class="sig-name descname"><span class="pre">test_get_tests_by_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_all" title="Permalink to this definition">¶</a></dt>
-<dd><p>Tests test retrieval via test name, test suite, and tags - also tests handling of duplicates</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_tags">
-<span class="sig-name descname"><span class="pre">test_get_tests_by_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_tags" title="Permalink to this definition">¶</a></dt>
-<dd><p>Tests test retrieval via tags</p>
-</dd></dl>
-
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_test_name">
 <span class="sig-name descname"><span class="pre">test_get_tests_by_test_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_test_name" title="Permalink to this definition">¶</a></dt>
@@ -226,57 +220,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_no_tests_found">
-<span class="sig-name descname"><span class="pre">test_run_no_tests_found</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_no_tests_found" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test short circuiting when given inputs result in no tests to run</p>
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_tags">
+<span class="sig-name descname"><span class="pre">test_get_tests_by_tags</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests test retrieval via tags</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_error">
-<span class="sig-name descname"><span class="pre">test_run_suite_file_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_error" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running tests that are expected to error via suite file</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_fail">
-<span class="sig-name descname"><span class="pre">test_run_suite_file_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_fail" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running tests that are expected to fail via suite file</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_pass">
-<span class="sig-name descname"><span class="pre">test_run_suite_file_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_pass" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running tests that are all expected to pass via suite file</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_error">
-<span class="sig-name descname"><span class="pre">test_run_tags_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_error" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running tests that are expected to error via tag collection</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_fail">
-<span class="sig-name descname"><span class="pre">test_run_tags_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_fail" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running tests that are expected to fail via tag collection</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_pass">
-<span class="sig-name descname"><span class="pre">test_run_tags_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_pass" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running tests that are expected to pass via tag collection</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_error">
-<span class="sig-name descname"><span class="pre">test_run_test_names_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_error" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running tests that are expected to error out, asserting the overall result is False</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_fail">
-<span class="sig-name descname"><span class="pre">test_run_test_names_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_fail" title="Permalink to this definition">¶</a></dt>
-<dd><p>Test running via multiple test names, 1 test should pass and 1 should fail, overall result should be False</p>
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_all">
+<span class="sig-name descname"><span class="pre">test_get_tests_by_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_get_tests_by_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tests test retrieval via test name, test suite, and tags - also tests handling of duplicates</p>
 </dd></dl>
 
 <dl class="py method">
@@ -286,9 +238,63 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_fail">
+<span class="sig-name descname"><span class="pre">test_run_test_names_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_fail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running via multiple test names, 1 test should pass and 1 should fail, overall result should be False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_error">
+<span class="sig-name descname"><span class="pre">test_run_test_names_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running tests that are expected to error out, asserting the overall result is False</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_pass">
+<span class="sig-name descname"><span class="pre">test_run_suite_file_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_pass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running tests that are all expected to pass via suite file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_fail">
+<span class="sig-name descname"><span class="pre">test_run_suite_file_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_fail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running tests that are expected to fail via suite file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_error">
+<span class="sig-name descname"><span class="pre">test_run_suite_file_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_suite_file_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running tests that are expected to error via suite file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_pass">
+<span class="sig-name descname"><span class="pre">test_run_tags_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_pass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running tests that are expected to pass via tag collection</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_fail">
+<span class="sig-name descname"><span class="pre">test_run_tags_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_fail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running tests that are expected to fail via tag collection</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_error">
+<span class="sig-name descname"><span class="pre">test_run_tags_error</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_tags_error" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test running tests that are expected to error via tag collection</p>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_suite_and_tags">
 <span class="sig-name descname"><span class="pre">test_run_test_names_suite_and_tags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_test_names_suite_and_tags" title="Permalink to this definition">¶</a></dt>
 <dd><p>Test running tests via combination of name, suite, and tags</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_no_tests_found">
+<span class="sig-name descname"><span class="pre">test_run_no_tests_found</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">runs_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.TestHyalusSuiteRunner.test_run_no_tests_found" title="Permalink to this definition">¶</a></dt>
+<dd><p>Test short circuiting when given inputs result in no tests to run</p>
 </dd></dl>
 
 <dl class="py method">
@@ -297,12 +303,6 @@
 <dd><p>In the unlikely event of somehow passing HyalusTestRunner invalid input, assert we fail the overall run</p>
 </dd></dl>
 
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="tests.run.test_runsuite.fixture_runs_dir">
-<span class="sig-prename descclassname"><span class="pre">tests.run.test_runsuite.</span></span><span class="sig-name descname"><span class="pre">fixture_runs_dir</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path_factory</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.run.test_runsuite.fixture_runs_dir" title="Permalink to this definition">¶</a></dt>
-<dd><p>Module-scope temp directory</p>
 </dd></dl>
 
 </section>
@@ -321,7 +321,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; Copyright 2022, Genapsys.
+        &#169; Copyright 2023, Sequencing Health, Inc.
 
     </p>
   </div>
