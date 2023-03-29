@@ -1,39 +1,18 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>tests.config.steps.test_assertions module &mdash; Hyalus 0.1 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/format-overrides.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/format-overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
@@ -42,64 +21,40 @@
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.js"></script>
         <script src="../_static/traceability.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="tests.config.steps.test_base module" href="tests.config.steps.test_base.html" />
     <link rel="prev" title="tests.config.steps package" href="tests.config.steps.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> Hyalus
           
-
-          
+          <a href="../index.html" class="icon icon-home">
+            Hyalus
           </a>
-
-          
-            
-            
               <div class="version">
                 0.1.0-3
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../readme.html">README</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to Hyalus</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../_src/hyalus/modules.html">hyalus</a></li>
@@ -122,132 +77,87 @@
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">Releases</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Hyalus</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="modules.html">tests</a> &raquo;</li>
-        
-          <li><a href="tests.html">tests package</a> &raquo;</li>
-        
-          <li><a href="tests.config.html">tests.config package</a> &raquo;</li>
-        
-          <li><a href="tests.config.steps.html">tests.config.steps package</a> &raquo;</li>
-        
-      <li>tests.config.steps.test_assertions module</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">tests</a></li>
+          <li class="breadcrumb-item"><a href="tests.html">tests package</a></li>
+          <li class="breadcrumb-item"><a href="tests.config.html">tests.config package</a></li>
+          <li class="breadcrumb-item"><a href="tests.config.steps.html">tests.config.steps package</a></li>
+      <li class="breadcrumb-item active">tests.config.steps.test_assertions module</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/_tests/tests.config.steps.test_assertions.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="module-tests.config.steps.test_assertions">
-<span id="tests-config-steps-test-assertions-module"></span><h1>tests.config.steps.test_assertions module<a class="headerlink" href="#module-tests.config.steps.test_assertions" title="Permalink to this heading">¶</a></h1>
+<span id="tests-config-steps-test-assertions-module"></span><h1>tests.config.steps.test_assertions module<a class="headerlink" href="#module-tests.config.steps.test_assertions" title="Permalink to this heading"></a></h1>
 <p>Unit tests for the hyalus.config.steps.assertions module</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.fixture_json_file">
-<span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">fixture_json_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.fixture_json_file" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">fixture_json_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.fixture_json_file" title="Permalink to this definition"></a></dt>
 <dd><p>Copies the verify.json file to temp directory and returns path to it</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.fixture_empty_json">
-<span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">fixture_empty_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.fixture_empty_json" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">fixture_empty_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.fixture_empty_json" title="Permalink to this definition"></a></dt>
 <dd><p>Copies the empty.json file to temp directory and returns path to it</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.fixture_tsv_file">
-<span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">fixture_tsv_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.fixture_tsv_file" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">fixture_tsv_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.fixture_tsv_file" title="Permalink to this definition"></a></dt>
 <dd><p>Copies the verify.tsv file to temp directory and returns path to it</p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertionStep">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertionStep</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertionStep</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertionStep class - uses AssertEQ and assumes that AssertEQ is implemented correctly</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_no_parsers">
-<span class="sig-name descname"><span class="pre">test_pre_process_no_parsers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_no_parsers" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_pre_process_no_parsers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_no_parsers" title="Permalink to this definition"></a></dt>
 <dd><p>Tests that arguments that should not be handled as potential paths are handled correctly</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_with_parser">
-<span class="sig-name descname"><span class="pre">test_pre_process_with_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_with_parser" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_pre_process_with_parser</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_with_parser" title="Permalink to this definition"></a></dt>
 <dd><p>Tests that a mix of arguments is handled correctly</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_multiple_parsers">
-<span class="sig-name descname"><span class="pre">test_pre_process_multiple_parsers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">empty_json</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_multiple_parsers" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_pre_process_multiple_parsers</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">empty_json</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_pre_process_multiple_parsers" title="Permalink to this definition"></a></dt>
 <dd><p>Tests that multiple path arguments are handled together properly</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertionStep.test_run_workflow_pass">
-<span class="sig-name descname"><span class="pre">test_run_workflow_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_run_workflow_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_workflow_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_run_workflow_pass" title="Permalink to this definition"></a></dt>
 <dd><p>Tests that a passing function output is handled accordingly</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertionStep.test_run_workflow_fail">
-<span class="sig-name descname"><span class="pre">test_run_workflow_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_run_workflow_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_workflow_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertionStep.test_run_workflow_fail" title="Permalink to this definition"></a></dt>
 <dd><p>Tests that an failing function output is handled accordingly</p>
 </dd></dl>
 
@@ -255,24 +165,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertEQ">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertEQ</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertEQ</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertEQ class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertEQ.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertEQ.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertEQ.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertEQ.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -280,24 +190,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNE">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertNE</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertNE</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertNE class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNE.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNE.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNE.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNE.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -305,24 +215,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGT">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertGT</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertGT</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertGT class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGT.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGT.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGT.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGT.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -330,24 +240,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGE">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertGE</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertGE</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertGE class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGE.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGE.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertGE.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertGE.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -355,24 +265,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLT">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertLT</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertLT</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertLT class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLT.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLT.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLT.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLT.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -380,24 +290,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLE">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertLE</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertLE</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertLE class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLE.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLE.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertLE.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertLE.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -405,24 +315,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertIn">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertIn</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertIn</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertIn class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertIn.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertIn.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertIn.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertIn.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -430,24 +340,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNotIn">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertNotIn</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertNotIn</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertNotIn class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNotIn.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNotIn.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertNotIn.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertNotIn.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -455,24 +365,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContains">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertContains</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertContains</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertContains class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContains.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContains.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContains.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContains.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -480,24 +390,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDoesNotContain">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertDoesNotContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertDoesNotContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertDoesNotContain class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDoesNotContain.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDoesNotContain.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDoesNotContain.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDoesNotContain.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -505,24 +415,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContain">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertContain class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContain.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContain.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertContain.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertContain.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -530,24 +440,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertValuesContain">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertValuesContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertValuesContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertValuesContain class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertValuesContain.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertValuesContain.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertValuesContain.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertValuesContain.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -555,24 +465,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertItemsContain">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertItemsContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertItemsContain</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertItemsContain class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertItemsContain.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertItemsContain.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertItemsContain.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertItemsContain.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -580,24 +490,24 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDataFrameContains">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertDataFrameContains</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.config.steps.test_assertions.</span></span><span class="sig-name descname"><span class="pre">TestAssertDataFrameContains</span></span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Tests for the AssertDataFrameContains class</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDataFrameContains.test_str">
-<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains.test_str" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains.test_str" title="Permalink to this definition"></a></dt>
 <dd><p>Test that string creation is functioning as intended</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDataFrameContains.test_run_pass">
-<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains.test_run_pass" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_pass</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains.test_run_pass" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for passing check</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.config.steps.test_assertions.TestAssertDataFrameContains.test_run_fail">
-<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains.test_run_fail" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_run_fail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">run_dir</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tsv_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.config.steps.test_assertions.TestAssertDataFrameContains.test_run_fail" title="Permalink to this definition"></a></dt>
 <dd><p>End-to-end style test for failing check</p>
 </dd></dl>
 
@@ -607,50 +517,33 @@
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="tests.config.steps.test_base.html" class="btn btn-neutral float-right" title="tests.config.steps.test_base module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tests.config.steps.html" class="btn btn-neutral float-left" title="tests.config.steps package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.config.steps.test_base.html" class="btn btn-neutral float-right" title="tests.config.steps.test_base module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2023, Sequencing Health, Inc.
-
-    </p>
+    <p>&#169; Copyright 2023, Sequencing Health, Inc.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

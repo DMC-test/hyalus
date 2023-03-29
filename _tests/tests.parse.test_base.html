@@ -1,39 +1,18 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
   <title>tests.parse.test_base module &mdash; Hyalus 0.1 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/format-overrides.css" type="text/css" />
-
-  
-  
-
-  
-  
-
-  
-
-  
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/format-overrides.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
@@ -42,64 +21,40 @@
         <script src="../_static/sphinx_highlight.js"></script>
         <script src="https://cdn.rawgit.com/aexmachina/jquery-bonsai/master/jquery.bonsai.js"></script>
         <script src="../_static/traceability.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="tests.parse.test_csv module" href="tests.parse.test_csv.html" />
     <link rel="prev" title="tests.parse package" href="tests.parse.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
 
           
-            <a href="../index.html" class="icon icon-home"> Hyalus
           
-
-          
+          <a href="../index.html" class="icon icon-home">
+            Hyalus
           </a>
-
-          
-            
-            
               <div class="version">
                 0.1.0-3
               </div>
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul>
 <li class="toctree-l1"><a class="reference internal" href="../readme.html">README</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">Contributing to Hyalus</a></li>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../_src/hyalus/modules.html">hyalus</a></li>
@@ -122,118 +77,74 @@
 <li class="toctree-l1"><a class="reference internal" href="../releases.html">Releases</a></li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Hyalus</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="modules.html">tests</a> &raquo;</li>
-        
-          <li><a href="tests.html">tests package</a> &raquo;</li>
-        
-          <li><a href="tests.parse.html">tests.parse package</a> &raquo;</li>
-        
-      <li>tests.parse.test_base module</li>
-    
-    
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">tests</a></li>
+          <li class="breadcrumb-item"><a href="tests.html">tests package</a></li>
+          <li class="breadcrumb-item"><a href="tests.parse.html">tests.parse package</a></li>
+      <li class="breadcrumb-item active">tests.parse.test_base module</li>
       <li class="wy-breadcrumbs-aside">
-        
-          
             <a href="../_sources/_tests/tests.parse.test_base.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="module-tests.parse.test_base">
-<span id="tests-parse-test-base-module"></span><h1>tests.parse.test_base module<a class="headerlink" href="#module-tests.parse.test_base" title="Permalink to this heading">¶</a></h1>
+<span id="tests-parse-test-base-module"></span><h1>tests.parse.test_base module<a class="headerlink" href="#module-tests.parse.test_base" title="Permalink to this heading"></a></h1>
 <p>Unit tests for the hyalus.parse.base module</p>
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.parse.test_base.fixture_tmp_tsv_df">
-<span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_tsv_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.fixture_tmp_tsv_df" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_tsv_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.fixture_tmp_tsv_df" title="Permalink to this definition"></a></dt>
 <dd><p>Copy TSV DataFrame to temp directory and return path to it</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="tests.parse.test_base.fixture_tmp_tsv_kv">
-<span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_tsv_kv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.fixture_tmp_tsv_kv" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">fixture_tmp_tsv_kv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.fixture_tmp_tsv_kv" title="Permalink to this definition"></a></dt>
 <dd><p>Copy TSV key/value file to temp directory and return path to it</p>
 </dd></dl>
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestResultsParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestResultsParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Unit tests for the ResultsParser base class functionality</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_abc_honored">
-<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_abc_honored" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_abc_honored" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that the ResultsParser class cannot be instantiated</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_use_glob_true">
-<span class="sig-name descname"><span class="pre">test_use_glob_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_use_glob_true" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_use_glob_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_use_glob_true" title="Permalink to this definition"></a></dt>
 <dd><p>Test integration of globbing functionality when giving a valid wildcard</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_parse_cache_on">
-<span class="sig-name descname"><span class="pre">test_parse_cache_on</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_on" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_parse_cache_on</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_on" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that parsing functions as expected and results are cached as expected when turned on</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestResultsParser.test_parse_cache_off">
-<span class="sig-name descname"><span class="pre">test_parse_cache_off</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_off" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_parse_cache_off</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestResultsParser.test_parse_cache_off" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that parsing functions as expected and results are not cached when turned off</p>
 </dd></dl>
 
@@ -241,54 +152,54 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestDataFrameParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestDataFrameParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Unit tests for the DataFrameParser base class functionality</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_abc_honored">
-<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_abc_honored" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_abc_honored" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that the DataFrameParser class cannot be instantiated</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_parse">
-<span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that an input file is properly parsed into a DataFrame</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_parse_kwargs">
-<span class="sig-name descname"><span class="pre">test_parse_kwargs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse_kwargs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_parse_kwargs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_parse_kwargs" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that kwargs are properly passed into the <code class="docutils literal notranslate"><span class="pre">pd.read_csv</span></code> call</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_eq_true_file_path">
-<span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_file_path" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_file_path" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with the same file path are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_eq_true_parse">
-<span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_parse" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_true_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths but the same parsed content are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_eq_false">
-<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_false" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_eq_false" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths and different content are treated as unequal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_search">
-<span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search" title="Permalink to this definition"></a></dt>
 <dd><p>Test subsetting of DataFrame with one valid constraint</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestDataFrameParser.test_search_multiple">
-<span class="sig-name descname"><span class="pre">test_search_multiple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search_multiple" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_search_multiple</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestDataFrameParser.test_search_multiple" title="Permalink to this definition"></a></dt>
 <dd><p>Test subsetting of DataFrame with multiple valid constraints</p>
 </dd></dl>
 
@@ -296,42 +207,42 @@
 
 <dl class="py class">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestKeyValueParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.parse.test_base.</span></span><span class="sig-name descname"><span class="pre">TestKeyValueParser</span></span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <a class="reference external" href="https://docs.python.org/3.10/library/functions.html#object" title="(in Python v3.10)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Unit tests for the KeyValueParser base class functionality</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_abc_honored">
-<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_abc_honored" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_abc_honored</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_abc_honored" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that the KeyValueParser class cannot be instantiated</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_parse">
-<span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_parse" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_parse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that an input file is properly parsed into a dictionary of key-value pairs</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_eq_true_file_path">
-<span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_file_path" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_file_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_file_path" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with the same file path are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_eq_true_parse">
-<span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_kv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_parse" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_true_parse</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tmp_tsv_kv</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_true_parse" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths but the same content are treated as equal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_eq_false">
-<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_false" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_eq_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_eq_false" title="Permalink to this definition"></a></dt>
 <dd><p>Assert that two parsers with different file paths and different content are treated as unequal</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="tests.parse.test_base.TestKeyValueParser.test_search">
-<span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_search" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">test_search</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.parse.test_base.TestKeyValueParser.test_search" title="Permalink to this definition"></a></dt>
 <dd><p>Test searching for a given key</p>
 </dd></dl>
 
@@ -341,50 +252,33 @@
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="tests.parse.test_csv.html" class="btn btn-neutral float-right" title="tests.parse.test_csv module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="tests.parse.html" class="btn btn-neutral float-left" title="tests.parse package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tests.parse.test_csv.html" class="btn btn-neutral float-right" title="tests.parse.test_csv module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright 2023, Sequencing Health, Inc.
-
-    </p>
+    <p>&#169; Copyright 2023, Sequencing Health, Inc.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>

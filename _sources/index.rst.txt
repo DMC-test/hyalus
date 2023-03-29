@@ -9,8 +9,16 @@ README
 .. toctree::
   :glob:
 
-  readme
+  readme.rst
 
+**********************
+Contributing to Hyalus
+**********************
+
+.. toctree::
+  :glob:
+
+  contributing.rst
 
 ********
 api-docs

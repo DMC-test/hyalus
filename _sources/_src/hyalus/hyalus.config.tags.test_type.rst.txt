@@ -1,7 +1,0 @@
-hyalus.config.tags.test\_type module
-====================================
-
-.. automodule:: hyalus.config.tags.test_type
-   :members:
-   :undoc-members:
-   :show-inheritance:
