@@ -38,7 +38,7 @@
             Hyalus
           </a>
               <div class="version">
-                0.1.0-7
+                0.1.0-8
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -117,19 +117,15 @@ This will link <code class="docutils literal notranslate"><span class="pre">src/
 All pull requests are expected to have at least one corresponding test case added/changed to test the changes.
 All existing tests and new tests must be passing to merge into <code class="docutils literal notranslate"><span class="pre">main</span></code>.
 Code coverage must also be at or above 90%.
-Tests can be run locally by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">test</span></code>, <code class="docutils literal notranslate"><span class="pre">pytest</span></code>, or <code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">run</span> <span class="pre">-m</span> <span class="pre">pytest</span></code>.
-<code class="docutils literal notranslate"><span class="pre">pytest</span></code> and <code class="docutils literal notranslate"><span class="pre">coverage</span></code> must be installed to run tests and gather coverage information.
+Tests can be run locally by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">test</span></code> or <code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">--cov</span></code>.
+<code class="docutils literal notranslate"><span class="pre">pytest</span></code> and <code class="docutils literal notranslate"><span class="pre">pytest-cov</span></code> must be installed to run tests and gather coverage information.
 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">test</span></code> will display both test results as well as code coverage from running the test suite.</p>
-<blockquote>
-<div><p><strong><em>NOTE:</em></strong> Hyalus is packaged to be available for use as a pytest plugin.
-In order to properly capture coverage information, pytest must be invoked <em>by</em> coverage (<code class="docutils literal notranslate"><span class="pre">coverage</span> <span class="pre">run</span> <span class="pre">-m</span> <span class="pre">pytest</span></code>), not the other way around (<code class="docutils literal notranslate"><span class="pre">pytest</span> <span class="pre">--cov</span></code>).</p>
-</div></blockquote>
 <div class="highlight-text notranslate"><div class="highlight"><pre><span></span>&gt; make test
-coverage run -m pytest &amp;&amp; coverage combine -q &amp;&amp; coverage report -m
+pytest --cov
 ======================================================================== test session starts =========================================================================
 platform darwin -- Python 3.11.1, pytest-7.2.2, pluggy-1.0.0
 rootdir: /path/to/git/hyalus
-plugins: hyalus-0.1.0
+plugins: cov-4.0.0, hyalus-0.1.0
 collected 373 items
 
 tests/assertions/test_apply.py ....                                                    [  1%]
